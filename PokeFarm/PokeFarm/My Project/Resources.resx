@@ -142,6 +142,9 @@
   <data name="places" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\places.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hypermode-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hypermode-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="index-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\index-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,7 +172,7 @@
   <data name="pokeball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pokeball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hypermode-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hypermode-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gem_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gem_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
