@@ -40,16 +40,33 @@ Partial Class Form1
         Me.NearbyPlacesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OtherLinksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DisplayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NotificationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BookmarksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TimersBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ForumToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserscriptsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OthersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InteractionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FieldsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WishforgeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.QuickToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InteractionsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TournamentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EggTimerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HyperModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ShinyHuntingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UberCharmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AlbinoHuntingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LuckyEggToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MessagesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VisitForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForumSubscriptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.webView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -69,7 +86,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShortcutsToolStripMenuItem, Me.MessagesToolStripMenuItem, Me.ForumToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShortcutsToolStripMenuItem, Me.QuickToolStripMenuItem, Me.MessagesToolStripMenuItem, Me.ForumToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1264, 24)
@@ -89,7 +106,7 @@ Partial Class Form1
         Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LabToolStripMenuItem, Me.PartyToolStripMenuItem, Me.FarmToolStripMenuItem, Me.ShelterToolStripMenuItem, Me.MarketToolStripMenuItem, Me.DaycareToolStripMenuItem, Me.PokedexToolStripMenuItem})
         Me.BasicToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.lab
         Me.BasicToolStripMenuItem.Name = "BasicToolStripMenuItem"
-        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.BasicToolStripMenuItem.Text = "Basic"
         '
         'LabToolStripMenuItem
@@ -146,7 +163,7 @@ Partial Class Form1
         Me.FarmToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FarmNewsToolStripMenuItem, Me.InventoryToolStripMenuItem, Me.NearbyPlacesToolStripMenuItem, Me.OtherLinksToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.NotepadToolStripMenuItem, Me.InteractionsToolStripMenuItem})
         Me.FarmToolStripMenuItem1.Image = Global.PokeFarm.My.Resources.Resources.farm
         Me.FarmToolStripMenuItem1.Name = "FarmToolStripMenuItem1"
-        Me.FarmToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.FarmToolStripMenuItem1.Size = New System.Drawing.Size(128, 22)
         Me.FarmToolStripMenuItem1.Text = "Farm"
         '
         'FarmNewsToolStripMenuItem
@@ -179,10 +196,53 @@ Partial Class Form1
         '
         'OptionsToolStripMenuItem
         '
+        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DisplayToolStripMenuItem, Me.NotificationsToolStripMenuItem, Me.BookmarksToolStripMenuItem, Me.TimersBarToolStripMenuItem, Me.ForumToolStripMenuItem1, Me.UserscriptsToolStripMenuItem, Me.OthersToolStripMenuItem})
         Me.OptionsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
         Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.OptionsToolStripMenuItem.Text = "Options"
+        '
+        'DisplayToolStripMenuItem
+        '
+        Me.DisplayToolStripMenuItem.Name = "DisplayToolStripMenuItem"
+        Me.DisplayToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.DisplayToolStripMenuItem.Text = "Display"
+        '
+        'NotificationsToolStripMenuItem
+        '
+        Me.NotificationsToolStripMenuItem.Name = "NotificationsToolStripMenuItem"
+        Me.NotificationsToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.NotificationsToolStripMenuItem.Text = "Notifications"
+        '
+        'BookmarksToolStripMenuItem
+        '
+        Me.BookmarksToolStripMenuItem.Name = "BookmarksToolStripMenuItem"
+        Me.BookmarksToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.BookmarksToolStripMenuItem.Text = "Bookmarks"
+        '
+        'TimersBarToolStripMenuItem
+        '
+        Me.TimersBarToolStripMenuItem.Name = "TimersBarToolStripMenuItem"
+        Me.TimersBarToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.TimersBarToolStripMenuItem.Text = "Timers Bar"
+        '
+        'ForumToolStripMenuItem1
+        '
+        Me.ForumToolStripMenuItem1.Name = "ForumToolStripMenuItem1"
+        Me.ForumToolStripMenuItem1.Size = New System.Drawing.Size(142, 22)
+        Me.ForumToolStripMenuItem1.Text = "Forum"
+        '
+        'UserscriptsToolStripMenuItem
+        '
+        Me.UserscriptsToolStripMenuItem.Name = "UserscriptsToolStripMenuItem"
+        Me.UserscriptsToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.UserscriptsToolStripMenuItem.Text = "Userscripts"
+        '
+        'OthersToolStripMenuItem
+        '
+        Me.OthersToolStripMenuItem.Name = "OthersToolStripMenuItem"
+        Me.OthersToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
+        Me.OthersToolStripMenuItem.Text = "Others"
         '
         'NotepadToolStripMenuItem
         '
@@ -202,30 +262,82 @@ Partial Class Form1
         '
         Me.FieldsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.places
         Me.FieldsToolStripMenuItem.Name = "FieldsToolStripMenuItem"
-        Me.FieldsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FieldsToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.FieldsToolStripMenuItem.Text = "Fields"
         '
         'WishforgeToolStripMenuItem
         '
         Me.WishforgeToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shortcut
         Me.WishforgeToolStripMenuItem.Name = "WishforgeToolStripMenuItem"
-        Me.WishforgeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.WishforgeToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.WishforgeToolStripMenuItem.Text = "Wishforge"
         '
-        'HelpToolStripMenuItem
+        'QuickToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.qmark
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
+        Me.QuickToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewsToolStripMenuItem, Me.InteractionsToolStripMenuItem1, Me.TournamentToolStripMenuItem, Me.EggTimerToolStripMenuItem, Me.HyperModeToolStripMenuItem, Me.ShinyHuntingToolStripMenuItem, Me.UberCharmToolStripMenuItem, Me.AlbinoHuntingToolStripMenuItem, Me.LuckyEggToolStripMenuItem})
+        Me.QuickToolStripMenuItem.Name = "QuickToolStripMenuItem"
+        Me.QuickToolStripMenuItem.Size = New System.Drawing.Size(84, 20)
+        Me.QuickToolStripMenuItem.Text = "Quick Menu"
         '
-        'AboutToolStripMenuItem
+        'NewsToolStripMenuItem
         '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
+        Me.NewsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.farm_news
+        Me.NewsToolStripMenuItem.Name = "NewsToolStripMenuItem"
+        Me.NewsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NewsToolStripMenuItem.Text = "News"
+        '
+        'InteractionsToolStripMenuItem1
+        '
+        Me.InteractionsToolStripMenuItem1.Image = Global.PokeFarm.My.Resources.Resources.interactions
+        Me.InteractionsToolStripMenuItem1.Name = "InteractionsToolStripMenuItem1"
+        Me.InteractionsToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.InteractionsToolStripMenuItem1.Text = "Interactions"
+        '
+        'TournamentToolStripMenuItem
+        '
+        Me.TournamentToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.links
+        Me.TournamentToolStripMenuItem.Name = "TournamentToolStripMenuItem"
+        Me.TournamentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TournamentToolStripMenuItem.Text = "Tournament"
+        '
+        'EggTimerToolStripMenuItem
+        '
+        Me.EggTimerToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.lab
+        Me.EggTimerToolStripMenuItem.Name = "EggTimerToolStripMenuItem"
+        Me.EggTimerToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EggTimerToolStripMenuItem.Text = "Egg Timer"
+        '
+        'HyperModeToolStripMenuItem
+        '
+        Me.HyperModeToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.hypermode_24
+        Me.HyperModeToolStripMenuItem.Name = "HyperModeToolStripMenuItem"
+        Me.HyperModeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HyperModeToolStripMenuItem.Text = "Hyper Mode"
+        '
+        'ShinyHuntingToolStripMenuItem
+        '
+        Me.ShinyHuntingToolStripMenuItem.Name = "ShinyHuntingToolStripMenuItem"
+        Me.ShinyHuntingToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShinyHuntingToolStripMenuItem.Text = "Shiny Hunting"
+        '
+        'UberCharmToolStripMenuItem
+        '
+        Me.UberCharmToolStripMenuItem.Name = "UberCharmToolStripMenuItem"
+        Me.UberCharmToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UberCharmToolStripMenuItem.Text = "Uber Charm"
+        '
+        'AlbinoHuntingToolStripMenuItem
+        '
+        Me.AlbinoHuntingToolStripMenuItem.Name = "AlbinoHuntingToolStripMenuItem"
+        Me.AlbinoHuntingToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AlbinoHuntingToolStripMenuItem.Text = "Albino Hunting"
+        '
+        'LuckyEggToolStripMenuItem
+        '
+        Me.LuckyEggToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.lab
+        Me.LuckyEggToolStripMenuItem.Name = "LuckyEggToolStripMenuItem"
+        Me.LuckyEggToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LuckyEggToolStripMenuItem.Text = "Lucky Egg"
         '
         'MessagesToolStripMenuItem
         '
@@ -251,6 +363,21 @@ Partial Class Form1
         Me.ForumSubscriptionsToolStripMenuItem.Name = "ForumSubscriptionsToolStripMenuItem"
         Me.ForumSubscriptionsToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.ForumSubscriptionsToolStripMenuItem.Text = "Forum Subscriptions"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.qmark
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
         '
         'Form1
         '
@@ -299,4 +426,21 @@ Partial Class Form1
     Friend WithEvents ForumToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VisitForumToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ForumSubscriptionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DisplayToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NotificationsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BookmarksToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TimersBarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ForumToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents UserscriptsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OthersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents QuickToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NewsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents InteractionsToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents TournamentToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EggTimerToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HyperModeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ShinyHuntingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AlbinoHuntingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LuckyEggToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UberCharmToolStripMenuItem As ToolStripMenuItem
 End Class

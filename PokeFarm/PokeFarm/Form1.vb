@@ -47,7 +47,7 @@ Public Class Form1
     End Sub
 
     Private Sub MarketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MarketToolStripMenuItem.Click
-        nav.web(nav.sc("market"))
+        nav.web(nav.sc("marketboard"))
     End Sub
 
     Private Sub DaycareToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DaycareToolStripMenuItem.Click
@@ -80,6 +80,36 @@ Public Class Form1
         nav.web(nav.sc("farm#tab=5"))
     End Sub
 
+#Region "Options"
+    Private Sub DisplayToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DisplayToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5.1"))
+    End Sub
+
+    Private Sub NotificationsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NotificationsToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5.2"))
+    End Sub
+
+    Private Sub BookmarksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BookmarksToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5.3"))
+    End Sub
+
+    Private Sub TimersBarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TimersBarToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5.4"))
+    End Sub
+
+    Private Sub ForumToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ForumToolStripMenuItem1.Click
+        nav.web(nav.sc("farm#tab=5.5"))
+    End Sub
+
+    Private Sub UserscriptsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UserscriptsToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5.6"))
+    End Sub
+
+    Private Sub OthersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OthersToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5.7"))
+    End Sub
+#End Region
+
     Private Sub NotepadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NotepadToolStripMenuItem.Click
         nav.web(nav.sc("farm#tab=6"))
     End Sub
@@ -109,6 +139,46 @@ Public Class Form1
 
     Private Sub ForumSubscriptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForumSubscriptionsToolStripMenuItem.Click
         nav.web(nav.sc("forum/subs"))
+    End Sub
+
+#End Region
+
+#Region "Quick Menu"
+    Private Sub NewsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewsToolStripMenuItem.Click
+        nav.web(nav.sc("news"))
+    End Sub
+
+    Private Sub InteractionsToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles InteractionsToolStripMenuItem1.Click
+        nav.web(nav.sc("interactions"))
+    End Sub
+
+    Private Sub TournamentToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TournamentToolStripMenuItem.Click
+        nav.web(nav.sc("tournament"))
+    End Sub
+
+    Private Sub EggTimerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EggTimerToolStripMenuItem.Click
+        nav.web(nav.sc("expboost/eggtimer"))
+    End Sub
+
+    Private Sub HyperModeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HyperModeToolStripMenuItem.Click
+        nav.web(nav.sc("hypermode"))
+    End Sub
+
+    Private Sub ShinyHuntingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShinyHuntingToolStripMenuItem.Click
+        nav.web(nav.sc("shinyhunt"))
+    End Sub
+
+
+    Private Sub UberCharmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UberCharmToolStripMenuItem.Click
+        nav.web(nav.sc("ubercharm"))
+    End Sub
+
+    Private Sub AlbinoHuntingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AlbinoHuntingToolStripMenuItem.Click
+        nav.web(nav.sc("albinohunt"))
+    End Sub
+
+    Private Sub LuckyEggToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LuckyEggToolStripMenuItem.Click
+        nav.web(nav.sc("expboost/luckyegg"))
     End Sub
 #End Region
 
