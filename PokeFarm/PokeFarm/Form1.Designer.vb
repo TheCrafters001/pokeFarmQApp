@@ -35,8 +35,6 @@ Partial Class Form1
         Me.DaycareToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PokedexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FarmToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FarmNewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NearbyPlacesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,6 +42,14 @@ Partial Class Form1
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InteractionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FieldsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WishforgeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MessagesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VisitForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ForumSubscriptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.webView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -63,7 +69,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShortcutsToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShortcutsToolStripMenuItem, Me.MessagesToolStripMenuItem, Me.ForumToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1264, 24)
@@ -72,7 +78,7 @@ Partial Class Form1
         '
         'ShortcutsToolStripMenuItem
         '
-        Me.ShortcutsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BasicToolStripMenuItem, Me.FarmToolStripMenuItem1})
+        Me.ShortcutsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BasicToolStripMenuItem, Me.FarmToolStripMenuItem1, Me.FieldsToolStripMenuItem, Me.WishforgeToolStripMenuItem})
         Me.ShortcutsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shortcut
         Me.ShortcutsToolStripMenuItem.Name = "ShortcutsToolStripMenuItem"
         Me.ShortcutsToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
@@ -90,49 +96,49 @@ Partial Class Form1
         '
         Me.LabToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.lab
         Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
-        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.LabToolStripMenuItem.Text = "Lab"
         '
         'PartyToolStripMenuItem
         '
         Me.PartyToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.pokeball
         Me.PartyToolStripMenuItem.Name = "PartyToolStripMenuItem"
-        Me.PartyToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PartyToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.PartyToolStripMenuItem.Text = "Party"
         '
         'FarmToolStripMenuItem
         '
         Me.FarmToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.farm
         Me.FarmToolStripMenuItem.Name = "FarmToolStripMenuItem"
-        Me.FarmToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FarmToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.FarmToolStripMenuItem.Text = "Farm"
         '
         'ShelterToolStripMenuItem
         '
         Me.ShelterToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shelter
         Me.ShelterToolStripMenuItem.Name = "ShelterToolStripMenuItem"
-        Me.ShelterToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShelterToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ShelterToolStripMenuItem.Text = "Shelter"
         '
         'MarketToolStripMenuItem
         '
         Me.MarketToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shop
         Me.MarketToolStripMenuItem.Name = "MarketToolStripMenuItem"
-        Me.MarketToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MarketToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.MarketToolStripMenuItem.Text = "Market"
         '
         'DaycareToolStripMenuItem
         '
         Me.DaycareToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.daycare
         Me.DaycareToolStripMenuItem.Name = "DaycareToolStripMenuItem"
-        Me.DaycareToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DaycareToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.DaycareToolStripMenuItem.Text = "Daycare"
         '
         'PokedexToolStripMenuItem
         '
         Me.PokedexToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.dex
         Me.PokedexToolStripMenuItem.Name = "PokedexToolStripMenuItem"
-        Me.PokedexToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PokedexToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.PokedexToolStripMenuItem.Text = "Pokédex"
         '
         'FarmToolStripMenuItem1
@@ -142,6 +148,69 @@ Partial Class Form1
         Me.FarmToolStripMenuItem1.Name = "FarmToolStripMenuItem1"
         Me.FarmToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.FarmToolStripMenuItem1.Text = "Farm"
+        '
+        'FarmNewsToolStripMenuItem
+        '
+        Me.FarmNewsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.farm_news
+        Me.FarmNewsToolStripMenuItem.Name = "FarmNewsToolStripMenuItem"
+        Me.FarmNewsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.FarmNewsToolStripMenuItem.Text = "Farm News"
+        '
+        'InventoryToolStripMenuItem
+        '
+        Me.InventoryToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.inventory
+        Me.InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem"
+        Me.InventoryToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.InventoryToolStripMenuItem.Text = "Inventory"
+        '
+        'NearbyPlacesToolStripMenuItem
+        '
+        Me.NearbyPlacesToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.places
+        Me.NearbyPlacesToolStripMenuItem.Name = "NearbyPlacesToolStripMenuItem"
+        Me.NearbyPlacesToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.NearbyPlacesToolStripMenuItem.Text = "Nearby Places"
+        '
+        'OtherLinksToolStripMenuItem
+        '
+        Me.OtherLinksToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.links
+        Me.OtherLinksToolStripMenuItem.Name = "OtherLinksToolStripMenuItem"
+        Me.OtherLinksToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.OtherLinksToolStripMenuItem.Text = "Other Links"
+        '
+        'OptionsToolStripMenuItem
+        '
+        Me.OptionsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.tools_options
+        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.OptionsToolStripMenuItem.Text = "Options"
+        '
+        'NotepadToolStripMenuItem
+        '
+        Me.NotepadToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.notepad
+        Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
+        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.NotepadToolStripMenuItem.Text = "Notepad"
+        '
+        'InteractionsToolStripMenuItem
+        '
+        Me.InteractionsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.interactions
+        Me.InteractionsToolStripMenuItem.Name = "InteractionsToolStripMenuItem"
+        Me.InteractionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
+        Me.InteractionsToolStripMenuItem.Text = "Interactions"
+        '
+        'FieldsToolStripMenuItem
+        '
+        Me.FieldsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.places
+        Me.FieldsToolStripMenuItem.Name = "FieldsToolStripMenuItem"
+        Me.FieldsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FieldsToolStripMenuItem.Text = "Fields"
+        '
+        'WishforgeToolStripMenuItem
+        '
+        Me.WishforgeToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shortcut
+        Me.WishforgeToolStripMenuItem.Name = "WishforgeToolStripMenuItem"
+        Me.WishforgeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.WishforgeToolStripMenuItem.Text = "Wishforge"
         '
         'HelpToolStripMenuItem
         '
@@ -158,47 +227,30 @@ Partial Class Form1
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
-        'FarmNewsToolStripMenuItem
+        'MessagesToolStripMenuItem
         '
-        Me.FarmNewsToolStripMenuItem.Name = "FarmNewsToolStripMenuItem"
-        Me.FarmNewsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FarmNewsToolStripMenuItem.Text = "Farm News"
+        Me.MessagesToolStripMenuItem.Name = "MessagesToolStripMenuItem"
+        Me.MessagesToolStripMenuItem.Size = New System.Drawing.Size(70, 20)
+        Me.MessagesToolStripMenuItem.Text = "Messages"
         '
-        'InventoryToolStripMenuItem
+        'ForumToolStripMenuItem
         '
-        Me.InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem"
-        Me.InventoryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.InventoryToolStripMenuItem.Text = "Inventory"
+        Me.ForumToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VisitForumToolStripMenuItem, Me.ForumSubscriptionsToolStripMenuItem})
+        Me.ForumToolStripMenuItem.Name = "ForumToolStripMenuItem"
+        Me.ForumToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
+        Me.ForumToolStripMenuItem.Text = "Forum"
         '
-        'NearbyPlacesToolStripMenuItem
+        'VisitForumToolStripMenuItem
         '
-        Me.NearbyPlacesToolStripMenuItem.Name = "NearbyPlacesToolStripMenuItem"
-        Me.NearbyPlacesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.NearbyPlacesToolStripMenuItem.Text = "Nearby Places"
+        Me.VisitForumToolStripMenuItem.Name = "VisitForumToolStripMenuItem"
+        Me.VisitForumToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.VisitForumToolStripMenuItem.Text = "Visit Forum"
         '
-        'OtherLinksToolStripMenuItem
+        'ForumSubscriptionsToolStripMenuItem
         '
-        Me.OtherLinksToolStripMenuItem.Name = "OtherLinksToolStripMenuItem"
-        Me.OtherLinksToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.OtherLinksToolStripMenuItem.Text = "Other Links"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.OptionsToolStripMenuItem.Text = "Options"
-        '
-        'NotepadToolStripMenuItem
-        '
-        Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
-        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.NotepadToolStripMenuItem.Text = "Notepad"
-        '
-        'InteractionsToolStripMenuItem
-        '
-        Me.InteractionsToolStripMenuItem.Name = "InteractionsToolStripMenuItem"
-        Me.InteractionsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.InteractionsToolStripMenuItem.Text = "Interactions"
+        Me.ForumSubscriptionsToolStripMenuItem.Name = "ForumSubscriptionsToolStripMenuItem"
+        Me.ForumSubscriptionsToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.ForumSubscriptionsToolStripMenuItem.Text = "Forum Subscriptions"
         '
         'Form1
         '
@@ -241,4 +293,10 @@ Partial Class Form1
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NotepadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InteractionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FieldsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents WishforgeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MessagesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ForumToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents VisitForumToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ForumSubscriptionsToolStripMenuItem As ToolStripMenuItem
 End Class

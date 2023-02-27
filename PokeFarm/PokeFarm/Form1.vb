@@ -25,7 +25,7 @@ Public Class Form1
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         about.Show()
     End Sub
-
+#Region "Basic"
     Private Sub FarmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FarmToolStripMenuItem.Click
         nav.web(nav.sc("farm"))
     End Sub
@@ -57,7 +57,9 @@ Public Class Form1
     Private Sub PokedexToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PokedexToolStripMenuItem.Click
         nav.web(nav.sc("pokedex"))
     End Sub
+#End Region
 
+#Region "Farm"
     Private Sub FarmNewsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FarmNewsToolStripMenuItem.Click
         nav.web(nav.sc("farm#tab=1"))
     End Sub
@@ -65,6 +67,50 @@ Public Class Form1
     Private Sub InventoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InventoryToolStripMenuItem.Click
         nav.web(nav.sc("farm#tab=2"))
     End Sub
+
+    Private Sub NearbyPlacesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NearbyPlacesToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=3"))
+    End Sub
+
+    Private Sub OtherLinksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OtherLinksToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=4"))
+    End Sub
+
+    Private Sub OptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OptionsToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=5"))
+    End Sub
+
+    Private Sub NotepadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NotepadToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=6"))
+    End Sub
+
+    Private Sub InteractionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InteractionsToolStripMenuItem.Click
+        nav.web(nav.sc("farm#tab=7"))
+    End Sub
+
+#End Region
+
+    Private Sub FieldsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FieldsToolStripMenuItem.Click
+        nav.web(nav.sc("fields"))
+    End Sub
+
+    Private Sub WishforgeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WishforgeToolStripMenuItem.Click
+        nav.web(nav.sc("forge"))
+    End Sub
+
+    Private Sub MessagesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MessagesToolStripMenuItem.Click
+        nav.web(nav.sc("pm"))
+    End Sub
+
+#Region "Forum"
+    Private Sub VisitForumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VisitForumToolStripMenuItem.Click
+        nav.web(nav.sc("forum"))
+    End Sub
+
+    Private Sub ForumSubscriptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForumSubscriptionsToolStripMenuItem.Click
+        nav.web(nav.sc("forum/subs"))
+    End Sub
+#End Region
 
 #End Region
 
