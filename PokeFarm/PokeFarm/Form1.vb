@@ -18,4 +18,8 @@ Public Class Form1
     Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs) Handles webView.NavigationStarting
         Me.Text = "Loading..."
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        about.Show()
+    End Sub
 End Class
