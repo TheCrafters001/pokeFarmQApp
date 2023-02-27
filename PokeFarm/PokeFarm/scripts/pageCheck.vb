@@ -21,7 +21,7 @@
                 ' Do not do anything
 
             Else
-                Form1.webView.CoreWebView2.Navigate("about:blank")
+                nav.web("about:blank")
 
                 Dim diagResult As DialogResult
                 diagResult = MessageBox.Show("You are trying to visit a page that is not from PokéFarm. Open in Browser?" & vbCrLf & vbCrLf & "URL: " & url, "Hold it!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
