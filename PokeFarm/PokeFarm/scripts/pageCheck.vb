@@ -1,7 +1,6 @@
 ﻿Public Class pageCheck
 
     Public Shared Sub Check()
-        'TO DO: FIX
 
         Dim url As String = Form1.webView.CoreWebView2.Source
 
