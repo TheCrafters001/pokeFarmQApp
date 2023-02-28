@@ -26,6 +26,7 @@ Partial Class about
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.title_lbl = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.thirdPartyLicenses_lnk = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,11 +59,22 @@ Partial Class about
         Me.RichTextBox1.TabIndex = 2
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
+        'thirdPartyLicenses_lnk
+        '
+        Me.thirdPartyLicenses_lnk.AutoSize = True
+        Me.thirdPartyLicenses_lnk.Location = New System.Drawing.Point(12, 251)
+        Me.thirdPartyLicenses_lnk.Name = "thirdPartyLicenses_lnk"
+        Me.thirdPartyLicenses_lnk.Size = New System.Drawing.Size(111, 15)
+        Me.thirdPartyLicenses_lnk.TabIndex = 3
+        Me.thirdPartyLicenses_lnk.TabStop = True
+        Me.thirdPartyLicenses_lnk.Text = "Third Party Licenses"
+        '
         'about
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(556, 260)
+        Me.ClientSize = New System.Drawing.Size(556, 274)
+        Me.Controls.Add(Me.thirdPartyLicenses_lnk)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.title_lbl)
         Me.Controls.Add(Me.PictureBox1)
@@ -82,4 +94,5 @@ Partial Class about
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents title_lbl As Label
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
 End Class
