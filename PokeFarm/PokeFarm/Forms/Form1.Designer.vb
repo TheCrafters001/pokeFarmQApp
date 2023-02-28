@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.webView = New Microsoft.Web.WebView2.WinForms.WebView2()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -66,6 +67,8 @@ Partial Class Form1
         Me.VisitForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForumSubscriptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Help_tsm = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.About_tsmi = New System.Windows.Forms.ToolStripMenuItem()
         Me.FarmNewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -81,10 +84,14 @@ Partial Class Form1
         Me.OthersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InteractionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.trayIconStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.webView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        Me.trayIconStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'webView
@@ -395,10 +402,21 @@ Partial Class Form1
         Me.Help_tsm.Size = New System.Drawing.Size(60, 20)
         Me.Help_tsm.Text = "Help"
         '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(113, 6)
+        '
         'About_tsmi
         '
         Me.About_tsmi.Name = "About_tsmi"
-        Me.About_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.About_tsmi.Size = New System.Drawing.Size(116, 22)
         Me.About_tsmi.Text = "About"
         '
         'FarmNewsToolStripMenuItem
@@ -492,16 +510,34 @@ Partial Class Form1
         Me.InteractionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.InteractionsToolStripMenuItem.Text = "Interactions"
         '
-        'SettingsToolStripMenuItem
+        'NotifyIcon1
         '
-        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SettingsToolStripMenuItem.Text = "Settings"
+        Me.NotifyIcon1.ContextMenuStrip = Me.trayIconStrip
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "PokéFarm Q Desktop App"
         '
-        'ToolStripSeparator1
+        'trayIconStrip
         '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.trayIconStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.ToolStripSeparator2, Me.QuitToolStripMenuItem})
+        Me.trayIconStrip.Name = "trayIconStrip"
+        Me.trayIconStrip.Size = New System.Drawing.Size(181, 76)
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        '
+        'QuitToolStripMenuItem
+        '
+        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QuitToolStripMenuItem.Text = "Quit"
         '
         'Form1
         '
@@ -515,10 +551,11 @@ Partial Class Form1
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PokeFarm Q"
+        Me.Text = "PokéFarm Q"
         CType(Me.webView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.trayIconStrip.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -583,4 +620,9 @@ Partial Class Form1
     Friend WithEvents Interactions_tsmi As ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents trayIconStrip As ContextMenuStrip
+    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -1,4 +1,5 @@
-﻿Imports AutoUpdaterDotNET
+﻿Imports System.ComponentModel
+Imports AutoUpdaterDotNET
 Imports Microsoft.Web.WebView2.Core
 
 Public Class Form1
@@ -197,8 +198,39 @@ Public Class Form1
         nav.web(nav.sc("scour"))
     End Sub
 
-
 #End Region
 
 
+#Region "Tray Icon"
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If My.Settings.runInBackground = True Then
+            e.Cancel = True
+            NotifyIcon1.Visible = True
+            Me.Hide()
+            NotifyIcon1.BalloonTipText = "Want to re-open? Click the icon in the system try!"
+            NotifyIcon1.BalloonTipTitle = "PokéFarm Q Desktop App"
+            NotifyIcon1.ShowBalloonTip(500)
+        End If
+    End Sub
+
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+        Me.Show()
+        Me.WindowState = FormWindowState.Normal
+        NotifyIcon1.Visible = False
+        Me.TopMost = True
+        Me.TopMost = False
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        Me.Show()
+        Me.WindowState = FormWindowState.Normal
+        NotifyIcon1.Visible = False
+        Me.TopMost = True
+        Me.TopMost = False
+    End Sub
+
+    Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
+        Application.Exit()
+    End Sub
+#End Region
 End Class

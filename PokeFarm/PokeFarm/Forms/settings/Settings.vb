@@ -13,6 +13,16 @@ Public Class Settings
             enableUpdate_rad.Checked = True
 
         End If
+
+        If My.Settings.runInBackground = False Then
+            disableRunInBack_rad.Checked = True
+            enableRunInBack_rad.Checked = False
+
+        ElseIf My.Settings.runInBackground = True Then
+            disableRunInBack_rad.Checked = False
+            enableRunInBack_rad.Checked = True
+
+        End If
     End Sub
 
     Private Sub ok_btn_Click(sender As Object, e As EventArgs) Handles ok_btn.Click
@@ -24,6 +34,17 @@ Public Class Settings
 
         ElseIf disableUpdate_rad.Checked = False And enableUpdate_rad.Checked = True Then
             My.Settings.autoUpdates = True
+            My.Settings.Save()
+
+        End If
+
+        'Save runInBackground settings
+        If disableRunInBack_rad.Checked = True And enableRunInBack_rad.Checked = False Then
+            My.Settings.runInBackground = False
+            My.Settings.Save()
+
+        ElseIf disableRunInBack_rad.Checked = False And enableRunInBack_rad.Checked = True Then
+            My.Settings.runInBackground = True
             My.Settings.Save()
 
         End If
