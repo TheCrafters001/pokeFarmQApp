@@ -1,7 +1,17 @@
-﻿Imports Microsoft.Web.WebView2.Core
+﻿Imports AutoUpdaterDotNET
+Imports Microsoft.Web.WebView2.Core
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'This will only run if updates are enabled
+        If My.Settings.autoUpdates = True Then
+            AutoUpdater.ReportErrors = False
+            AutoUpdater.LetUserSelectRemindLater = True
+            AutoUpdater.Synchronous = True
+            AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Temp\pokefarm\"
+            AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
+
+        End If
 
         'To Do: Turn of context menus
         'webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = False
@@ -26,6 +36,9 @@ Public Class Form1
         about.Show()
     End Sub
 
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        Settings.Show()
+    End Sub
 
     Private Sub MessagesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Messages_tsm.Click
         nav.web(nav.sc("pm"))
@@ -183,7 +196,6 @@ Public Class Form1
     Private Sub Scour_tsm_Click(sender As Object, e As EventArgs) Handles Scour_tsm.Click
         nav.web(nav.sc("scour"))
     End Sub
-
 
 
 #End Region
