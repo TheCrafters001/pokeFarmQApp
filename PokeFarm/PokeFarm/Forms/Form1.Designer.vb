@@ -81,6 +81,8 @@ Partial Class Form1
         Me.OthersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InteractionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         CType(Me.webView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -176,28 +178,28 @@ Partial Class Form1
         '
         Me.FarmNews_tsmi.Image = Global.PokeFarm.My.Resources.Resources.farm_news
         Me.FarmNews_tsmi.Name = "FarmNews_tsmi"
-        Me.FarmNews_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.FarmNews_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.FarmNews_tsmi.Text = "Farm News"
         '
         'Inventory_tsmi
         '
         Me.Inventory_tsmi.Image = Global.PokeFarm.My.Resources.Resources.inventory
         Me.Inventory_tsmi.Name = "Inventory_tsmi"
-        Me.Inventory_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.Inventory_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.Inventory_tsmi.Text = "Inventory"
         '
         'NearbyPlaces_tsmi
         '
         Me.NearbyPlaces_tsmi.Image = Global.PokeFarm.My.Resources.Resources.places
         Me.NearbyPlaces_tsmi.Name = "NearbyPlaces_tsmi"
-        Me.NearbyPlaces_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.NearbyPlaces_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.NearbyPlaces_tsmi.Text = "Nearby Places"
         '
         'OtherLinks_tsmi
         '
         Me.OtherLinks_tsmi.Image = Global.PokeFarm.My.Resources.Resources.links
         Me.OtherLinks_tsmi.Name = "OtherLinks_tsmi"
-        Me.OtherLinks_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.OtherLinks_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.OtherLinks_tsmi.Text = "Other Links"
         '
         'Options_tsmi
@@ -205,70 +207,70 @@ Partial Class Form1
         Me.Options_tsmi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.optionDisplay_tsmi, Me.optionNotif_tsmi, Me.optionBookmar_tsmi, Me.optionTimer_tsmi, Me.optionFroum_tsmi, Me.optionUserScri_tsmi, Me.optionOthers_tsmi})
         Me.Options_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.Options_tsmi.Name = "Options_tsmi"
-        Me.Options_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.Options_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.Options_tsmi.Text = "Options"
         '
         'optionDisplay_tsmi
         '
         Me.optionDisplay_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionDisplay_tsmi.Name = "optionDisplay_tsmi"
-        Me.optionDisplay_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionDisplay_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionDisplay_tsmi.Text = "Display"
         '
         'optionNotif_tsmi
         '
         Me.optionNotif_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionNotif_tsmi.Name = "optionNotif_tsmi"
-        Me.optionNotif_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionNotif_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionNotif_tsmi.Text = "Notifications"
         '
         'optionBookmar_tsmi
         '
         Me.optionBookmar_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionBookmar_tsmi.Name = "optionBookmar_tsmi"
-        Me.optionBookmar_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionBookmar_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionBookmar_tsmi.Text = "Bookmarks"
         '
         'optionTimer_tsmi
         '
         Me.optionTimer_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionTimer_tsmi.Name = "optionTimer_tsmi"
-        Me.optionTimer_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionTimer_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionTimer_tsmi.Text = "Timers Bar"
         '
         'optionFroum_tsmi
         '
         Me.optionFroum_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionFroum_tsmi.Name = "optionFroum_tsmi"
-        Me.optionFroum_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionFroum_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionFroum_tsmi.Text = "Forum"
         '
         'optionUserScri_tsmi
         '
         Me.optionUserScri_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionUserScri_tsmi.Name = "optionUserScri_tsmi"
-        Me.optionUserScri_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionUserScri_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionUserScri_tsmi.Text = "User Scripts"
         '
         'optionOthers_tsmi
         '
         Me.optionOthers_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
         Me.optionOthers_tsmi.Name = "optionOthers_tsmi"
-        Me.optionOthers_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.optionOthers_tsmi.Size = New System.Drawing.Size(142, 22)
         Me.optionOthers_tsmi.Text = "Others"
         '
         'Notepad_tsmi
         '
         Me.Notepad_tsmi.Image = Global.PokeFarm.My.Resources.Resources.notepad
         Me.Notepad_tsmi.Name = "Notepad_tsmi"
-        Me.Notepad_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.Notepad_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.Notepad_tsmi.Text = "Notepad"
         '
         'Interactions_tsmi
         '
         Me.Interactions_tsmi.Image = Global.PokeFarm.My.Resources.Resources.interactions
         Me.Interactions_tsmi.Name = "Interactions_tsmi"
-        Me.Interactions_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.Interactions_tsmi.Size = New System.Drawing.Size(148, 22)
         Me.Interactions_tsmi.Text = "Interactions"
         '
         'Fields_tsm
@@ -386,7 +388,7 @@ Partial Class Form1
         '
         'Help_tsm
         '
-        Me.Help_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.About_tsmi})
+        Me.Help_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem, Me.ToolStripSeparator1, Me.About_tsmi})
         Me.Help_tsm.Image = Global.PokeFarm.My.Resources.Resources.qmark
         Me.Help_tsm.Name = "Help_tsm"
         Me.Help_tsm.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -396,7 +398,7 @@ Partial Class Form1
         'About_tsmi
         '
         Me.About_tsmi.Name = "About_tsmi"
-        Me.About_tsmi.Size = New System.Drawing.Size(107, 22)
+        Me.About_tsmi.Size = New System.Drawing.Size(180, 22)
         Me.About_tsmi.Text = "About"
         '
         'FarmNewsToolStripMenuItem
@@ -490,6 +492,17 @@ Partial Class Form1
         Me.InteractionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.InteractionsToolStripMenuItem.Text = "Interactions"
         '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -568,4 +581,6 @@ Partial Class Form1
     Friend WithEvents optionOthers_tsmi As ToolStripMenuItem
     Friend WithEvents Notepad_tsmi As ToolStripMenuItem
     Friend WithEvents Interactions_tsmi As ToolStripMenuItem
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
 End Class
