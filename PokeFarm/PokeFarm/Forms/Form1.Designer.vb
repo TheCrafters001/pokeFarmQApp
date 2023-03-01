@@ -52,6 +52,7 @@ Partial Class Form1
         Me.Fields_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.Scour_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.Wishforge_tsm = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Summons_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.QuickTools_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InteractionsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -69,6 +70,7 @@ Partial Class Form1
         Me.Help_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.Wiki_tsmi = New System.Windows.Forms.ToolStripMenuItem()
         Me.About_tsmi = New System.Windows.Forms.ToolStripMenuItem()
         Me.FarmNewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -89,6 +91,11 @@ Partial Class Form1
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Boxes_tsm = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Currencies_tsm = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Credits_tsmu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Gold_tsmu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Zophan_tsmu = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.webView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.trayIconStrip.SuspendLayout()
@@ -109,7 +116,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Basic_tsm, Me.Farm_tsm, Me.Fields_tsm, Me.Scour_tsm, Me.Wishforge_tsm, Me.QuickTools_tsm, Me.Messages_tsm, Me.Forum_tsm, Me.Help_tsm})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Basic_tsm, Me.Farm_tsm, Me.Currencies_tsm, Me.Fields_tsm, Me.Scour_tsm, Me.Wishforge_tsm, Me.Boxes_tsm, Me.Summons_tsm, Me.QuickTools_tsm, Me.Messages_tsm, Me.Forum_tsm, Me.Help_tsm})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1264, 24)
@@ -301,6 +308,13 @@ Partial Class Form1
         Me.Wishforge_tsm.Size = New System.Drawing.Size(89, 20)
         Me.Wishforge_tsm.Text = "Wishforge"
         '
+        'Summons_tsm
+        '
+        Me.Summons_tsm.Image = Global.PokeFarm.My.Resources.Resources.links
+        Me.Summons_tsm.Name = "Summons_tsm"
+        Me.Summons_tsm.Size = New System.Drawing.Size(89, 20)
+        Me.Summons_tsm.Text = "Summons"
+        '
         'QuickTools_tsm
         '
         Me.QuickTools_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewsToolStripMenuItem, Me.InteractionsToolStripMenuItem1, Me.TournamentToolStripMenuItem, Me.EggTimerToolStripMenuItem, Me.HyperModeToolStripMenuItem, Me.ShinyHuntingToolStripMenuItem, Me.UberCharmToolStripMenuItem, Me.AlbinoHuntingToolStripMenuItem, Me.LuckyEggToolStripMenuItem})
@@ -312,60 +326,63 @@ Partial Class Form1
         '
         Me.NewsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.farm_news
         Me.NewsToolStripMenuItem.Name = "NewsToolStripMenuItem"
-        Me.NewsToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.NewsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.NewsToolStripMenuItem.Text = "News"
         '
         'InteractionsToolStripMenuItem1
         '
         Me.InteractionsToolStripMenuItem1.Image = Global.PokeFarm.My.Resources.Resources.interactions
         Me.InteractionsToolStripMenuItem1.Name = "InteractionsToolStripMenuItem1"
-        Me.InteractionsToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
+        Me.InteractionsToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.InteractionsToolStripMenuItem1.Text = "Interactions"
         '
         'TournamentToolStripMenuItem
         '
         Me.TournamentToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.links
         Me.TournamentToolStripMenuItem.Name = "TournamentToolStripMenuItem"
-        Me.TournamentToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.TournamentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.TournamentToolStripMenuItem.Text = "Tournament"
         '
         'EggTimerToolStripMenuItem
         '
-        Me.EggTimerToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.lab
+        Me.EggTimerToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.luckyegg
         Me.EggTimerToolStripMenuItem.Name = "EggTimerToolStripMenuItem"
-        Me.EggTimerToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.EggTimerToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EggTimerToolStripMenuItem.Text = "Egg Timer"
         '
         'HyperModeToolStripMenuItem
         '
         Me.HyperModeToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.hypermode_24
         Me.HyperModeToolStripMenuItem.Name = "HyperModeToolStripMenuItem"
-        Me.HyperModeToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.HyperModeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.HyperModeToolStripMenuItem.Text = "Hyper Mode"
         '
         'ShinyHuntingToolStripMenuItem
         '
+        Me.ShinyHuntingToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shinycharm
         Me.ShinyHuntingToolStripMenuItem.Name = "ShinyHuntingToolStripMenuItem"
-        Me.ShinyHuntingToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.ShinyHuntingToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ShinyHuntingToolStripMenuItem.Text = "Shiny Hunting"
         '
         'UberCharmToolStripMenuItem
         '
+        Me.UberCharmToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.ubercharm
         Me.UberCharmToolStripMenuItem.Name = "UberCharmToolStripMenuItem"
-        Me.UberCharmToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.UberCharmToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.UberCharmToolStripMenuItem.Text = "Uber Charm"
         '
         'AlbinoHuntingToolStripMenuItem
         '
+        Me.AlbinoHuntingToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.albinoradar
         Me.AlbinoHuntingToolStripMenuItem.Name = "AlbinoHuntingToolStripMenuItem"
-        Me.AlbinoHuntingToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.AlbinoHuntingToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AlbinoHuntingToolStripMenuItem.Text = "Albino Hunting"
         '
         'LuckyEggToolStripMenuItem
         '
-        Me.LuckyEggToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.lab
+        Me.LuckyEggToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.luckyegg
         Me.LuckyEggToolStripMenuItem.Name = "LuckyEggToolStripMenuItem"
-        Me.LuckyEggToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
+        Me.LuckyEggToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.LuckyEggToolStripMenuItem.Text = "Lucky Egg"
         '
         'Messages_tsm
@@ -395,7 +412,7 @@ Partial Class Form1
         '
         'Help_tsm
         '
-        Me.Help_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem, Me.ToolStripSeparator1, Me.About_tsmi})
+        Me.Help_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem, Me.ToolStripSeparator1, Me.Wiki_tsmi, Me.About_tsmi})
         Me.Help_tsm.Image = Global.PokeFarm.My.Resources.Resources.qmark
         Me.Help_tsm.Name = "Help_tsm"
         Me.Help_tsm.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -405,18 +422,24 @@ Partial Class Form1
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(113, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        '
+        'Wiki_tsmi
+        '
+        Me.Wiki_tsmi.Name = "Wiki_tsmi"
+        Me.Wiki_tsmi.Size = New System.Drawing.Size(180, 22)
+        Me.Wiki_tsmi.Text = "Wiki"
         '
         'About_tsmi
         '
         Me.About_tsmi.Name = "About_tsmi"
-        Me.About_tsmi.Size = New System.Drawing.Size(116, 22)
+        Me.About_tsmi.Size = New System.Drawing.Size(180, 22)
         Me.About_tsmi.Text = "About"
         '
         'FarmNewsToolStripMenuItem
@@ -520,24 +543,60 @@ Partial Class Form1
         '
         Me.trayIconStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.ToolStripSeparator2, Me.QuitToolStripMenuItem})
         Me.trayIconStrip.Name = "trayIconStrip"
-        Me.trayIconStrip.Size = New System.Drawing.Size(181, 76)
+        Me.trayIconStrip.Size = New System.Drawing.Size(104, 54)
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(100, 6)
         '
         'QuitToolStripMenuItem
         '
         Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.QuitToolStripMenuItem.Text = "Quit"
+        '
+        'Boxes_tsm
+        '
+        Me.Boxes_tsm.Image = Global.PokeFarm.My.Resources.Resources.boxboxboxbox
+        Me.Boxes_tsm.Name = "Boxes_tsm"
+        Me.Boxes_tsm.Size = New System.Drawing.Size(112, 20)
+        Me.Boxes_tsm.Text = "Treasure Boxes"
+        '
+        'Currencies_tsm
+        '
+        Me.Currencies_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Credits_tsmu, Me.Gold_tsmu, Me.Zophan_tsmu})
+        Me.Currencies_tsm.Image = Global.PokeFarm.My.Resources.Resources.gold
+        Me.Currencies_tsm.Name = "Currencies_tsm"
+        Me.Currencies_tsm.Size = New System.Drawing.Size(91, 20)
+        Me.Currencies_tsm.Text = "Currencies"
+        '
+        'Credits_tsmu
+        '
+        Me.Credits_tsmu.Image = Global.PokeFarm.My.Resources.Resources.credits
+        Me.Credits_tsmu.Name = "Credits_tsmu"
+        Me.Credits_tsmu.Size = New System.Drawing.Size(180, 22)
+        Me.Credits_tsmu.Text = "Credits"
+        '
+        'Gold_tsmu
+        '
+        Me.Gold_tsmu.Image = Global.PokeFarm.My.Resources.Resources.gold
+        Me.Gold_tsmu.Name = "Gold_tsmu"
+        Me.Gold_tsmu.Size = New System.Drawing.Size(180, 22)
+        Me.Gold_tsmu.Text = "Gold Poké"
+        '
+        'Zophan_tsmu
+        '
+        Me.Zophan_tsmu.Image = Global.PokeFarm.My.Resources.Resources.zophan
+        Me.Zophan_tsmu.Name = "Zophan_tsmu"
+        Me.Zophan_tsmu.Size = New System.Drawing.Size(180, 22)
+        Me.Zophan_tsmu.Text = "Zophan Canisters"
         '
         'Form1
         '
@@ -625,4 +684,11 @@ Partial Class Form1
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Summons_tsm As ToolStripMenuItem
+    Friend WithEvents Wiki_tsmi As ToolStripMenuItem
+    Friend WithEvents Currencies_tsm As ToolStripMenuItem
+    Friend WithEvents Credits_tsmu As ToolStripMenuItem
+    Friend WithEvents Gold_tsmu As ToolStripMenuItem
+    Friend WithEvents Zophan_tsmu As ToolStripMenuItem
+    Friend WithEvents Boxes_tsm As ToolStripMenuItem
 End Class

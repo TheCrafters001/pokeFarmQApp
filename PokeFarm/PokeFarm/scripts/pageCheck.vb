@@ -4,7 +4,7 @@
 
         Dim url As String = Form1.webView.CoreWebView2.Source
 
-        If url = "about:blank" Then
+        If url = "about:blank" Or url = "https://pokefarm.wiki/" Then
 
         Else
             ' Split URL

@@ -198,20 +198,32 @@ Public Class Form1
         nav.web(nav.sc("scour"))
     End Sub
 
+    Private Sub SummonsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Summons_tsm.Click
+        nav.web(nav.sc("summons"))
+    End Sub
+
+#Region "Currency"
+    Private Sub Boxes_tsm_Click(sender As Object, e As EventArgs) Handles Boxes_tsm.Click
+        nav.web(nav.sc("boxes"))
+    End Sub
+
+    Private Sub Credits_tsmu_Click(sender As Object, e As EventArgs) Handles Credits_tsmu.Click
+        nav.web(nav.sc("cr"))
+    End Sub
+
+    Private Sub Gold_tsmu_Click(sender As Object, e As EventArgs) Handles Gold_tsmu.Click
+        nav.web(nav.sc("gp"))
+    End Sub
+
+    Private Sub Zophan_tsmu_Click(sender As Object, e As EventArgs) Handles Zophan_tsmu.Click
+        nav.web(nav.sc("zc"))
+    End Sub
+#End Region
+
 #End Region
 
 
 #Region "Tray Icon"
-    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If My.Settings.runInBackground = True Then
-            e.Cancel = True
-            NotifyIcon1.Visible = True
-            Me.Hide()
-            NotifyIcon1.BalloonTipText = "Want to re-open? Click the icon in the system try!"
-            NotifyIcon1.BalloonTipTitle = "PokéFarm Q Desktop App"
-            NotifyIcon1.ShowBalloonTip(500)
-        End If
-    End Sub
 
     Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
         Me.Show()
@@ -232,5 +244,23 @@ Public Class Form1
     Private Sub QuitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QuitToolStripMenuItem.Click
         Application.Exit()
     End Sub
+
 #End Region
+
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If My.Settings.runInBackground = True Then
+            e.Cancel = True
+            NotifyIcon1.Visible = True
+            Me.Hide()
+            NotifyIcon1.BalloonTipText = "Want to re-open? Click the icon in the system try!"
+            NotifyIcon1.BalloonTipTitle = "PokéFarm Q Desktop App"
+            NotifyIcon1.ShowBalloonTip(500)
+        End If
+    End Sub
+
+    Private Sub Wiki_tsmi_Click(sender As Object, e As EventArgs) Handles Wiki_tsmi.Click
+        Dim NewProcess As Diagnostics.ProcessStartInfo = New Diagnostics.ProcessStartInfo("https://pokefarm.wiki")
+        NewProcess.UseShellExecute = True
+        Process.Start(NewProcess)
+    End Sub
 End Class
