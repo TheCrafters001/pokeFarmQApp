@@ -25,8 +25,6 @@ SolidCompression=yes
 DisableWelcomePage=False
 WizardStyle=modern
 AppCopyright=Copyright (c) 2023 TheCrafters001
-PrivilegesRequired=lowest
-PrivilegesRequiredOverridesAllowed=dialog
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
