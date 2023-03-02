@@ -27,6 +27,7 @@ Partial Class about
         Me.title_lbl = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.thirdPartyLicenses_lnk = New System.Windows.Forms.LinkLabel()
+        Me.msEdge_lbl = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -69,11 +70,22 @@ Partial Class about
         Me.thirdPartyLicenses_lnk.TabStop = True
         Me.thirdPartyLicenses_lnk.Text = "Third Party Licenses"
         '
+        'msEdge_lbl
+        '
+        Me.msEdge_lbl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.msEdge_lbl.Location = New System.Drawing.Point(129, 251)
+        Me.msEdge_lbl.Name = "msEdge_lbl"
+        Me.msEdge_lbl.Size = New System.Drawing.Size(415, 23)
+        Me.msEdge_lbl.TabIndex = 4
+        Me.msEdge_lbl.Text = "Microsoft Edge Version"
+        Me.msEdge_lbl.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
         'about
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(556, 274)
+        Me.Controls.Add(Me.msEdge_lbl)
         Me.Controls.Add(Me.thirdPartyLicenses_lnk)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.title_lbl)
@@ -95,4 +107,5 @@ Partial Class about
     Friend WithEvents title_lbl As Label
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents thirdPartyLicenses_lnk As LinkLabel
+    Friend WithEvents msEdge_lbl As Label
 End Class

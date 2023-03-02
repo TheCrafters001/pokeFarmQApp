@@ -33,6 +33,7 @@ Partial Class Settings
         Me.disableRunInBack_rad = New System.Windows.Forms.RadioButton()
         Me.enableRunInBack_rad = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.migrateFolder = New System.Windows.Forms.FolderBrowserDialog()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -40,7 +41,7 @@ Partial Class Settings
         'ok_btn
         '
         Me.ok_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ok_btn.Location = New System.Drawing.Point(284, 218)
+        Me.ok_btn.Location = New System.Drawing.Point(284, 217)
         Me.ok_btn.Name = "ok_btn"
         Me.ok_btn.Size = New System.Drawing.Size(75, 23)
         Me.ok_btn.TabIndex = 0
@@ -50,7 +51,7 @@ Partial Class Settings
         'cancel_btn
         '
         Me.cancel_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.cancel_btn.Location = New System.Drawing.Point(12, 218)
+        Me.cancel_btn.Location = New System.Drawing.Point(12, 217)
         Me.cancel_btn.Name = "cancel_btn"
         Me.cancel_btn.Size = New System.Drawing.Size(75, 23)
         Me.cancel_btn.TabIndex = 1
@@ -59,8 +60,6 @@ Partial Class Settings
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.updateCheck_btn)
         Me.GroupBox1.Controls.Add(Me.disableUpdate_rad)
         Me.GroupBox1.Controls.Add(Me.enableUpdate_rad)
@@ -114,8 +113,6 @@ Partial Class Settings
         '
         'GroupBox2
         '
-        Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.disableRunInBack_rad)
         Me.GroupBox2.Controls.Add(Me.enableRunInBack_rad)
         Me.GroupBox2.Controls.Add(Me.Label2)
@@ -157,11 +154,17 @@ Partial Class Settings
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Do you want to minimize the app rather than close it?"
         '
+        'migrateFolder
+        '
+        Me.migrateFolder.Description = "You will need to migrate your data. To do this, go to where PokeFarm Q Desktop Ap" &
+    "p was installed, then look for a folder called PokeFarm.exe.WebView2"
+        Me.migrateFolder.UseDescriptionForTitle = True
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(371, 253)
+        Me.ClientSize = New System.Drawing.Size(371, 252)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cancel_btn)
@@ -190,4 +193,5 @@ Partial Class Settings
     Friend WithEvents disableRunInBack_rad As RadioButton
     Friend WithEvents enableRunInBack_rad As RadioButton
     Friend WithEvents Label2 As Label
+    Friend WithEvents migrateFolder As FolderBrowserDialog
 End Class

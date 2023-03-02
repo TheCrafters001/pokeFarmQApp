@@ -110,7 +110,6 @@ Partial Class Form1
         Me.webView.Location = New System.Drawing.Point(0, 24)
         Me.webView.Name = "webView"
         Me.webView.Size = New System.Drawing.Size(1264, 679)
-        Me.webView.Source = New System.Uri("about:blank", System.UriKind.Absolute)
         Me.webView.TabIndex = 0
         Me.webView.ZoomFactor = 1.0R
         '

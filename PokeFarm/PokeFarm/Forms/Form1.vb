@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 Imports AutoUpdaterDotNET
 Imports Microsoft.Web.WebView2.Core
 
@@ -13,8 +14,12 @@ Public Class Form1
             AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
         End If
 
-        webView.Source = New Uri("https://pokefarm.com/")
-        Await webView.EnsureCoreWebView2Async()
+        'Solution https://stackoverflow.com/a/71699939
+        ' by user09938
+        Debug.WriteLine("MS Edge Version: " & CoreWebView2Environment.GetAvailableBrowserVersionString())
+        Await nav.InitializeCoreWebView2Async(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name))
+
+        webView.Source = New Uri("https://pokefarm.com")
 
         'To Do: Turn of context menus
         'webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = False
