@@ -8,8 +8,9 @@ Public Class nav
     ''' Navigate the web!
     ''' </summary>
     ''' <param name="nav">The URL Goes here.</param>
-    Public Shared Sub web(ByVal nav As String)
+    Public Shared Async Sub web(ByVal nav As String)
         Form1.webView.CoreWebView2.Navigate(nav)
+        Await Form1.webView.EnsureCoreWebView2Async()
     End Sub
 
 

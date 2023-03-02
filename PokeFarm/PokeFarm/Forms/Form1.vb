@@ -3,7 +3,7 @@ Imports AutoUpdaterDotNET
 Imports Microsoft.Web.WebView2.Core
 
 Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Async Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'This will only run if updates are enabled
         If My.Settings.autoUpdates = True Then
             AutoUpdater.ReportErrors = False
@@ -12,6 +12,9 @@ Public Class Form1
             AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Temp\pokefarm\"
             AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
         End If
+
+        webView.Source = New Uri("https://pokefarm.com/")
+        Await webView.EnsureCoreWebView2Async()
 
         'To Do: Turn of context menus
         'webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = False
