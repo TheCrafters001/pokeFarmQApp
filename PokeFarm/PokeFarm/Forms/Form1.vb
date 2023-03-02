@@ -26,6 +26,21 @@ Public Class Form1
     End Sub
 
     Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles webView.NavigationCompleted
+
+        ' Solution: https://stackoverflow.com/a/27145407
+        ' By Aliaksandr Hmyrak
+        webView.CoreWebView2.ExecuteScriptAsync("(function()
+                {
+                    var hyperlinks = document.getElementsByTagName('a');
+                    for(var i = 0; i < hyperlinks.length; i++)
+                    {
+                        if(hyperlinks[i].getAttribute('target') != null)
+                        {
+                            hyperlinks[i].setAttribute('target', '_self');
+                        }
+                    }
+                })()")
+
         ' Run Check to check if we are on pokefarm
         pageCheck.Check()
 
