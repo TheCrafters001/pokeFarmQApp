@@ -11,7 +11,6 @@ Public Class Form1
             AutoUpdater.Synchronous = True
             AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Temp\pokefarm\"
             AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
-
         End If
 
         'To Do: Turn of context menus
@@ -29,7 +28,6 @@ Public Class Form1
     Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs) Handles webView.NavigationStarting
         Me.Text = "Loading..."
     End Sub
-
 
 #Region "ToolStrip"
 
@@ -259,8 +257,6 @@ Public Class Form1
     End Sub
 
     Private Sub Wiki_tsmi_Click(sender As Object, e As EventArgs) Handles Wiki_tsmi.Click
-        Dim NewProcess As Diagnostics.ProcessStartInfo = New Diagnostics.ProcessStartInfo("https://pokefarm.wiki")
-        NewProcess.UseShellExecute = True
-        Process.Start(NewProcess)
+        nav.web("https://pokefarm.wiki/")
     End Sub
 End Class

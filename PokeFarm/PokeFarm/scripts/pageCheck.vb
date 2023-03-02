@@ -4,7 +4,7 @@
 
         Dim url As String = Form1.webView.CoreWebView2.Source
 
-        If url = "about:blank" Or url = "https://pokefarm.wiki/" Then
+        If url = "about:blank" Then
 
         Else
             ' Split URL
@@ -14,7 +14,7 @@
             Dim host As String = uri.Host
 
             ' Check to see if the page is from PokeFarm.
-            If host = "pokefarm.com" Then
+            If host = "pokefarm.com" Or host = "pokefarm.wiki" Then
                 ' Do not do anything
 
             ElseIf host = "" And url = "about:blank" Then
@@ -32,9 +32,9 @@
                     NewProcess.UseShellExecute = True
                     Process.Start(NewProcess)
 
-                    Form1.webView.CoreWebView2.NavigateToString("https://pokefarm.com/")
+                    nav.web("https://pokefarm.com/")
                 ElseIf diagResult = DialogResult.No Then
-                    Form1.webView.CoreWebView2.Navigate("https://pokefarm.com/")
+                    nav.web("https://pokefarm.com/")
                 End If
 
             End If
