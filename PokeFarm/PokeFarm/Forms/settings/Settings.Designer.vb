@@ -34,14 +34,18 @@ Partial Class Settings
         Me.enableRunInBack_rad = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.migrateFolder = New System.Windows.Forms.FolderBrowserDialog()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.menuBarPos_lbl = New System.Windows.Forms.Label()
+        Me.menuBarPos_cmb = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'ok_btn
         '
         Me.ok_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ok_btn.Location = New System.Drawing.Point(284, 217)
+        Me.ok_btn.Location = New System.Drawing.Point(284, 297)
         Me.ok_btn.Name = "ok_btn"
         Me.ok_btn.Size = New System.Drawing.Size(75, 23)
         Me.ok_btn.TabIndex = 0
@@ -51,7 +55,7 @@ Partial Class Settings
         'cancel_btn
         '
         Me.cancel_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.cancel_btn.Location = New System.Drawing.Point(12, 217)
+        Me.cancel_btn.Location = New System.Drawing.Point(12, 297)
         Me.cancel_btn.Name = "cancel_btn"
         Me.cancel_btn.Size = New System.Drawing.Size(75, 23)
         Me.cancel_btn.TabIndex = 1
@@ -160,11 +164,42 @@ Partial Class Settings
     "p was installed, then look for a folder called PokeFarm.exe.WebView2"
         Me.migrateFolder.UseDescriptionForTitle = True
         '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.menuBarPos_cmb)
+        Me.GroupBox3.Controls.Add(Me.menuBarPos_lbl)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 216)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(347, 74)
+        Me.GroupBox3.TabIndex = 5
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Menu Bar Position"
+        '
+        'menuBarPos_lbl
+        '
+        Me.menuBarPos_lbl.AutoSize = True
+        Me.menuBarPos_lbl.Location = New System.Drawing.Point(6, 19)
+        Me.menuBarPos_lbl.Name = "menuBarPos_lbl"
+        Me.menuBarPos_lbl.Size = New System.Drawing.Size(272, 15)
+        Me.menuBarPos_lbl.TabIndex = 0
+        Me.menuBarPos_lbl.Text = "Please choose a position you want your menu bar."
+        '
+        'menuBarPos_cmb
+        '
+        Me.menuBarPos_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.menuBarPos_cmb.FormattingEnabled = True
+        Me.menuBarPos_cmb.Items.AddRange(New Object() {"Top", "Left", "Right", "Bottom"})
+        Me.menuBarPos_cmb.Location = New System.Drawing.Point(6, 37)
+        Me.menuBarPos_cmb.Name = "menuBarPos_cmb"
+        Me.menuBarPos_cmb.Size = New System.Drawing.Size(335, 23)
+        Me.menuBarPos_cmb.TabIndex = 1
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(371, 252)
+        Me.ClientSize = New System.Drawing.Size(371, 332)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cancel_btn)
@@ -178,6 +213,8 @@ Partial Class Settings
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -194,4 +231,7 @@ Partial Class Settings
     Friend WithEvents enableRunInBack_rad As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents migrateFolder As FolderBrowserDialog
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents menuBarPos_cmb As ComboBox
+    Friend WithEvents menuBarPos_lbl As Label
 End Class

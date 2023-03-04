@@ -1,28 +1,12 @@
 ﻿Imports System.ComponentModel
-Imports System.IO
-Imports AutoUpdaterDotNET
 Imports Microsoft.Web.WebView2.Core
 
 Public Class Form1
-    Private Async Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'This will only run if updates are enabled
-        If My.Settings.autoUpdates = True Then
-            AutoUpdater.ReportErrors = False
-            AutoUpdater.LetUserSelectRemindLater = True
-            AutoUpdater.Synchronous = True
-            AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Temp\pokefarm\"
-            AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
-        End If
-
-        'Solution https://stackoverflow.com/a/71699939
-        ' by user09938
-        Debug.WriteLine("MS Edge Version: " & CoreWebView2Environment.GetAvailableBrowserVersionString())
-        Await nav.InitializeCoreWebView2Async(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name))
-
-        webView.Source = New Uri("https://pokefarm.com")
-
-        'To Do: Turn of context menus
-        'webView.CoreWebView2.Settings.AreDefaultContextMenusEnabled = False
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        startup.updateCheck()
+        startup.preInit()
+        startup.menuBar(My.Settings.menuBarPos)
+        startup.postInit()
     End Sub
 
     Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles webView.NavigationCompleted
@@ -282,4 +266,26 @@ Public Class Form1
     Private Sub Wiki_tsmi_Click(sender As Object, e As EventArgs) Handles Wiki_tsmi.Click
         nav.web("https://pokefarm.wiki/")
     End Sub
+
+#Region "Special"
+
+#Region "MassClick"
+    Private Sub WebsiteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MCAWeb_tsmi.Click
+        nav.web("https://pfq.eltafez.com/mca")
+    End Sub
+
+    Private Sub ForumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MCAForum_tsmi.Click
+        nav.web("https://pfq.link/~LZbR")
+    End Sub
+
+    Private Sub ForumToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles SCAForum_tsmi.Click
+        nav.web("https://pfq.link/~pb8t")
+    End Sub
+
+#End Region
+
+
+#End Region
+
+
 End Class

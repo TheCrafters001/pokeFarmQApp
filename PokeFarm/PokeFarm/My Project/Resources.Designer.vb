@@ -163,6 +163,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property incubator() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("incubator", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property index_2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("index-2", resourceCulture)
@@ -286,16 +296,6 @@ Namespace My.Resources
         Friend ReadOnly Property shop() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("shop", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property shortcut() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("shortcut", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -72,6 +72,12 @@ Partial Class Form1
         Me.Forum_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.VisitForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForumSubscriptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Special_tsm = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MCA_tsmi = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MCAWeb_tsmi = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MCAForum_tsmi = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SCA_tsmi = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SCAForum_tsmi = New System.Windows.Forms.ToolStripMenuItem()
         Me.Help_tsm = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -115,7 +121,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Basic_tsm, Me.Farm_tsm, Me.Currencies_tsm, Me.Fields_tsm, Me.Scour_tsm, Me.Wishforge_tsm, Me.Boxes_tsm, Me.Summons_tsm, Me.QuickTools_tsm, Me.Messages_tsm, Me.Forum_tsm, Me.Help_tsm})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Basic_tsm, Me.Farm_tsm, Me.Currencies_tsm, Me.Fields_tsm, Me.Scour_tsm, Me.Wishforge_tsm, Me.Boxes_tsm, Me.Summons_tsm, Me.QuickTools_tsm, Me.Messages_tsm, Me.Forum_tsm, Me.Special_tsm, Me.Help_tsm})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1264, 24)
@@ -380,7 +386,7 @@ Partial Class Form1
         '
         'EggTimerToolStripMenuItem
         '
-        Me.EggTimerToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.luckyegg
+        Me.EggTimerToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.incubator
         Me.EggTimerToolStripMenuItem.Name = "EggTimerToolStripMenuItem"
         Me.EggTimerToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
         Me.EggTimerToolStripMenuItem.Text = "Egg Timer"
@@ -444,6 +450,45 @@ Partial Class Form1
         Me.ForumSubscriptionsToolStripMenuItem.Name = "ForumSubscriptionsToolStripMenuItem"
         Me.ForumSubscriptionsToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.ForumSubscriptionsToolStripMenuItem.Text = "Forum Subscriptions"
+        '
+        'Special_tsm
+        '
+        Me.Special_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCA_tsmi, Me.SCA_tsmi})
+        Me.Special_tsm.Name = "Special_tsm"
+        Me.Special_tsm.Size = New System.Drawing.Size(56, 20)
+        Me.Special_tsm.Text = "Special"
+        '
+        'MCA_tsmi
+        '
+        Me.MCA_tsmi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCAWeb_tsmi, Me.MCAForum_tsmi})
+        Me.MCA_tsmi.Name = "MCA_tsmi"
+        Me.MCA_tsmi.Size = New System.Drawing.Size(101, 22)
+        Me.MCA_tsmi.Text = "MCA"
+        '
+        'MCAWeb_tsmi
+        '
+        Me.MCAWeb_tsmi.Name = "MCAWeb_tsmi"
+        Me.MCAWeb_tsmi.Size = New System.Drawing.Size(116, 22)
+        Me.MCAWeb_tsmi.Text = "Website"
+        '
+        'MCAForum_tsmi
+        '
+        Me.MCAForum_tsmi.Name = "MCAForum_tsmi"
+        Me.MCAForum_tsmi.Size = New System.Drawing.Size(116, 22)
+        Me.MCAForum_tsmi.Text = "Forum"
+        '
+        'SCA_tsmi
+        '
+        Me.SCA_tsmi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SCAForum_tsmi})
+        Me.SCA_tsmi.Name = "SCA_tsmi"
+        Me.SCA_tsmi.Size = New System.Drawing.Size(101, 22)
+        Me.SCA_tsmi.Text = "SCA"
+        '
+        'SCAForum_tsmi
+        '
+        Me.SCAForum_tsmi.Name = "SCAForum_tsmi"
+        Me.SCAForum_tsmi.Size = New System.Drawing.Size(109, 22)
+        Me.SCAForum_tsmi.Text = "Forum"
         '
         'Help_tsm
         '
@@ -690,4 +735,10 @@ Partial Class Form1
     Friend WithEvents Gold_tsmu As ToolStripMenuItem
     Friend WithEvents Zophan_tsmu As ToolStripMenuItem
     Friend WithEvents Boxes_tsm As ToolStripMenuItem
+    Friend WithEvents Special_tsm As ToolStripMenuItem
+    Friend WithEvents MCA_tsmi As ToolStripMenuItem
+    Friend WithEvents MCAWeb_tsmi As ToolStripMenuItem
+    Friend WithEvents MCAForum_tsmi As ToolStripMenuItem
+    Friend WithEvents SCA_tsmi As ToolStripMenuItem
+    Friend WithEvents SCAForum_tsmi As ToolStripMenuItem
 End Class

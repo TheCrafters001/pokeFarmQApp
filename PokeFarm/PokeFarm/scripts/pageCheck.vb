@@ -14,10 +14,13 @@
             Dim host As String = uri.Host
 
             ' Check to see if the page is from PokeFarm.
-            If host = "pokefarm.com" Or host = "pokefarm.wiki" Then
+            If host = "pokefarm.com" Or host = "pokefarm.wiki" Or host = "pfq.link" Then ' Pokefarm Links
                 ' Do not do anything
 
-            ElseIf host = "" And url = "about:blank" Then
+            ElseIf host = "pfq.eltafez.com" Then ' Special links
+                ' Do not do anything
+
+            ElseIf host = "" And url = "about:blank" Then ' MS Edige Pages
                 ' Do not do anything
 
             Else

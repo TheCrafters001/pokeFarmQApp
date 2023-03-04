@@ -77,7 +77,7 @@ Partial Class about
         Me.msEdge_lbl.Name = "msEdge_lbl"
         Me.msEdge_lbl.Size = New System.Drawing.Size(415, 23)
         Me.msEdge_lbl.TabIndex = 4
-        Me.msEdge_lbl.Text = "Microsoft Edge Version"
+        Me.msEdge_lbl.Text = "MS Edge Version: some.really.long.number"
         Me.msEdge_lbl.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'about
