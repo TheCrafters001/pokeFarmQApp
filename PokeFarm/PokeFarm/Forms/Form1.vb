@@ -2,6 +2,7 @@
 Imports Microsoft.Web.WebView2.Core
 
 Public Class Form1
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         startup.updateCheck()
         startup.preInit()

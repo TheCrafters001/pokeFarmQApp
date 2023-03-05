@@ -11,6 +11,7 @@
 Option Strict On
 Option Explicit On
 
+
 Namespace My
 
     'NOTE: This file is auto-generated; do not modify it directly.  To make changes,
@@ -23,15 +24,16 @@ Namespace My
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Public Sub New()
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
-            Me.IsSingleInstance = False
+            Me.IsSingleInstance = True
             Me.EnableVisualStyles = True
             Me.SaveMySettingsOnExit = True
-            Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
+            Me.ShutdownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
+            Me.HighDpiMode = HighDpiMode.DpiUnaware
         End Sub
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Form1
+            Me.MainForm = Global.PokeFarm.Form1
         End Sub
     End Class
 End Namespace
