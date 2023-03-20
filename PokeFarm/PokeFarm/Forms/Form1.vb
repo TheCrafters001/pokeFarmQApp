@@ -170,10 +170,6 @@ Public Class Form1
         nav.web(nav.sc("farm#tab=2"))
     End Sub
 
-    Private Sub NearbyPlaces_tsm_Click(sender As Object, e As EventArgs) Handles NearbyPlaces_tsm.Click
-        nav.web(nav.sc("farm#tab=3"))
-    End Sub
-
     Private Sub OtherLinks_tsmi_Click(sender As Object, e As EventArgs) Handles OtherLinks_tsmi.Click
         nav.web(nav.sc("farm#tab=4"))
     End Sub
