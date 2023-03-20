@@ -5,6 +5,9 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
+            ' This will eventually get moved to its own class
+            navProgress_status.Text = ""
+
             startup.updateCheck()
             startup.preInit()
             startup.menuBar(My.Settings.menuBarPos)
@@ -249,6 +252,51 @@ Public Class Form1
 
 #End Region
 
+#Region "Nearby Places"
+    Private Sub berry_tsmi_Click(sender As Object, e As EventArgs) Handles berry_tsmi.Click
+        nav.web(nav.sc("garden"))
+    End Sub
+
+    Private Sub fish_tsmi_Click(sender As Object, e As EventArgs) Handles fish_tsmi.Click
+        nav.web(nav.sc("fishing"))
+    End Sub
+
+    Private Sub trade_tsmi_Click(sender As Object, e As EventArgs) Handles trade_tsmi.Click
+        nav.web(nav.sc("trade"))
+    End Sub
+
+    Private Sub egg_tsmi_Click(sender As Object, e As EventArgs) Handles egg_tsmi.Click
+        nav.web(nav.sc("supplier"))
+    End Sub
+
+    Private Sub contest_tsmi_Click(sender As Object, e As EventArgs) Handles contest_tsmi.Click
+        nav.web(nav.sc("contest"))
+    End Sub
+
+    Private Sub dojo_tsmi_Click(sender As Object, e As EventArgs) Handles dojo_tsmi.Click
+        nav.web(nav.sc("dojo"))
+    End Sub
+
+    Private Sub colress_tsmi_Click(sender As Object, e As EventArgs) Handles colress_tsmi.Click
+        nav.web(nav.sc("colress"))
+    End Sub
+
+    Private Sub pGrove_tsmi_Click(sender As Object, e As EventArgs) Handles pGrove_tsmi.Click
+        nav.web(nav.sc("pledgegrove"))
+    End Sub
+
+    Private Sub aether_tsmi_Click(sender As Object, e As EventArgs) Handles aether_tsmi.Click
+        nav.web(nav.sc("aether"))
+    End Sub
+
+    Private Sub research_tsmi_Click(sender As Object, e As EventArgs) Handles research_tsmi.Click
+        nav.web(nav.sc("deltahunt"))
+    End Sub
+
+    Private Sub cele_tsmi_Click(sender As Object, e As EventArgs) Handles cele_tsmi.Click
+        nav.web(nav.sc("cs-shop"))
+    End Sub
+#End Region
 
 #Region "Tray Icon"
 
