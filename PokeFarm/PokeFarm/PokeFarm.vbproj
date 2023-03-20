@@ -12,7 +12,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageIcon>index-2.png</PackageIcon>
-    <Version>1.5.0-pre</Version>
+    <Version>1.5.0</Version>
     <ApplicationIcon>index.ico</ApplicationIcon>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
