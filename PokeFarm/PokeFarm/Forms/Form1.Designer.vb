@@ -22,646 +22,483 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.webView = New Microsoft.Web.WebView2.WinForms.WebView2()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.Basic_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Lab_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Party_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Farm_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Shelter_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Marketboard_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.daycare_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Pokedex_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Farm_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FarmNews_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Inventory_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NearbyPlaces_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OtherLinks_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Options_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionDisplay_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionNotif_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionBookmar_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionTimer_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionFroum_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionUserScri_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.optionOthers_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Notepad_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Interactions_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Currencies_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Credits_tsmu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Gold_tsmu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Zophan_tsmu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Fields_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Scour_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Wishforge_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Boxes_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Summons_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.QuickTools_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InteractionsToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TournamentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EggTimerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HyperModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ShinyHuntingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UberCharmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AlbinoHuntingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LuckyEggToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Messages_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Forum_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VisitForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ForumSubscriptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Special_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MCA_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MCAWeb_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MCAForum_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SCA_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SCAForum_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Help_tsm = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.Wiki_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.About_tsmi = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FarmNewsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NearbyPlacesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OtherLinksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DisplayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NotificationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BookmarksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TimersBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ForumToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UserscriptsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OthersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InteractionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.trayIconStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.QuitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        CType(Me.webView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip1.SuspendLayout()
-        Me.trayIconStrip.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'webView
-        '
-        Me.webView.AllowExternalDrop = True
-        Me.webView.CreationProperties = Nothing
-        Me.webView.DefaultBackgroundColor = System.Drawing.Color.Black
-        Me.webView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.webView.Location = New System.Drawing.Point(0, 24)
-        Me.webView.Name = "webView"
-        Me.webView.Size = New System.Drawing.Size(1264, 679)
-        Me.webView.TabIndex = 0
-        Me.webView.ZoomFactor = 1.0R
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Basic_tsm, Me.Farm_tsm, Me.Currencies_tsm, Me.Fields_tsm, Me.Scour_tsm, Me.Wishforge_tsm, Me.Boxes_tsm, Me.Summons_tsm, Me.QuickTools_tsm, Me.Messages_tsm, Me.Forum_tsm, Me.Special_tsm, Me.Help_tsm})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1264, 24)
-        Me.MenuStrip1.TabIndex = 1
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'Basic_tsm
-        '
-        Me.Basic_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Lab_tsmi, Me.Party_tsmi, Me.Farm_tsmi, Me.Shelter_tsmi, Me.Marketboard_tsmi, Me.daycare_tsmi, Me.Pokedex_tsmi})
-        Me.Basic_tsm.Image = Global.PokeFarm.My.Resources.Resources.lab
-        Me.Basic_tsm.Name = "Basic_tsm"
-        Me.Basic_tsm.Size = New System.Drawing.Size(62, 20)
-        Me.Basic_tsm.Text = "Basic"
-        '
-        'Lab_tsmi
-        '
-        Me.Lab_tsmi.Image = Global.PokeFarm.My.Resources.Resources.lab
-        Me.Lab_tsmi.Name = "Lab_tsmi"
-        Me.Lab_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.Lab_tsmi.Text = "Lab"
-        '
-        'Party_tsmi
-        '
-        Me.Party_tsmi.Image = Global.PokeFarm.My.Resources.Resources.pokeball
-        Me.Party_tsmi.Name = "Party_tsmi"
-        Me.Party_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.Party_tsmi.Text = "Party"
-        '
-        'Farm_tsmi
-        '
-        Me.Farm_tsmi.Image = Global.PokeFarm.My.Resources.Resources.farm
-        Me.Farm_tsmi.Name = "Farm_tsmi"
-        Me.Farm_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.Farm_tsmi.Text = "Farm"
-        '
-        'Shelter_tsmi
-        '
-        Me.Shelter_tsmi.Image = Global.PokeFarm.My.Resources.Resources.shelter
-        Me.Shelter_tsmi.Name = "Shelter_tsmi"
-        Me.Shelter_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.Shelter_tsmi.Text = "Shelter"
-        '
-        'Marketboard_tsmi
-        '
-        Me.Marketboard_tsmi.Image = Global.PokeFarm.My.Resources.Resources.shop
-        Me.Marketboard_tsmi.Name = "Marketboard_tsmi"
-        Me.Marketboard_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.Marketboard_tsmi.Text = "Market"
-        '
-        'daycare_tsmi
-        '
-        Me.daycare_tsmi.Image = Global.PokeFarm.My.Resources.Resources.daycare
-        Me.daycare_tsmi.Name = "daycare_tsmi"
-        Me.daycare_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.daycare_tsmi.Text = "Daycare"
-        '
-        'Pokedex_tsmi
-        '
-        Me.Pokedex_tsmi.Image = Global.PokeFarm.My.Resources.Resources.dex
-        Me.Pokedex_tsmi.Name = "Pokedex_tsmi"
-        Me.Pokedex_tsmi.Size = New System.Drawing.Size(119, 22)
-        Me.Pokedex_tsmi.Text = "Pokédex"
-        '
-        'Farm_tsm
-        '
-        Me.Farm_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FarmNews_tsmi, Me.Inventory_tsmi, Me.NearbyPlaces_tsmi, Me.OtherLinks_tsmi, Me.Options_tsmi, Me.Notepad_tsmi, Me.Interactions_tsmi})
-        Me.Farm_tsm.Image = Global.PokeFarm.My.Resources.Resources.farm
-        Me.Farm_tsm.Name = "Farm_tsm"
-        Me.Farm_tsm.Size = New System.Drawing.Size(62, 20)
-        Me.Farm_tsm.Text = "Farm"
-        '
-        'FarmNews_tsmi
-        '
-        Me.FarmNews_tsmi.Image = Global.PokeFarm.My.Resources.Resources.farm_news
-        Me.FarmNews_tsmi.Name = "FarmNews_tsmi"
-        Me.FarmNews_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.FarmNews_tsmi.Text = "Farm News"
-        '
-        'Inventory_tsmi
-        '
-        Me.Inventory_tsmi.Image = Global.PokeFarm.My.Resources.Resources.inventory
-        Me.Inventory_tsmi.Name = "Inventory_tsmi"
-        Me.Inventory_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.Inventory_tsmi.Text = "Inventory"
-        '
-        'NearbyPlaces_tsmi
-        '
-        Me.NearbyPlaces_tsmi.Image = Global.PokeFarm.My.Resources.Resources.places
-        Me.NearbyPlaces_tsmi.Name = "NearbyPlaces_tsmi"
-        Me.NearbyPlaces_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.NearbyPlaces_tsmi.Text = "Nearby Places"
-        '
-        'OtherLinks_tsmi
-        '
-        Me.OtherLinks_tsmi.Image = Global.PokeFarm.My.Resources.Resources.links
-        Me.OtherLinks_tsmi.Name = "OtherLinks_tsmi"
-        Me.OtherLinks_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.OtherLinks_tsmi.Text = "Other Links"
-        '
-        'Options_tsmi
-        '
-        Me.Options_tsmi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.optionDisplay_tsmi, Me.optionNotif_tsmi, Me.optionBookmar_tsmi, Me.optionTimer_tsmi, Me.optionFroum_tsmi, Me.optionUserScri_tsmi, Me.optionOthers_tsmi})
-        Me.Options_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.Options_tsmi.Name = "Options_tsmi"
-        Me.Options_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.Options_tsmi.Text = "Options"
-        '
-        'optionDisplay_tsmi
-        '
-        Me.optionDisplay_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionDisplay_tsmi.Name = "optionDisplay_tsmi"
-        Me.optionDisplay_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionDisplay_tsmi.Text = "Display"
-        '
-        'optionNotif_tsmi
-        '
-        Me.optionNotif_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionNotif_tsmi.Name = "optionNotif_tsmi"
-        Me.optionNotif_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionNotif_tsmi.Text = "Notifications"
-        '
-        'optionBookmar_tsmi
-        '
-        Me.optionBookmar_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionBookmar_tsmi.Name = "optionBookmar_tsmi"
-        Me.optionBookmar_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionBookmar_tsmi.Text = "Bookmarks"
-        '
-        'optionTimer_tsmi
-        '
-        Me.optionTimer_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionTimer_tsmi.Name = "optionTimer_tsmi"
-        Me.optionTimer_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionTimer_tsmi.Text = "Timers Bar"
-        '
-        'optionFroum_tsmi
-        '
-        Me.optionFroum_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionFroum_tsmi.Name = "optionFroum_tsmi"
-        Me.optionFroum_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionFroum_tsmi.Text = "Forum"
-        '
-        'optionUserScri_tsmi
-        '
-        Me.optionUserScri_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionUserScri_tsmi.Name = "optionUserScri_tsmi"
-        Me.optionUserScri_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionUserScri_tsmi.Text = "User Scripts"
-        '
-        'optionOthers_tsmi
-        '
-        Me.optionOthers_tsmi.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.optionOthers_tsmi.Name = "optionOthers_tsmi"
-        Me.optionOthers_tsmi.Size = New System.Drawing.Size(142, 22)
-        Me.optionOthers_tsmi.Text = "Others"
-        '
-        'Notepad_tsmi
-        '
-        Me.Notepad_tsmi.Image = Global.PokeFarm.My.Resources.Resources.notepad
-        Me.Notepad_tsmi.Name = "Notepad_tsmi"
-        Me.Notepad_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.Notepad_tsmi.Text = "Notepad"
-        '
-        'Interactions_tsmi
-        '
-        Me.Interactions_tsmi.Image = Global.PokeFarm.My.Resources.Resources.interactions
-        Me.Interactions_tsmi.Name = "Interactions_tsmi"
-        Me.Interactions_tsmi.Size = New System.Drawing.Size(148, 22)
-        Me.Interactions_tsmi.Text = "Interactions"
-        '
-        'Currencies_tsm
-        '
-        Me.Currencies_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Credits_tsmu, Me.Gold_tsmu, Me.Zophan_tsmu})
-        Me.Currencies_tsm.Image = Global.PokeFarm.My.Resources.Resources.gold
-        Me.Currencies_tsm.Name = "Currencies_tsm"
-        Me.Currencies_tsm.Size = New System.Drawing.Size(91, 20)
-        Me.Currencies_tsm.Text = "Currencies"
-        '
-        'Credits_tsmu
-        '
-        Me.Credits_tsmu.Image = Global.PokeFarm.My.Resources.Resources.credits
-        Me.Credits_tsmu.Name = "Credits_tsmu"
-        Me.Credits_tsmu.Size = New System.Drawing.Size(166, 22)
-        Me.Credits_tsmu.Text = "Credits"
-        '
-        'Gold_tsmu
-        '
-        Me.Gold_tsmu.Image = Global.PokeFarm.My.Resources.Resources.gold
-        Me.Gold_tsmu.Name = "Gold_tsmu"
-        Me.Gold_tsmu.Size = New System.Drawing.Size(166, 22)
-        Me.Gold_tsmu.Text = "Gold Poké"
-        '
-        'Zophan_tsmu
-        '
-        Me.Zophan_tsmu.Image = Global.PokeFarm.My.Resources.Resources.zophan
-        Me.Zophan_tsmu.Name = "Zophan_tsmu"
-        Me.Zophan_tsmu.Size = New System.Drawing.Size(166, 22)
-        Me.Zophan_tsmu.Text = "Zophan Canisters"
-        '
-        'Fields_tsm
-        '
-        Me.Fields_tsm.Image = Global.PokeFarm.My.Resources.Resources.places
-        Me.Fields_tsm.Name = "Fields_tsm"
-        Me.Fields_tsm.Size = New System.Drawing.Size(65, 20)
-        Me.Fields_tsm.Text = "Fields"
-        '
-        'Scour_tsm
-        '
-        Me.Scour_tsm.Image = Global.PokeFarm.My.Resources.Resources.places
-        Me.Scour_tsm.Name = "Scour_tsm"
-        Me.Scour_tsm.Size = New System.Drawing.Size(114, 20)
-        Me.Scour_tsm.Text = "Scour Missions"
-        '
-        'Wishforge_tsm
-        '
-        Me.Wishforge_tsm.Image = Global.PokeFarm.My.Resources.Resources.gem_normal
-        Me.Wishforge_tsm.Name = "Wishforge_tsm"
-        Me.Wishforge_tsm.Size = New System.Drawing.Size(89, 20)
-        Me.Wishforge_tsm.Text = "Wishforge"
-        '
-        'Boxes_tsm
-        '
-        Me.Boxes_tsm.Image = Global.PokeFarm.My.Resources.Resources.boxboxboxbox
-        Me.Boxes_tsm.Name = "Boxes_tsm"
-        Me.Boxes_tsm.Size = New System.Drawing.Size(112, 20)
-        Me.Boxes_tsm.Text = "Treasure Boxes"
-        '
-        'Summons_tsm
-        '
-        Me.Summons_tsm.Image = Global.PokeFarm.My.Resources.Resources.links
-        Me.Summons_tsm.Name = "Summons_tsm"
-        Me.Summons_tsm.Size = New System.Drawing.Size(89, 20)
-        Me.Summons_tsm.Text = "Summons"
-        '
-        'QuickTools_tsm
-        '
-        Me.QuickTools_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewsToolStripMenuItem, Me.InteractionsToolStripMenuItem1, Me.TournamentToolStripMenuItem, Me.EggTimerToolStripMenuItem, Me.HyperModeToolStripMenuItem, Me.ShinyHuntingToolStripMenuItem, Me.UberCharmToolStripMenuItem, Me.AlbinoHuntingToolStripMenuItem, Me.LuckyEggToolStripMenuItem})
-        Me.QuickTools_tsm.Name = "QuickTools_tsm"
-        Me.QuickTools_tsm.Size = New System.Drawing.Size(84, 20)
-        Me.QuickTools_tsm.Text = "Quick Menu"
-        '
-        'NewsToolStripMenuItem
-        '
-        Me.NewsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.farm_news
-        Me.NewsToolStripMenuItem.Name = "NewsToolStripMenuItem"
-        Me.NewsToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.NewsToolStripMenuItem.Text = "News"
-        '
-        'InteractionsToolStripMenuItem1
-        '
-        Me.InteractionsToolStripMenuItem1.Image = Global.PokeFarm.My.Resources.Resources.interactions
-        Me.InteractionsToolStripMenuItem1.Name = "InteractionsToolStripMenuItem1"
-        Me.InteractionsToolStripMenuItem1.Size = New System.Drawing.Size(156, 22)
-        Me.InteractionsToolStripMenuItem1.Text = "Interactions"
-        '
-        'TournamentToolStripMenuItem
-        '
-        Me.TournamentToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.links
-        Me.TournamentToolStripMenuItem.Name = "TournamentToolStripMenuItem"
-        Me.TournamentToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.TournamentToolStripMenuItem.Text = "Tournament"
-        '
-        'EggTimerToolStripMenuItem
-        '
-        Me.EggTimerToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.incubator
-        Me.EggTimerToolStripMenuItem.Name = "EggTimerToolStripMenuItem"
-        Me.EggTimerToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.EggTimerToolStripMenuItem.Text = "Egg Timer"
-        '
-        'HyperModeToolStripMenuItem
-        '
-        Me.HyperModeToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.hypermode_24
-        Me.HyperModeToolStripMenuItem.Name = "HyperModeToolStripMenuItem"
-        Me.HyperModeToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.HyperModeToolStripMenuItem.Text = "Hyper Mode"
-        '
-        'ShinyHuntingToolStripMenuItem
-        '
-        Me.ShinyHuntingToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.shinycharm
-        Me.ShinyHuntingToolStripMenuItem.Name = "ShinyHuntingToolStripMenuItem"
-        Me.ShinyHuntingToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.ShinyHuntingToolStripMenuItem.Text = "Shiny Hunting"
-        '
-        'UberCharmToolStripMenuItem
-        '
-        Me.UberCharmToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.ubercharm
-        Me.UberCharmToolStripMenuItem.Name = "UberCharmToolStripMenuItem"
-        Me.UberCharmToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.UberCharmToolStripMenuItem.Text = "Uber Charm"
-        '
-        'AlbinoHuntingToolStripMenuItem
-        '
-        Me.AlbinoHuntingToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.albinoradar
-        Me.AlbinoHuntingToolStripMenuItem.Name = "AlbinoHuntingToolStripMenuItem"
-        Me.AlbinoHuntingToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.AlbinoHuntingToolStripMenuItem.Text = "Albino Hunting"
-        '
-        'LuckyEggToolStripMenuItem
-        '
-        Me.LuckyEggToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.luckyegg
-        Me.LuckyEggToolStripMenuItem.Name = "LuckyEggToolStripMenuItem"
-        Me.LuckyEggToolStripMenuItem.Size = New System.Drawing.Size(156, 22)
-        Me.LuckyEggToolStripMenuItem.Text = "Lucky Egg"
-        '
-        'Messages_tsm
-        '
-        Me.Messages_tsm.Name = "Messages_tsm"
-        Me.Messages_tsm.Size = New System.Drawing.Size(70, 20)
-        Me.Messages_tsm.Text = "Messages"
-        '
-        'Forum_tsm
-        '
-        Me.Forum_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.VisitForumToolStripMenuItem, Me.ForumSubscriptionsToolStripMenuItem})
-        Me.Forum_tsm.Name = "Forum_tsm"
-        Me.Forum_tsm.Size = New System.Drawing.Size(54, 20)
-        Me.Forum_tsm.Text = "Forum"
-        '
-        'VisitForumToolStripMenuItem
-        '
-        Me.VisitForumToolStripMenuItem.Name = "VisitForumToolStripMenuItem"
-        Me.VisitForumToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.VisitForumToolStripMenuItem.Text = "Visit Forum"
-        '
-        'ForumSubscriptionsToolStripMenuItem
-        '
-        Me.ForumSubscriptionsToolStripMenuItem.Name = "ForumSubscriptionsToolStripMenuItem"
-        Me.ForumSubscriptionsToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.ForumSubscriptionsToolStripMenuItem.Text = "Forum Subscriptions"
-        '
-        'Special_tsm
-        '
-        Me.Special_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCA_tsmi, Me.SCA_tsmi})
-        Me.Special_tsm.Name = "Special_tsm"
-        Me.Special_tsm.Size = New System.Drawing.Size(56, 20)
-        Me.Special_tsm.Text = "Special"
-        '
-        'MCA_tsmi
-        '
-        Me.MCA_tsmi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MCAWeb_tsmi, Me.MCAForum_tsmi})
-        Me.MCA_tsmi.Name = "MCA_tsmi"
-        Me.MCA_tsmi.Size = New System.Drawing.Size(101, 22)
-        Me.MCA_tsmi.Text = "MCA"
-        '
-        'MCAWeb_tsmi
-        '
-        Me.MCAWeb_tsmi.Name = "MCAWeb_tsmi"
-        Me.MCAWeb_tsmi.Size = New System.Drawing.Size(116, 22)
-        Me.MCAWeb_tsmi.Text = "Website"
-        '
-        'MCAForum_tsmi
-        '
-        Me.MCAForum_tsmi.Name = "MCAForum_tsmi"
-        Me.MCAForum_tsmi.Size = New System.Drawing.Size(116, 22)
-        Me.MCAForum_tsmi.Text = "Forum"
-        '
-        'SCA_tsmi
-        '
-        Me.SCA_tsmi.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SCAForum_tsmi})
-        Me.SCA_tsmi.Name = "SCA_tsmi"
-        Me.SCA_tsmi.Size = New System.Drawing.Size(101, 22)
-        Me.SCA_tsmi.Text = "SCA"
-        '
-        'SCAForum_tsmi
-        '
-        Me.SCAForum_tsmi.Name = "SCAForum_tsmi"
-        Me.SCAForum_tsmi.Size = New System.Drawing.Size(109, 22)
-        Me.SCAForum_tsmi.Text = "Forum"
-        '
-        'Help_tsm
-        '
-        Me.Help_tsm.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem, Me.ToolStripSeparator1, Me.Wiki_tsmi, Me.About_tsmi})
-        Me.Help_tsm.Image = Global.PokeFarm.My.Resources.Resources.qmark
-        Me.Help_tsm.Name = "Help_tsm"
-        Me.Help_tsm.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Help_tsm.Size = New System.Drawing.Size(60, 20)
-        Me.Help_tsm.Text = "Help"
-        '
-        'SettingsToolStripMenuItem
-        '
-        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
-        Me.SettingsToolStripMenuItem.Text = "Settings"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(113, 6)
-        '
-        'Wiki_tsmi
-        '
-        Me.Wiki_tsmi.Name = "Wiki_tsmi"
-        Me.Wiki_tsmi.Size = New System.Drawing.Size(116, 22)
-        Me.Wiki_tsmi.Text = "Wiki"
-        '
-        'About_tsmi
-        '
-        Me.About_tsmi.Name = "About_tsmi"
-        Me.About_tsmi.Size = New System.Drawing.Size(116, 22)
-        Me.About_tsmi.Text = "About"
-        '
-        'FarmNewsToolStripMenuItem
-        '
-        Me.FarmNewsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.farm_news
-        Me.FarmNewsToolStripMenuItem.Name = "FarmNewsToolStripMenuItem"
-        Me.FarmNewsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.FarmNewsToolStripMenuItem.Text = "Farm News"
-        '
-        'InventoryToolStripMenuItem
-        '
-        Me.InventoryToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.inventory
-        Me.InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem"
-        Me.InventoryToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.InventoryToolStripMenuItem.Text = "Inventory"
-        '
-        'NearbyPlacesToolStripMenuItem
-        '
-        Me.NearbyPlacesToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.places
-        Me.NearbyPlacesToolStripMenuItem.Name = "NearbyPlacesToolStripMenuItem"
-        Me.NearbyPlacesToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.NearbyPlacesToolStripMenuItem.Text = "Nearby Places"
-        '
-        'OtherLinksToolStripMenuItem
-        '
-        Me.OtherLinksToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.links
-        Me.OtherLinksToolStripMenuItem.Name = "OtherLinksToolStripMenuItem"
-        Me.OtherLinksToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.OtherLinksToolStripMenuItem.Text = "Other Links"
-        '
-        'OptionsToolStripMenuItem
-        '
-        Me.OptionsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.tools_options
-        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
-        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.OptionsToolStripMenuItem.Text = "Options"
-        '
-        'DisplayToolStripMenuItem
-        '
-        Me.DisplayToolStripMenuItem.Name = "DisplayToolStripMenuItem"
-        Me.DisplayToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.DisplayToolStripMenuItem.Text = "Display"
-        '
-        'NotificationsToolStripMenuItem
-        '
-        Me.NotificationsToolStripMenuItem.Name = "NotificationsToolStripMenuItem"
-        Me.NotificationsToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.NotificationsToolStripMenuItem.Text = "Notifications"
-        '
-        'BookmarksToolStripMenuItem
-        '
-        Me.BookmarksToolStripMenuItem.Name = "BookmarksToolStripMenuItem"
-        Me.BookmarksToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.BookmarksToolStripMenuItem.Text = "Bookmarks"
-        '
-        'TimersBarToolStripMenuItem
-        '
-        Me.TimersBarToolStripMenuItem.Name = "TimersBarToolStripMenuItem"
-        Me.TimersBarToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.TimersBarToolStripMenuItem.Text = "Timers Bar"
-        '
-        'ForumToolStripMenuItem1
-        '
-        Me.ForumToolStripMenuItem1.Name = "ForumToolStripMenuItem1"
-        Me.ForumToolStripMenuItem1.Size = New System.Drawing.Size(142, 22)
-        Me.ForumToolStripMenuItem1.Text = "Forum"
-        '
-        'UserscriptsToolStripMenuItem
-        '
-        Me.UserscriptsToolStripMenuItem.Name = "UserscriptsToolStripMenuItem"
-        Me.UserscriptsToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.UserscriptsToolStripMenuItem.Text = "Userscripts"
-        '
-        'OthersToolStripMenuItem
-        '
-        Me.OthersToolStripMenuItem.Name = "OthersToolStripMenuItem"
-        Me.OthersToolStripMenuItem.Size = New System.Drawing.Size(142, 22)
-        Me.OthersToolStripMenuItem.Text = "Others"
-        '
-        'NotepadToolStripMenuItem
-        '
-        Me.NotepadToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.notepad
-        Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
-        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.NotepadToolStripMenuItem.Text = "Notepad"
-        '
-        'InteractionsToolStripMenuItem
-        '
-        Me.InteractionsToolStripMenuItem.Image = Global.PokeFarm.My.Resources.Resources.interactions
-        Me.InteractionsToolStripMenuItem.Name = "InteractionsToolStripMenuItem"
-        Me.InteractionsToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
-        Me.InteractionsToolStripMenuItem.Text = "Interactions"
-        '
-        'NotifyIcon1
-        '
-        Me.NotifyIcon1.ContextMenuStrip = Me.trayIconStrip
-        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
-        Me.NotifyIcon1.Text = "PokéFarm Q Desktop App"
-        '
-        'trayIconStrip
-        '
-        Me.trayIconStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.ToolStripSeparator2, Me.QuitToolStripMenuItem})
-        Me.trayIconStrip.Name = "trayIconStrip"
-        Me.trayIconStrip.Size = New System.Drawing.Size(104, 54)
-        '
-        'OpenToolStripMenuItem
-        '
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.OpenToolStripMenuItem.Text = "Open"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(100, 6)
-        '
-        'QuitToolStripMenuItem
-        '
-        Me.QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
-        Me.QuitToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
-        Me.QuitToolStripMenuItem.Text = "Quit"
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(1264, 703)
-        Me.Controls.Add(Me.webView)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PokéFarm Q"
-        CType(Me.webView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
-        Me.trayIconStrip.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
+        webView = New Microsoft.Web.WebView2.WinForms.WebView2()
+        MenuStrip1 = New MenuStrip()
+        Basic_tsm = New ToolStripMenuItem()
+        Lab_tsmi = New ToolStripMenuItem()
+        Party_tsmi = New ToolStripMenuItem()
+        Shelter_tsmi = New ToolStripMenuItem()
+        Marketboard_tsmi = New ToolStripMenuItem()
+        daycare_tsmi = New ToolStripMenuItem()
+        Pokedex_tsmi = New ToolStripMenuItem()
+        Farm_tsm = New ToolStripMenuItem()
+        FarmNews_tsmi = New ToolStripMenuItem()
+        Inventory_tsmi = New ToolStripMenuItem()
+        OtherLinks_tsmi = New ToolStripMenuItem()
+        Options_tsmi = New ToolStripMenuItem()
+        optionDisplay_tsmi = New ToolStripMenuItem()
+        optionNotif_tsmi = New ToolStripMenuItem()
+        optionBookmar_tsmi = New ToolStripMenuItem()
+        optionTimer_tsmi = New ToolStripMenuItem()
+        optionFroum_tsmi = New ToolStripMenuItem()
+        optionUserScri_tsmi = New ToolStripMenuItem()
+        optionOthers_tsmi = New ToolStripMenuItem()
+        Notepad_tsmi = New ToolStripMenuItem()
+        Interactions_tsmi = New ToolStripMenuItem()
+        NearbyPlaces_tsm = New ToolStripMenuItem()
+        berry_tsmi = New ToolStripMenuItem()
+        fish_tsmi = New ToolStripMenuItem()
+        trade_tsmi = New ToolStripMenuItem()
+        egg_tsmi = New ToolStripMenuItem()
+        contest_tsmi = New ToolStripMenuItem()
+        dojo_tsmi = New ToolStripMenuItem()
+        colress_tsmi = New ToolStripMenuItem()
+        pGrove_tsmi = New ToolStripMenuItem()
+        aether_tsmi = New ToolStripMenuItem()
+        research_tsmi = New ToolStripMenuItem()
+        cele_tsmi = New ToolStripMenuItem()
+        Currencies_tsm = New ToolStripMenuItem()
+        Credits_tsmu = New ToolStripMenuItem()
+        Gold_tsmu = New ToolStripMenuItem()
+        Zophan_tsmu = New ToolStripMenuItem()
+        Fields_tsm = New ToolStripMenuItem()
+        Scour_tsm = New ToolStripMenuItem()
+        Wishforge_tsm = New ToolStripMenuItem()
+        Boxes_tsm = New ToolStripMenuItem()
+        Summons_tsm = New ToolStripMenuItem()
+        Users_tmu = New ToolStripMenuItem()
+        myUserProfle_tsmi = New ToolStripMenuItem()
+        usersSep1_tsmi = New ToolStripSeparator()
+        userSearch_tsmi = New ToolStripMenuItem()
+        QuickTools_tsm = New ToolStripMenuItem()
+        NewsToolStripMenuItem = New ToolStripMenuItem()
+        InteractionsToolStripMenuItem1 = New ToolStripMenuItem()
+        TournamentToolStripMenuItem = New ToolStripMenuItem()
+        EggTimerToolStripMenuItem = New ToolStripMenuItem()
+        HyperModeToolStripMenuItem = New ToolStripMenuItem()
+        ShinyHuntingToolStripMenuItem = New ToolStripMenuItem()
+        UberCharmToolStripMenuItem = New ToolStripMenuItem()
+        AlbinoHuntingToolStripMenuItem = New ToolStripMenuItem()
+        LuckyEggToolStripMenuItem = New ToolStripMenuItem()
+        Messages_tsm = New ToolStripMenuItem()
+        Forum_tsm = New ToolStripMenuItem()
+        VisitForumToolStripMenuItem = New ToolStripMenuItem()
+        ForumSubscriptionsToolStripMenuItem = New ToolStripMenuItem()
+        Special_tsm = New ToolStripMenuItem()
+        MCA_tsmi = New ToolStripMenuItem()
+        MCAWeb_tsmi = New ToolStripMenuItem()
+        MCAForum_tsmi = New ToolStripMenuItem()
+        SCA_tsmi = New ToolStripMenuItem()
+        SCAForum_tsmi = New ToolStripMenuItem()
+        Help_tsm = New ToolStripMenuItem()
+        SettingsToolStripMenuItem = New ToolStripMenuItem()
+        ToolStripSeparator1 = New ToolStripSeparator()
+        Wiki_tsmi = New ToolStripMenuItem()
+        About_tsmi = New ToolStripMenuItem()
+        FarmNewsToolStripMenuItem = New ToolStripMenuItem()
+        InventoryToolStripMenuItem = New ToolStripMenuItem()
+        NearbyPlacesToolStripMenuItem = New ToolStripMenuItem()
+        OtherLinksToolStripMenuItem = New ToolStripMenuItem()
+        OptionsToolStripMenuItem = New ToolStripMenuItem()
+        DisplayToolStripMenuItem = New ToolStripMenuItem()
+        NotificationsToolStripMenuItem = New ToolStripMenuItem()
+        BookmarksToolStripMenuItem = New ToolStripMenuItem()
+        TimersBarToolStripMenuItem = New ToolStripMenuItem()
+        ForumToolStripMenuItem1 = New ToolStripMenuItem()
+        UserscriptsToolStripMenuItem = New ToolStripMenuItem()
+        OthersToolStripMenuItem = New ToolStripMenuItem()
+        NotepadToolStripMenuItem = New ToolStripMenuItem()
+        InteractionsToolStripMenuItem = New ToolStripMenuItem()
+        NotifyIcon1 = New NotifyIcon(components)
+        trayIconStrip = New ContextMenuStrip(components)
+        OpenToolStripMenuItem = New ToolStripMenuItem()
+        ToolStripSeparator2 = New ToolStripSeparator()
+        QuitToolStripMenuItem = New ToolStripMenuItem()
+        CType(webView, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip1.SuspendLayout()
+        trayIconStrip.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' webView
+        ' 
+        webView.AllowExternalDrop = True
+        webView.CreationProperties = Nothing
+        webView.DefaultBackgroundColor = Color.Black
+        webView.Dock = DockStyle.Fill
+        webView.Location = New Point(126, 0)
+        webView.Name = "webView"
+        webView.Size = New Size(1138, 703)
+        webView.TabIndex = 0
+        webView.ZoomFactor = 1R
+        ' 
+        ' MenuStrip1
+        ' 
+        MenuStrip1.Dock = DockStyle.Left
+        MenuStrip1.Items.AddRange(New ToolStripItem() {Basic_tsm, Farm_tsm, NearbyPlaces_tsm, Currencies_tsm, Fields_tsm, Scour_tsm, Wishforge_tsm, Boxes_tsm, Summons_tsm, Users_tmu, QuickTools_tsm, Messages_tsm, Forum_tsm, Special_tsm, Help_tsm})
+        MenuStrip1.Location = New Point(0, 0)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(126, 703)
+        MenuStrip1.TabIndex = 1
+        MenuStrip1.Text = "MenuStrip1"
+        Basic_tsm.DropDownItems.AddRange(New ToolStripItem() {Lab_tsmi, Party_tsmi, Shelter_tsmi, Marketboard_tsmi, daycare_tsmi, Pokedex_tsmi})
+        Basic_tsm.Image = My.Resources.Resources.lab
+        Basic_tsm.Name = "Basic_tsm"
+        Basic_tsm.Size = New Size(113, 20)
+        Basic_tsm.Text = "Basic"
+        Lab_tsmi.Image = My.Resources.Resources.lab
+        Lab_tsmi.Name = "Lab_tsmi"
+        Lab_tsmi.Size = New Size(119, 22)
+        Lab_tsmi.Text = "Lab"
+        Party_tsmi.Image = My.Resources.Resources.pokeball
+        Party_tsmi.Name = "Party_tsmi"
+        Party_tsmi.Size = New Size(119, 22)
+        Party_tsmi.Text = "Party"
+        Shelter_tsmi.Image = My.Resources.Resources.shelter
+        Shelter_tsmi.Name = "Shelter_tsmi"
+        Shelter_tsmi.Size = New Size(119, 22)
+        Shelter_tsmi.Text = "Shelter"
+        Marketboard_tsmi.Image = My.Resources.Resources.shop
+        Marketboard_tsmi.Name = "Marketboard_tsmi"
+        Marketboard_tsmi.Size = New Size(119, 22)
+        Marketboard_tsmi.Text = "Market"
+        daycare_tsmi.Image = My.Resources.Resources.daycare
+        daycare_tsmi.Name = "daycare_tsmi"
+        daycare_tsmi.Size = New Size(119, 22)
+        daycare_tsmi.Text = "Daycare"
+        Pokedex_tsmi.Image = My.Resources.Resources.dex
+        Pokedex_tsmi.Name = "Pokedex_tsmi"
+        Pokedex_tsmi.Size = New Size(119, 22)
+        Pokedex_tsmi.Text = "Pokédex"
+        Farm_tsm.DropDownItems.AddRange(New ToolStripItem() {FarmNews_tsmi, Inventory_tsmi, OtherLinks_tsmi, Options_tsmi, Notepad_tsmi, Interactions_tsmi})
+        Farm_tsm.Image = My.Resources.Resources.farm
+        Farm_tsm.Name = "Farm_tsm"
+        Farm_tsm.Size = New Size(113, 20)
+        Farm_tsm.Text = "Farm"
+        FarmNews_tsmi.Image = My.Resources.Resources.farm_news
+        FarmNews_tsmi.Name = "FarmNews_tsmi"
+        FarmNews_tsmi.Size = New Size(136, 22)
+        FarmNews_tsmi.Text = "Farm News"
+        Inventory_tsmi.Image = My.Resources.Resources.inventory
+        Inventory_tsmi.Name = "Inventory_tsmi"
+        Inventory_tsmi.Size = New Size(136, 22)
+        Inventory_tsmi.Text = "Inventory"
+        OtherLinks_tsmi.Image = My.Resources.Resources.links
+        OtherLinks_tsmi.Name = "OtherLinks_tsmi"
+        OtherLinks_tsmi.Size = New Size(136, 22)
+        OtherLinks_tsmi.Text = "Other Links"
+        Options_tsmi.DropDownItems.AddRange(New ToolStripItem() {optionDisplay_tsmi, optionNotif_tsmi, optionBookmar_tsmi, optionTimer_tsmi, optionFroum_tsmi, optionUserScri_tsmi, optionOthers_tsmi})
+        Options_tsmi.Image = My.Resources.Resources.tools_options
+        Options_tsmi.Name = "Options_tsmi"
+        Options_tsmi.Size = New Size(136, 22)
+        Options_tsmi.Text = "Options"
+        optionDisplay_tsmi.Image = My.Resources.Resources.tools_options
+        optionDisplay_tsmi.Name = "optionDisplay_tsmi"
+        optionDisplay_tsmi.Size = New Size(142, 22)
+        optionDisplay_tsmi.Text = "Display"
+        optionNotif_tsmi.Image = My.Resources.Resources.tools_options
+        optionNotif_tsmi.Name = "optionNotif_tsmi"
+        optionNotif_tsmi.Size = New Size(142, 22)
+        optionNotif_tsmi.Text = "Notifications"
+        optionBookmar_tsmi.Image = My.Resources.Resources.tools_options
+        optionBookmar_tsmi.Name = "optionBookmar_tsmi"
+        optionBookmar_tsmi.Size = New Size(142, 22)
+        optionBookmar_tsmi.Text = "Bookmarks"
+        optionTimer_tsmi.Image = My.Resources.Resources.tools_options
+        optionTimer_tsmi.Name = "optionTimer_tsmi"
+        optionTimer_tsmi.Size = New Size(142, 22)
+        optionTimer_tsmi.Text = "Timers Bar"
+        optionFroum_tsmi.Image = My.Resources.Resources.tools_options
+        optionFroum_tsmi.Name = "optionFroum_tsmi"
+        optionFroum_tsmi.Size = New Size(142, 22)
+        optionFroum_tsmi.Text = "Forum"
+        optionUserScri_tsmi.Image = My.Resources.Resources.tools_options
+        optionUserScri_tsmi.Name = "optionUserScri_tsmi"
+        optionUserScri_tsmi.Size = New Size(142, 22)
+        optionUserScri_tsmi.Text = "User Scripts"
+        optionOthers_tsmi.Image = My.Resources.Resources.tools_options
+        optionOthers_tsmi.Name = "optionOthers_tsmi"
+        optionOthers_tsmi.Size = New Size(142, 22)
+        optionOthers_tsmi.Text = "Others"
+        Notepad_tsmi.Image = My.Resources.Resources.notepad
+        Notepad_tsmi.Name = "Notepad_tsmi"
+        Notepad_tsmi.Size = New Size(136, 22)
+        Notepad_tsmi.Text = "Notepad"
+        Interactions_tsmi.Image = My.Resources.Resources.interactions
+        Interactions_tsmi.Name = "Interactions_tsmi"
+        Interactions_tsmi.Size = New Size(136, 22)
+        Interactions_tsmi.Text = "Interactions"
+        NearbyPlaces_tsm.DropDownItems.AddRange(New ToolStripItem() {berry_tsmi, fish_tsmi, trade_tsmi, egg_tsmi, contest_tsmi, dojo_tsmi, colress_tsmi, pGrove_tsmi, aether_tsmi, research_tsmi, cele_tsmi})
+        NearbyPlaces_tsm.Image = My.Resources.Resources.places
+        NearbyPlaces_tsm.Name = "NearbyPlaces_tsm"
+        NearbyPlaces_tsm.Size = New Size(113, 20)
+        NearbyPlaces_tsm.Text = "Nearby Places"
+        berry_tsmi.Name = "berry_tsmi"
+        berry_tsmi.Size = New Size(191, 22)
+        berry_tsmi.Text = "Berry Garden"
+        fish_tsmi.Name = "fish_tsmi"
+        fish_tsmi.Size = New Size(191, 22)
+        fish_tsmi.Text = "Fishing Hut"
+        trade_tsmi.Name = "trade_tsmi"
+        trade_tsmi.Size = New Size(191, 22)
+        trade_tsmi.Text = "Trade Centre"
+        egg_tsmi.Name = "egg_tsmi"
+        egg_tsmi.Size = New Size(191, 22)
+        egg_tsmi.Text = "Egg Supplier"
+        contest_tsmi.Name = "contest_tsmi"
+        contest_tsmi.Size = New Size(191, 22)
+        contest_tsmi.Text = "Contest Hall"
+        dojo_tsmi.Name = "dojo_tsmi"
+        dojo_tsmi.Size = New Size(191, 22)
+        dojo_tsmi.Text = "Pokémon Dojo"
+        colress_tsmi.Name = "colress_tsmi"
+        colress_tsmi.Size = New Size(191, 22)
+        colress_tsmi.Text = "Colress' Shack"
+        pGrove_tsmi.Name = "pGrove_tsmi"
+        pGrove_tsmi.Size = New Size(191, 22)
+        pGrove_tsmi.Text = "Pledge Grove"
+        aether_tsmi.Name = "aether_tsmi"
+        aether_tsmi.Size = New Size(191, 22)
+        aether_tsmi.Text = "Aether House"
+        research_tsmi.Name = "research_tsmi"
+        research_tsmi.Size = New Size(191, 22)
+        research_tsmi.Text = "Holon Research Tower"
+        cele_tsmi.Name = "cele_tsmi"
+        cele_tsmi.Size = New Size(191, 22)
+        cele_tsmi.Text = "Cele's Centre"
+        Currencies_tsm.DropDownItems.AddRange(New ToolStripItem() {Credits_tsmu, Gold_tsmu, Zophan_tsmu})
+        Currencies_tsm.Image = My.Resources.Resources.gold
+        Currencies_tsm.Name = "Currencies_tsm"
+        Currencies_tsm.Size = New Size(113, 20)
+        Currencies_tsm.Text = "Currencies"
+        Credits_tsmu.Image = My.Resources.Resources.credits
+        Credits_tsmu.Name = "Credits_tsmu"
+        Credits_tsmu.Size = New Size(166, 22)
+        Credits_tsmu.Text = "Credits"
+        Gold_tsmu.Image = My.Resources.Resources.gold
+        Gold_tsmu.Name = "Gold_tsmu"
+        Gold_tsmu.Size = New Size(166, 22)
+        Gold_tsmu.Text = "Gold Poké"
+        Zophan_tsmu.Image = My.Resources.Resources.zophan
+        Zophan_tsmu.Name = "Zophan_tsmu"
+        Zophan_tsmu.Size = New Size(166, 22)
+        Zophan_tsmu.Text = "Zophan Canisters"
+        Fields_tsm.Image = My.Resources.Resources.places
+        Fields_tsm.Name = "Fields_tsm"
+        Fields_tsm.Size = New Size(113, 20)
+        Fields_tsm.Text = "Fields"
+        Scour_tsm.Image = My.Resources.Resources.places
+        Scour_tsm.Name = "Scour_tsm"
+        Scour_tsm.Size = New Size(113, 20)
+        Scour_tsm.Text = "Scour Missions"
+        Wishforge_tsm.Image = My.Resources.Resources.gem_normal
+        Wishforge_tsm.Name = "Wishforge_tsm"
+        Wishforge_tsm.Size = New Size(113, 20)
+        Wishforge_tsm.Text = "Wishforge"
+        Boxes_tsm.Image = My.Resources.Resources.boxboxboxbox
+        Boxes_tsm.Name = "Boxes_tsm"
+        Boxes_tsm.Size = New Size(113, 20)
+        Boxes_tsm.Text = "Treasure Boxes"
+        Summons_tsm.Image = My.Resources.Resources.links
+        Summons_tsm.Name = "Summons_tsm"
+        Summons_tsm.Size = New Size(113, 20)
+        Summons_tsm.Text = "Summons"
+        Users_tmu.DropDownItems.AddRange(New ToolStripItem() {myUserProfle_tsmi, usersSep1_tsmi, userSearch_tsmi})
+        Users_tmu.Name = "Users_tmu"
+        Users_tmu.Size = New Size(113, 19)
+        Users_tmu.Text = "Users"
+        myUserProfle_tsmi.Name = "myUserProfle_tsmi"
+        myUserProfle_tsmi.Size = New Size(180, 22)
+        myUserProfle_tsmi.Text = "My Profile"
+        usersSep1_tsmi.Name = "usersSep1_tsmi"
+        usersSep1_tsmi.Size = New Size(177, 6)
+        ' 
+        ' userSearch_tsmi
+        ' 
+        userSearch_tsmi.Name = "userSearch_tsmi"
+        userSearch_tsmi.Size = New Size(180, 22)
+        userSearch_tsmi.Text = "Search for a Profile"
+        QuickTools_tsm.DropDownItems.AddRange(New ToolStripItem() {NewsToolStripMenuItem, InteractionsToolStripMenuItem1, TournamentToolStripMenuItem, EggTimerToolStripMenuItem, HyperModeToolStripMenuItem, ShinyHuntingToolStripMenuItem, UberCharmToolStripMenuItem, AlbinoHuntingToolStripMenuItem, LuckyEggToolStripMenuItem})
+        QuickTools_tsm.Name = "QuickTools_tsm"
+        QuickTools_tsm.Size = New Size(113, 19)
+        QuickTools_tsm.Text = "Quick Menu"
+        NewsToolStripMenuItem.Image = My.Resources.Resources.farm_news
+        NewsToolStripMenuItem.Name = "NewsToolStripMenuItem"
+        NewsToolStripMenuItem.Size = New Size(156, 22)
+        NewsToolStripMenuItem.Text = "News"
+        InteractionsToolStripMenuItem1.Image = My.Resources.Resources.interactions
+        InteractionsToolStripMenuItem1.Name = "InteractionsToolStripMenuItem1"
+        InteractionsToolStripMenuItem1.Size = New Size(156, 22)
+        InteractionsToolStripMenuItem1.Text = "Interactions"
+        TournamentToolStripMenuItem.Image = My.Resources.Resources.links
+        TournamentToolStripMenuItem.Name = "TournamentToolStripMenuItem"
+        TournamentToolStripMenuItem.Size = New Size(156, 22)
+        TournamentToolStripMenuItem.Text = "Tournament"
+        EggTimerToolStripMenuItem.Image = My.Resources.Resources.incubator
+        EggTimerToolStripMenuItem.Name = "EggTimerToolStripMenuItem"
+        EggTimerToolStripMenuItem.Size = New Size(156, 22)
+        EggTimerToolStripMenuItem.Text = "Egg Timer"
+        HyperModeToolStripMenuItem.Image = My.Resources.Resources.hypermode_24
+        HyperModeToolStripMenuItem.Name = "HyperModeToolStripMenuItem"
+        HyperModeToolStripMenuItem.Size = New Size(156, 22)
+        HyperModeToolStripMenuItem.Text = "Hyper Mode"
+        ShinyHuntingToolStripMenuItem.Image = My.Resources.Resources.shinycharm
+        ShinyHuntingToolStripMenuItem.Name = "ShinyHuntingToolStripMenuItem"
+        ShinyHuntingToolStripMenuItem.Size = New Size(156, 22)
+        ShinyHuntingToolStripMenuItem.Text = "Shiny Hunting"
+        UberCharmToolStripMenuItem.Image = My.Resources.Resources.ubercharm
+        UberCharmToolStripMenuItem.Name = "UberCharmToolStripMenuItem"
+        UberCharmToolStripMenuItem.Size = New Size(156, 22)
+        UberCharmToolStripMenuItem.Text = "Uber Charm"
+        AlbinoHuntingToolStripMenuItem.Image = My.Resources.Resources.albinoradar
+        AlbinoHuntingToolStripMenuItem.Name = "AlbinoHuntingToolStripMenuItem"
+        AlbinoHuntingToolStripMenuItem.Size = New Size(156, 22)
+        AlbinoHuntingToolStripMenuItem.Text = "Albino Hunting"
+        LuckyEggToolStripMenuItem.Image = My.Resources.Resources.luckyegg
+        LuckyEggToolStripMenuItem.Name = "LuckyEggToolStripMenuItem"
+        LuckyEggToolStripMenuItem.Size = New Size(156, 22)
+        LuckyEggToolStripMenuItem.Text = "Lucky Egg"
+        Messages_tsm.Name = "Messages_tsm"
+        Messages_tsm.Size = New Size(113, 19)
+        Messages_tsm.Text = "Messages"
+        Forum_tsm.DropDownItems.AddRange(New ToolStripItem() {VisitForumToolStripMenuItem, ForumSubscriptionsToolStripMenuItem})
+        Forum_tsm.Name = "Forum_tsm"
+        Forum_tsm.Size = New Size(113, 19)
+        Forum_tsm.Text = "Forum"
+        VisitForumToolStripMenuItem.Name = "VisitForumToolStripMenuItem"
+        VisitForumToolStripMenuItem.Size = New Size(183, 22)
+        VisitForumToolStripMenuItem.Text = "Visit Forum"
+        ForumSubscriptionsToolStripMenuItem.Name = "ForumSubscriptionsToolStripMenuItem"
+        ForumSubscriptionsToolStripMenuItem.Size = New Size(183, 22)
+        ForumSubscriptionsToolStripMenuItem.Text = "Forum Subscriptions"
+        Special_tsm.DropDownItems.AddRange(New ToolStripItem() {MCA_tsmi, SCA_tsmi})
+        Special_tsm.Name = "Special_tsm"
+        Special_tsm.Size = New Size(113, 19)
+        Special_tsm.Text = "Special"
+        MCA_tsmi.DropDownItems.AddRange(New ToolStripItem() {MCAWeb_tsmi, MCAForum_tsmi})
+        MCA_tsmi.Name = "MCA_tsmi"
+        MCA_tsmi.Size = New Size(101, 22)
+        MCA_tsmi.Text = "MCA"
+        MCAWeb_tsmi.Name = "MCAWeb_tsmi"
+        MCAWeb_tsmi.Size = New Size(116, 22)
+        MCAWeb_tsmi.Text = "Website"
+        MCAForum_tsmi.Name = "MCAForum_tsmi"
+        MCAForum_tsmi.Size = New Size(116, 22)
+        MCAForum_tsmi.Text = "Forum"
+        SCA_tsmi.DropDownItems.AddRange(New ToolStripItem() {SCAForum_tsmi})
+        SCA_tsmi.Name = "SCA_tsmi"
+        SCA_tsmi.Size = New Size(101, 22)
+        SCA_tsmi.Text = "SCA"
+        SCAForum_tsmi.Name = "SCAForum_tsmi"
+        SCAForum_tsmi.Size = New Size(109, 22)
+        SCAForum_tsmi.Text = "Forum"
+        Help_tsm.DropDownItems.AddRange(New ToolStripItem() {SettingsToolStripMenuItem, ToolStripSeparator1, Wiki_tsmi, About_tsmi})
+        Help_tsm.Image = My.Resources.Resources.qmark
+        Help_tsm.Name = "Help_tsm"
+        Help_tsm.RightToLeft = RightToLeft.No
+        Help_tsm.Size = New Size(113, 20)
+        Help_tsm.Text = "Help"
+        SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        SettingsToolStripMenuItem.Size = New Size(116, 22)
+        SettingsToolStripMenuItem.Text = "Settings"
+        ToolStripSeparator1.Name = "ToolStripSeparator1"
+        ToolStripSeparator1.Size = New Size(113, 6)
+        ' 
+        ' Wiki_tsmi
+        ' 
+        Wiki_tsmi.Name = "Wiki_tsmi"
+        Wiki_tsmi.Size = New Size(116, 22)
+        Wiki_tsmi.Text = "Wiki"
+        About_tsmi.Name = "About_tsmi"
+        About_tsmi.Size = New Size(116, 22)
+        About_tsmi.Text = "About"
+        FarmNewsToolStripMenuItem.Image = My.Resources.Resources.farm_news
+        FarmNewsToolStripMenuItem.Name = "FarmNewsToolStripMenuItem"
+        FarmNewsToolStripMenuItem.Size = New Size(148, 22)
+        FarmNewsToolStripMenuItem.Text = "Farm News"
+        InventoryToolStripMenuItem.Image = My.Resources.Resources.inventory
+        InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem"
+        InventoryToolStripMenuItem.Size = New Size(148, 22)
+        InventoryToolStripMenuItem.Text = "Inventory"
+        NearbyPlacesToolStripMenuItem.Image = My.Resources.Resources.places
+        NearbyPlacesToolStripMenuItem.Name = "NearbyPlacesToolStripMenuItem"
+        NearbyPlacesToolStripMenuItem.Size = New Size(148, 22)
+        NearbyPlacesToolStripMenuItem.Text = "Nearby Places"
+        OtherLinksToolStripMenuItem.Image = My.Resources.Resources.links
+        OtherLinksToolStripMenuItem.Name = "OtherLinksToolStripMenuItem"
+        OtherLinksToolStripMenuItem.Size = New Size(148, 22)
+        OtherLinksToolStripMenuItem.Text = "Other Links"
+        OptionsToolStripMenuItem.Image = My.Resources.Resources.tools_options
+        OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        OptionsToolStripMenuItem.Size = New Size(148, 22)
+        OptionsToolStripMenuItem.Text = "Options"
+        DisplayToolStripMenuItem.Name = "DisplayToolStripMenuItem"
+        DisplayToolStripMenuItem.Size = New Size(142, 22)
+        DisplayToolStripMenuItem.Text = "Display"
+        NotificationsToolStripMenuItem.Name = "NotificationsToolStripMenuItem"
+        NotificationsToolStripMenuItem.Size = New Size(142, 22)
+        NotificationsToolStripMenuItem.Text = "Notifications"
+        BookmarksToolStripMenuItem.Name = "BookmarksToolStripMenuItem"
+        BookmarksToolStripMenuItem.Size = New Size(142, 22)
+        BookmarksToolStripMenuItem.Text = "Bookmarks"
+        TimersBarToolStripMenuItem.Name = "TimersBarToolStripMenuItem"
+        TimersBarToolStripMenuItem.Size = New Size(142, 22)
+        TimersBarToolStripMenuItem.Text = "Timers Bar"
+        ForumToolStripMenuItem1.Name = "ForumToolStripMenuItem1"
+        ForumToolStripMenuItem1.Size = New Size(142, 22)
+        ForumToolStripMenuItem1.Text = "Forum"
+        UserscriptsToolStripMenuItem.Name = "UserscriptsToolStripMenuItem"
+        UserscriptsToolStripMenuItem.Size = New Size(142, 22)
+        UserscriptsToolStripMenuItem.Text = "Userscripts"
+        OthersToolStripMenuItem.Name = "OthersToolStripMenuItem"
+        OthersToolStripMenuItem.Size = New Size(142, 22)
+        OthersToolStripMenuItem.Text = "Others"
+        NotepadToolStripMenuItem.Image = My.Resources.Resources.notepad
+        NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
+        NotepadToolStripMenuItem.Size = New Size(148, 22)
+        NotepadToolStripMenuItem.Text = "Notepad"
+        InteractionsToolStripMenuItem.Image = My.Resources.Resources.interactions
+        InteractionsToolStripMenuItem.Name = "InteractionsToolStripMenuItem"
+        InteractionsToolStripMenuItem.Size = New Size(148, 22)
+        InteractionsToolStripMenuItem.Text = "Interactions"
+        NotifyIcon1.ContextMenuStrip = trayIconStrip
+        NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), Icon)
+        NotifyIcon1.Text = "PokéFarm Q Desktop App"
+        trayIconStrip.Items.AddRange(New ToolStripItem() {OpenToolStripMenuItem, ToolStripSeparator2, QuitToolStripMenuItem})
+        trayIconStrip.Name = "trayIconStrip"
+        trayIconStrip.Size = New Size(104, 54)
+        ' 
+        ' OpenToolStripMenuItem
+        ' 
+        OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        OpenToolStripMenuItem.Size = New Size(103, 22)
+        OpenToolStripMenuItem.Text = "Open"
+        ToolStripSeparator2.Name = "ToolStripSeparator2"
+        ToolStripSeparator2.Size = New Size(100, 6)
+        ' 
+        ' QuitToolStripMenuItem
+        ' 
+        QuitToolStripMenuItem.Name = "QuitToolStripMenuItem"
+        QuitToolStripMenuItem.Size = New Size(103, 22)
+        QuitToolStripMenuItem.Text = "Quit"
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.Black
+        ClientSize = New Size(1264, 703)
+        Controls.Add(webView)
+        Controls.Add(MenuStrip1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MainMenuStrip = MenuStrip1
+        Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "PokéFarm Q"
+        CType(webView, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
+        trayIconStrip.ResumeLayout(False)
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
     Friend WithEvents webView As Microsoft.Web.WebView2.WinForms.WebView2
     Friend WithEvents MenuStrip1 As MenuStrip
@@ -684,7 +521,6 @@ Partial Class Form1
     Friend WithEvents Basic_tsm As ToolStripMenuItem
     Friend WithEvents Lab_tsmi As ToolStripMenuItem
     Friend WithEvents Party_tsmi As ToolStripMenuItem
-    Friend WithEvents Farm_tsmi As ToolStripMenuItem
     Friend WithEvents Shelter_tsmi As ToolStripMenuItem
     Friend WithEvents Marketboard_tsmi As ToolStripMenuItem
     Friend WithEvents daycare_tsmi As ToolStripMenuItem
@@ -709,7 +545,6 @@ Partial Class Form1
     Friend WithEvents InteractionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FarmNews_tsmi As ToolStripMenuItem
     Friend WithEvents Inventory_tsmi As ToolStripMenuItem
-    Friend WithEvents NearbyPlaces_tsmi As ToolStripMenuItem
     Friend WithEvents OtherLinks_tsmi As ToolStripMenuItem
     Friend WithEvents Options_tsmi As ToolStripMenuItem
     Friend WithEvents optionDisplay_tsmi As ToolStripMenuItem
@@ -741,4 +576,20 @@ Partial Class Form1
     Friend WithEvents MCAForum_tsmi As ToolStripMenuItem
     Friend WithEvents SCA_tsmi As ToolStripMenuItem
     Friend WithEvents SCAForum_tsmi As ToolStripMenuItem
+    Friend WithEvents NearbyPlaces_tsm As ToolStripMenuItem
+    Friend WithEvents berry_tsmi As ToolStripMenuItem
+    Friend WithEvents fish_tsmi As ToolStripMenuItem
+    Friend WithEvents trade_tsmi As ToolStripMenuItem
+    Friend WithEvents egg_tsmi As ToolStripMenuItem
+    Friend WithEvents contest_tsmi As ToolStripMenuItem
+    Friend WithEvents dojo_tsmi As ToolStripMenuItem
+    Friend WithEvents colress_tsmi As ToolStripMenuItem
+    Friend WithEvents pGrove_tsmi As ToolStripMenuItem
+    Friend WithEvents aether_tsmi As ToolStripMenuItem
+    Friend WithEvents research_tsmi As ToolStripMenuItem
+    Friend WithEvents cele_tsmi As ToolStripMenuItem
+    Friend WithEvents Users_tmu As ToolStripMenuItem
+    Friend WithEvents myUserProfle_tsmi As ToolStripMenuItem
+    Friend WithEvents usersSep1_tsmi As ToolStripSeparator
+    Friend WithEvents userSearch_tsmi As ToolStripMenuItem
 End Class

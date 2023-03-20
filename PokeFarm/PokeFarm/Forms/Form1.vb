@@ -4,13 +4,20 @@ Imports Microsoft.Web.WebView2.Core
 Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        startup.updateCheck()
-        startup.preInit()
-        startup.menuBar(My.Settings.menuBarPos)
-        startup.postInit()
+        Try
+            startup.updateCheck()
+            startup.preInit()
+            startup.menuBar(My.Settings.menuBarPos)
+            startup.postInit()
+        Catch ex As Exception
+            eHandle.ex(ex.Message, "Startup Error")
+        End Try
     End Sub
 
     Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles webView.NavigationCompleted
+
+        ' Run Check to check if we are on pokefarm
+        pageCheck.Check()
 
         ' Solution: https://stackoverflow.com/a/27145407
         ' By Aliaksandr Hmyrak
@@ -25,9 +32,6 @@ Public Class Form1
                         }
                     }
                 })()")
-
-        ' Run Check to check if we are on pokefarm
-        pageCheck.Check()
 
         ' Display title
         Me.Text = webView.CoreWebView2.DocumentTitle
@@ -116,10 +120,6 @@ Public Class Form1
         nav.web(nav.sc("party"))
     End Sub
 
-    Private Sub Farm_tsmi_Click(sender As Object, e As EventArgs) Handles Farm_tsmi.Click
-        nav.web(nav.sc("farm"))
-    End Sub
-
     Private Sub Shelter_tsmi_Click(sender As Object, e As EventArgs) Handles Shelter_tsmi.Click
         nav.web(nav.sc("shelter"))
     End Sub
@@ -148,13 +148,14 @@ Public Class Form1
         nav.web(nav.sc("farm#tab=2"))
     End Sub
 
-    Private Sub NearbyPlaces_tsmi_Click(sender As Object, e As EventArgs) Handles NearbyPlaces_tsmi.Click
+    Private Sub NearbyPlaces_tsm_Click(sender As Object, e As EventArgs) Handles NearbyPlaces_tsm.Click
         nav.web(nav.sc("farm#tab=3"))
     End Sub
 
     Private Sub OtherLinks_tsmi_Click(sender As Object, e As EventArgs) Handles OtherLinks_tsmi.Click
         nav.web(nav.sc("farm#tab=4"))
     End Sub
+
 #Region "Options"
     Private Sub optionDisplay_tsmi_Click(sender As Object, e As EventArgs) Handles optionDisplay_tsmi.Click
         nav.web(nav.sc("farm#tab=5.1"))
@@ -224,6 +225,7 @@ Public Class Form1
     Private Sub Zophan_tsmu_Click(sender As Object, e As EventArgs) Handles Zophan_tsmu.Click
         nav.web(nav.sc("zc"))
     End Sub
+
 #End Region
 
 #End Region
@@ -253,7 +255,7 @@ Public Class Form1
 
 #End Region
 
-    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub Form1_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing
         If My.Settings.runInBackground = True Then
             e.Cancel = True
             NotifyIcon1.Visible = True

@@ -20,7 +20,7 @@
             ElseIf host = "pfq.eltafez.com" Then ' Special links
                 ' Do not do anything
 
-            ElseIf host = "" And url = "about:blank" Then ' MS Edige Pages
+            ElseIf host = "" And url = "about:blank" Then ' MS Edge Pages
                 ' Do not do anything
 
             Else
@@ -30,10 +30,13 @@
                 diagResult = MessageBox.Show("You are trying to visit a page that is not from PokéFarm. Open in Browser?" & vbCrLf & vbCrLf & "URL: " & url, "Hold it!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
                 If diagResult = DialogResult.Yes Then
-
-                    Dim NewProcess As Diagnostics.ProcessStartInfo = New Diagnostics.ProcessStartInfo(url)
-                    NewProcess.UseShellExecute = True
-                    Process.Start(NewProcess)
+                    Try
+                        Dim NewProcess As Diagnostics.ProcessStartInfo = New Diagnostics.ProcessStartInfo(url)
+                        NewProcess.UseShellExecute = True
+                        Process.Start(NewProcess)
+                    Catch ex As Exception
+                        eHandle.ex(ex.Message)
+                    End Try
 
                     nav.web("https://pokefarm.com/")
                 ElseIf diagResult = DialogResult.No Then

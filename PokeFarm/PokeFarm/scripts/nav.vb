@@ -26,6 +26,12 @@ Public Class nav
         Return output
     End Function
 
+    Public Shared Function profile(ByVal name As String)
+        Dim output As String = "https://pokefarm.com/user/" & name
+
+        Return output
+    End Function
+
 
     Public Shared Async Function InitializeCoreWebView2Async(Optional userDataFolder As String = "") As Task
 
