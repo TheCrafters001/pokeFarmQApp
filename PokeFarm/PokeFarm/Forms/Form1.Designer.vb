@@ -401,22 +401,22 @@ Partial Class Form1
         ' myUserProfle_tsmi
         ' 
         myUserProfle_tsmi.Name = "myUserProfle_tsmi"
-        myUserProfle_tsmi.Size = New Size(180, 22)
+        myUserProfle_tsmi.Size = New Size(173, 22)
         myUserProfle_tsmi.Text = "My Profile"' 
         ' usersSep1_tsmi
         ' 
         usersSep1_tsmi.Name = "usersSep1_tsmi"
-        usersSep1_tsmi.Size = New Size(177, 6)
+        usersSep1_tsmi.Size = New Size(170, 6)
         ' 
         ' userSearch_tsmi
         ' 
         userSearch_tsmi.Name = "userSearch_tsmi"
-        userSearch_tsmi.Size = New Size(180, 22)
+        userSearch_tsmi.Size = New Size(173, 22)
         userSearch_tsmi.Text = "Search for a Profile"' 
         ' pokerus_tsmi
         ' 
         pokerus_tsmi.Name = "pokerus_tsmi"
-        pokerus_tsmi.Size = New Size(180, 22)
+        pokerus_tsmi.Size = New Size(173, 22)
         pokerus_tsmi.Text = "Pokérus"' 
         ' QuickTools_tsm
         ' 
@@ -509,7 +509,7 @@ Partial Class Form1
         ' 
         MCA_tsmi.DropDownItems.AddRange(New ToolStripItem() {MCAWeb_tsmi, MCAForum_tsmi})
         MCA_tsmi.Name = "MCA_tsmi"
-        MCA_tsmi.Size = New Size(180, 22)
+        MCA_tsmi.Size = New Size(101, 22)
         MCA_tsmi.Text = "MCA"' 
         ' MCAWeb_tsmi
         ' 
@@ -525,7 +525,7 @@ Partial Class Form1
         ' 
         SCA_tsmi.DropDownItems.AddRange(New ToolStripItem() {SCAForum_tsmi})
         SCA_tsmi.Name = "SCA_tsmi"
-        SCA_tsmi.Size = New Size(180, 22)
+        SCA_tsmi.Size = New Size(101, 22)
         SCA_tsmi.Text = "SCA"' 
         ' SCAForum_tsmi
         ' 

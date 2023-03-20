@@ -42,6 +42,7 @@ Public Class Form1
 
     Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs) Handles webView.NavigationStarting
         Me.Text = "Loading..."
+        navProgress_status.Text = "Loading..."
     End Sub
 
 #Region "ToolStrip"
@@ -60,7 +61,7 @@ Public Class Form1
 
 #Region "Users"
     Private Sub userSearch_tsmi_Click(sender As Object, e As EventArgs) Handles userSearch_tsmi.Click
-        userSearch.Show()
+        nav.web(nav.sc("user"))
     End Sub
 
     Private Sub myUserProfle_tsmi_Click(sender As Object, e As EventArgs) Handles myUserProfle_tsmi.Click
