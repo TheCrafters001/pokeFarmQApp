@@ -55,6 +55,21 @@ Public Class Form1
         nav.web(nav.sc("pm"))
     End Sub
 
+#Region "Users"
+    Private Sub userSearch_tsmi_Click(sender As Object, e As EventArgs) Handles userSearch_tsmi.Click
+        userSearch.Show()
+    End Sub
+
+    Private Sub myUserProfle_tsmi_Click(sender As Object, e As EventArgs) Handles myUserProfle_tsmi.Click
+        nav.web(nav.profile(True, False))
+    End Sub
+
+    Private Sub pokerus_tsmi_Click(sender As Object, e As EventArgs) Handles pokerus_tsmi.Click
+        nav.web(nav.profile(False, True))
+    End Sub
+
+#End Region
+
 #Region "Forum"
     Private Sub VisitForumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VisitForumToolStripMenuItem.Click
         nav.web(nav.sc("forum"))
@@ -286,7 +301,6 @@ Public Class Form1
     End Sub
 
 #End Region
-
 
 #End Region
 
