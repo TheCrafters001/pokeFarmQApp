@@ -35,6 +35,9 @@ Public Class Form1
 
         ' Display title
         Me.Text = webView.CoreWebView2.DocumentTitle
+
+        ' Also show page link
+        navProgress_status.Text = webView.CoreWebView2.Source
     End Sub
 
     Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs)
