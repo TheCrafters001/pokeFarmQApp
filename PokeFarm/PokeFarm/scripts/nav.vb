@@ -33,15 +33,13 @@ Public Class nav
     ''' <param name="isPkrs">Navigate to user with pokerus</param>
     ''' <param name="name">Navigate to user, if not specified, functions like isMe.</param>
     ''' <returns></returns>
-    Public Shared Function profile(ByVal isMe As Boolean, ByVal isPkrs As Boolean, Optional ByVal name As String = "~me")
+    Public Shared Function profile(ByVal isMe As Boolean, ByVal isPkrs As Boolean)
         Dim output As String
 
         If isMe = True Then
             output = "https://pokefarm.com/user/~me"
         ElseIf isPkrs = True Then
             output = "https://pokefarm.com/user/~pkrs"
-        Else
-            output = "https://pokefarm.com/user/" & name
         End If
 
         Return output
