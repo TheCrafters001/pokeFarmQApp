@@ -308,5 +308,16 @@ Public Class Form1
 
 #End Region
 
+#Region "Status"
+
+    Private Sub navProgress_status_Click(sender As Object, e As EventArgs) Handles navProgress_status.Click
+        Clipboard.SetText(navProgress_status.Text)
+
+        MessageBox.Show("Copied URL to clipboard", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        ' show page link
+        navProgress_status.Text = webView.CoreWebView2.Source
+    End Sub
+#End Region
 
 End Class
