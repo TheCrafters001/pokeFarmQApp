@@ -5,8 +5,7 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            ' This will eventually get moved to its own class
-            navProgress_status.Text = ""
+            nav.updateStatus("")
 
             startup.updateCheck()
             startup.preInit()
@@ -40,12 +39,12 @@ Public Class Form1
         Me.Text = webView.CoreWebView2.DocumentTitle
 
         ' Also show page link
-        navProgress_status.Text = webView.CoreWebView2.Source
+        nav.updateStatus(webView.CoreWebView2.Source)
     End Sub
 
     Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs) Handles webView.NavigationStarting
         Me.Text = "Loading..."
-        navProgress_status.Text = "Loading..."
+        nav.updateStatus("Loading...")
     End Sub
 
 #Region "ToolStrip"

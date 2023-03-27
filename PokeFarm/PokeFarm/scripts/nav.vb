@@ -27,6 +27,13 @@ Public Class nav
     End Function
 
     ''' <summary>
+    ''' Updates the status bar
+    ''' </summary>
+    Public Shared Sub updateStatus(Optional ByVal status As String = "??????")
+        Form1.navProgress_status.Text = status
+    End Sub
+
+    ''' <summary>
     ''' Navigate to a profile.
     ''' </summary>
     ''' <param name="isMe">Navigate to user profile</param>

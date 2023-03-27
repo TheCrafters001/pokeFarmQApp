@@ -1,5 +1,12 @@
 ﻿Public Class pageCheck
 
+    ''' <summary>
+    ''' Checks if page is safe to show on status bar.
+    ''' </summary>
+    Public Shared Sub safePage()
+
+    End Sub
+
     Public Shared Sub Check()
 
         Dim url As String = Form1.webView.CoreWebView2.Source
@@ -14,25 +21,38 @@
             Dim host As String = uri.Host
 
             ' Check to see if the page is from PokeFarm.
-            If host = "pokefarm.com" Or host = "pokefarm.wiki" Or host = "pfq.link" Then ' Pokefarm Links
+            If host = "pokefarm.com" Or
+                host = "pokefarm.wiki" Or
+                host = "pfq.link" Then ' Pokefarm Links
                 ' Do not do anything
+
+            ElseIf host = "checkout.stripe.com" Or
+                host = "stripe.com" Then ' Checkout Links
 
             ElseIf host = "pfq.eltafez.com" Then ' Special links
                 ' Do not do anything
 
-            ElseIf host = "" And url = "about:blank" Then ' MS Edge Pages
+            ElseIf host = "" And
+                url = "about:blank" Then ' MS Edge Pages
                 ' Do not do anything
 
             Else
                 nav.web("about:blank")
 
                 Dim diagResult As DialogResult
-                diagResult = MessageBox.Show("You are trying to visit a page that is not from PokéFarm. Open in Browser?" & vbCrLf & vbCrLf & "URL: " & url, "Hold it!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+                diagResult = MessageBox.Show("You are trying to visit a page that is not from PokéFarm. Open in Browser?" &
+                                             vbCrLf & vbCrLf &
+                                             "URL: " & url,
+                                             "Hold it!", MessageBoxButtons.YesNo,
+                                             MessageBoxIcon.Warning)
 
                 If diagResult = DialogResult.Yes Then
                     Try
-                        Dim NewProcess As Diagnostics.ProcessStartInfo = New Diagnostics.ProcessStartInfo(url)
+                        Dim NewProcess As Diagnostics.ProcessStartInfo =
+                            New Diagnostics.ProcessStartInfo(url)
+
                         NewProcess.UseShellExecute = True
+
                         Process.Start(NewProcess)
                     Catch ex As Exception
                         eHandle.ex(ex.Message)
