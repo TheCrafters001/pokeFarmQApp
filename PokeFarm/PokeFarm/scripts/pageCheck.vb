@@ -97,7 +97,7 @@ Public Class pageCheck
 
                 Debug.WriteLine("Creating Trusted Domain List")
 
-                File.WriteAllLines(filePath, pokeFarmTrusted)
+                File.WriteAllLines(filePath, pokeFarmTrusted, Encoding.UTF8)
                 TrustedDomainCheck()
             End If
         Catch ex As Exception

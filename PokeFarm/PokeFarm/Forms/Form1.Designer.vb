@@ -95,6 +95,7 @@ Partial Class Form1
         SCAForum_tsmi = New ToolStripMenuItem()
         Help_tsm = New ToolStripMenuItem()
         SettingsToolStripMenuItem = New ToolStripMenuItem()
+        TrustedDomainsToolStripMenuItem = New ToolStripMenuItem()
         ToolStripSeparator1 = New ToolStripSeparator()
         Wiki_tsmi = New ToolStripMenuItem()
         About_tsmi = New ToolStripMenuItem()
@@ -119,7 +120,6 @@ Partial Class Form1
         QuitToolStripMenuItem = New ToolStripMenuItem()
         StatusStrip1 = New StatusStrip()
         navProgress_status = New ToolStripStatusLabel()
-        TrustedDomainsToolStripMenuItem = New ToolStripMenuItem()
         CType(webView, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         trayIconStrip.SuspendLayout()
@@ -615,6 +615,12 @@ Partial Class Form1
         SettingsToolStripMenuItem.Size = New Size(180, 22)
         SettingsToolStripMenuItem.Text = "Settings"
         ' 
+        ' TrustedDomainsToolStripMenuItem
+        ' 
+        TrustedDomainsToolStripMenuItem.Name = "TrustedDomainsToolStripMenuItem"
+        TrustedDomainsToolStripMenuItem.Size = New Size(180, 22)
+        TrustedDomainsToolStripMenuItem.Text = "Trusted Domains"
+        ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
@@ -768,12 +774,6 @@ Partial Class Form1
         navProgress_status.Name = "navProgress_status"
         navProgress_status.Size = New Size(71, 17)
         navProgress_status.Text = "navProgress"
-        ' 
-        ' TrustedDomainsToolStripMenuItem
-        ' 
-        TrustedDomainsToolStripMenuItem.Name = "TrustedDomainsToolStripMenuItem"
-        TrustedDomainsToolStripMenuItem.Size = New Size(180, 22)
-        TrustedDomainsToolStripMenuItem.Text = "Trusted Domains"
         ' 
         ' Form1
         ' 

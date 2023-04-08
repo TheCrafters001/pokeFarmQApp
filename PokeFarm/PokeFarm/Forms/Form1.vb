@@ -332,6 +332,10 @@ Public Class Form1
         nav.web("https://pokefarm.wiki/")
     End Sub
 
+    Private Sub TrustedDomainsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrustedDomainsToolStripMenuItem.Click
+        TrustedDomains.Show()
+    End Sub
+
 #Region "Special"
 
 #Region "MassClick"
