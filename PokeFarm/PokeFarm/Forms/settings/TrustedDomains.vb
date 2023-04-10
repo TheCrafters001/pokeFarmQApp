@@ -22,7 +22,17 @@ Public Class TrustedDomains
         If trustedDomains_lst.SelectedItem = "" Then
             MessageBox.Show("Cannot remove item: No Item Selected")
         Else
-            trustedDomains_lst.Items.Remove(trustedDomains_lst.SelectedItem)
+            If trustedDomains_lst.SelectedItem = "pokefarm.com" Or
+                trustedDomains_lst.SelectedItem = "pokefarm.wiki" Or
+                trustedDomains_lst.SelectedItem = "pokefarm.wiki" Or
+                trustedDomains_lst.SelectedItem = "about:blank" Or
+                trustedDomains_lst.SelectedItem = "checkout.stripe.com" Then
+
+                Dim diagResult As DialogResult = MessageBox.Show("One or more selected domains cannot be removed, because it is essential for this app to work.", "Hold it!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            Else
+                trustedDomains_lst.Items.Remove(trustedDomains_lst.SelectedItem)
+            End If
         End If
     End Sub
 
