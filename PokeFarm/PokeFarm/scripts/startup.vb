@@ -18,20 +18,6 @@ Public Class startup
         End If
     End Sub
 
-    Public Shared Sub menuBar(ByVal pos As Integer)
-        If pos = 0 Then
-            Form1.MenuStrip1.Dock = DockStyle.Top
-        ElseIf pos = 1 Then
-            Form1.MenuStrip1.Dock = DockStyle.Left
-        ElseIf pos = 2 Then
-            Form1.MenuStrip1.Dock = DockStyle.Right
-        ElseIf pos = 3 Then
-            Form1.MenuStrip1.Dock = DockStyle.Bottom
-        Else ' Fallback
-            Form1.MenuStrip1.Dock = DockStyle.Top
-        End If
-    End Sub
-
     Public Shared Async Sub preInit()
         'Solution https://stackoverflow.com/a/71699939
         ' by user09938

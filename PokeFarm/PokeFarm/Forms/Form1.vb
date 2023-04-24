@@ -9,7 +9,6 @@ Public Class Form1
 
             startup.updateCheck()
             startup.preInit()
-            startup.menuBar(My.Settings.menuBarPos)
             startup.postInit()
         Catch ex As Exception
             eHandle.ex(ex.Message, "Startup Error")
