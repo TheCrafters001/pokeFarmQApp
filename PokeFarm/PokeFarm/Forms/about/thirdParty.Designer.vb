@@ -22,34 +22,33 @@ Partial Class thirdParty
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(thirdParty))
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.SuspendLayout()
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox1.Location = New System.Drawing.Point(0, 0)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(527, 450)
-        Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
-        '
-        'thirdParty
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(527, 450)
-        Me.Controls.Add(Me.RichTextBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "thirdParty"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Third Party Licenses"
-        Me.ResumeLayout(False)
-
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(thirdParty))
+        RichTextBox1 = New RichTextBox()
+        SuspendLayout()
+        ' 
+        ' RichTextBox1
+        ' 
+        RichTextBox1.Dock = DockStyle.Fill
+        RichTextBox1.Location = New Point(0, 0)
+        RichTextBox1.Name = "RichTextBox1"
+        RichTextBox1.ReadOnly = True
+        RichTextBox1.Size = New Size(527, 450)
+        RichTextBox1.TabIndex = 0
+        RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        ' 
+        ' thirdParty
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(527, 450)
+        Controls.Add(RichTextBox1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "thirdParty"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Third Party Licenses"
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents RichTextBox1 As RichTextBox

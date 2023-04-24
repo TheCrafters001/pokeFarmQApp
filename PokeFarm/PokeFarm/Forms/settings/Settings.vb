@@ -33,9 +33,6 @@ Public Class Settings
 
     Private Sub ok_btn_Click(sender As Object, e As EventArgs) Handles ok_btn.Click
         Try
-            'Create MessageBox
-            Dim DiagResult As DialogResult = MessageBox.Show("If you have changed any settings, you will need to restart the application for them to apply." & vbCrLf & "Would you like to restart the application?", "Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
-
             'Save autoUpdate settings
             If disableUpdate_rad.Checked = True And enableUpdate_rad.Checked = False Then
                 My.Settings.autoUpdates = False
@@ -62,10 +59,13 @@ Public Class Settings
             My.Settings.menuBarPos = menuBarPos_cmb.SelectedIndex
             My.Settings.Save()
 
+            'Create MessageBox
+            Dim DiagResult As DialogResult = MessageBox.Show("If you have changed any settings, you will need to restart the application for them to apply." & vbCrLf & "Would you like to restart the application?", "Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+
             'Check MessageBox
             If DiagResult = DialogResult.Yes Then
                 Application.Restart()
-            ElseIf DiagResult = DialogResult.no Then
+            ElseIf DiagResult = DialogResult.No Then
                 Me.Close()
             End If
         Catch ex As Exception

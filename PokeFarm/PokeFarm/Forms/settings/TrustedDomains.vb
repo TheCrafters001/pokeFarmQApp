@@ -28,7 +28,7 @@ Public Class TrustedDomains
                 trustedDomains_lst.SelectedItem = "about:blank" Or
                 trustedDomains_lst.SelectedItem = "checkout.stripe.com" Then
 
-                Dim diagResult As DialogResult = MessageBox.Show("One or more selected domains cannot be removed, because it is essential for this app to work.", "Hold it!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Dim diagResult As DialogResult = MessageBox.Show("The selected domain cannot be removed, because it is essential for this app to work.", "Hold it!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
             Else
                 trustedDomains_lst.Items.Remove(trustedDomains_lst.SelectedItem)

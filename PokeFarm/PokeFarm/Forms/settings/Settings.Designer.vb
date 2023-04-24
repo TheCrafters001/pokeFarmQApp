@@ -22,201 +22,201 @@ Partial Class Settings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ok_btn = New System.Windows.Forms.Button()
-        Me.cancel_btn = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.updateCheck_btn = New System.Windows.Forms.Button()
-        Me.disableUpdate_rad = New System.Windows.Forms.RadioButton()
-        Me.enableUpdate_rad = New System.Windows.Forms.RadioButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.disableRunInBack_rad = New System.Windows.Forms.RadioButton()
-        Me.enableRunInBack_rad = New System.Windows.Forms.RadioButton()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.migrateFolder = New System.Windows.Forms.FolderBrowserDialog()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.menuBarPos_lbl = New System.Windows.Forms.Label()
-        Me.menuBarPos_cmb = New System.Windows.Forms.ComboBox()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'ok_btn
-        '
-        Me.ok_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ok_btn.Location = New System.Drawing.Point(284, 297)
-        Me.ok_btn.Name = "ok_btn"
-        Me.ok_btn.Size = New System.Drawing.Size(75, 23)
-        Me.ok_btn.TabIndex = 0
-        Me.ok_btn.Text = "&OK"
-        Me.ok_btn.UseVisualStyleBackColor = True
-        '
-        'cancel_btn
-        '
-        Me.cancel_btn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.cancel_btn.Location = New System.Drawing.Point(12, 297)
-        Me.cancel_btn.Name = "cancel_btn"
-        Me.cancel_btn.Size = New System.Drawing.Size(75, 23)
-        Me.cancel_btn.TabIndex = 1
-        Me.cancel_btn.Text = "&Cancel"
-        Me.cancel_btn.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.updateCheck_btn)
-        Me.GroupBox1.Controls.Add(Me.disableUpdate_rad)
-        Me.GroupBox1.Controls.Add(Me.enableUpdate_rad)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(347, 96)
-        Me.GroupBox1.TabIndex = 2
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Automatic Updates"
-        '
-        'updateCheck_btn
-        '
-        Me.updateCheck_btn.Location = New System.Drawing.Point(177, 37)
-        Me.updateCheck_btn.Name = "updateCheck_btn"
-        Me.updateCheck_btn.Size = New System.Drawing.Size(164, 23)
-        Me.updateCheck_btn.TabIndex = 3
-        Me.updateCheck_btn.Text = "Check For Updates"
-        Me.updateCheck_btn.UseVisualStyleBackColor = True
-        '
-        'disableUpdate_rad
-        '
-        Me.disableUpdate_rad.AutoSize = True
-        Me.disableUpdate_rad.Checked = True
-        Me.disableUpdate_rad.Location = New System.Drawing.Point(6, 62)
-        Me.disableUpdate_rad.Name = "disableUpdate_rad"
-        Me.disableUpdate_rad.Size = New System.Drawing.Size(168, 19)
-        Me.disableUpdate_rad.TabIndex = 2
-        Me.disableUpdate_rad.TabStop = True
-        Me.disableUpdate_rad.Text = "Disable Automatic Updates"
-        Me.disableUpdate_rad.UseVisualStyleBackColor = True
-        '
-        'enableUpdate_rad
-        '
-        Me.enableUpdate_rad.AutoSize = True
-        Me.enableUpdate_rad.Location = New System.Drawing.Point(6, 37)
-        Me.enableUpdate_rad.Name = "enableUpdate_rad"
-        Me.enableUpdate_rad.Size = New System.Drawing.Size(165, 19)
-        Me.enableUpdate_rad.TabIndex = 1
-        Me.enableUpdate_rad.Text = "Enable Automatic Updates"
-        Me.enableUpdate_rad.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 19)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(267, 15)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Do you want to check for updates Automatically?"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.disableRunInBack_rad)
-        Me.GroupBox2.Controls.Add(Me.enableRunInBack_rad)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 114)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(347, 96)
-        Me.GroupBox2.TabIndex = 4
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Minimize to System Tray"
-        '
-        'disableRunInBack_rad
-        '
-        Me.disableRunInBack_rad.AutoSize = True
-        Me.disableRunInBack_rad.Checked = True
-        Me.disableRunInBack_rad.Location = New System.Drawing.Point(6, 62)
-        Me.disableRunInBack_rad.Name = "disableRunInBack_rad"
-        Me.disableRunInBack_rad.Size = New System.Drawing.Size(79, 19)
-        Me.disableRunInBack_rad.TabIndex = 2
-        Me.disableRunInBack_rad.TabStop = True
-        Me.disableRunInBack_rad.Text = "Close App"
-        Me.disableRunInBack_rad.UseVisualStyleBackColor = True
-        '
-        'enableRunInBack_rad
-        '
-        Me.enableRunInBack_rad.AutoSize = True
-        Me.enableRunInBack_rad.Location = New System.Drawing.Point(6, 37)
-        Me.enableRunInBack_rad.Name = "enableRunInBack_rad"
-        Me.enableRunInBack_rad.Size = New System.Drawing.Size(153, 19)
-        Me.enableRunInBack_rad.TabIndex = 1
-        Me.enableRunInBack_rad.Text = "Minimize to System Tray"
-        Me.enableRunInBack_rad.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 19)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(289, 15)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Do you want to minimize the app rather than close it?"
-        '
-        'migrateFolder
-        '
-        Me.migrateFolder.Description = "You will need to migrate your data. To do this, go to where PokeFarm Q Desktop Ap" &
-    "p was installed, then look for a folder called PokeFarm.exe.WebView2"
-        Me.migrateFolder.UseDescriptionForTitle = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.menuBarPos_cmb)
-        Me.GroupBox3.Controls.Add(Me.menuBarPos_lbl)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 216)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(347, 74)
-        Me.GroupBox3.TabIndex = 5
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Menu Bar Position"
-        '
-        'menuBarPos_lbl
-        '
-        Me.menuBarPos_lbl.AutoSize = True
-        Me.menuBarPos_lbl.Location = New System.Drawing.Point(6, 19)
-        Me.menuBarPos_lbl.Name = "menuBarPos_lbl"
-        Me.menuBarPos_lbl.Size = New System.Drawing.Size(272, 15)
-        Me.menuBarPos_lbl.TabIndex = 0
-        Me.menuBarPos_lbl.Text = "Please choose a position you want your menu bar."
-        '
-        'menuBarPos_cmb
-        '
-        Me.menuBarPos_cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.menuBarPos_cmb.FormattingEnabled = True
-        Me.menuBarPos_cmb.Items.AddRange(New Object() {"Top", "Left", "Right", "Bottom"})
-        Me.menuBarPos_cmb.Location = New System.Drawing.Point(6, 37)
-        Me.menuBarPos_cmb.Name = "menuBarPos_cmb"
-        Me.menuBarPos_cmb.Size = New System.Drawing.Size(335, 23)
-        Me.menuBarPos_cmb.TabIndex = 1
-        '
-        'Settings
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(371, 332)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.cancel_btn)
-        Me.Controls.Add(Me.ok_btn)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Name = "Settings"
-        Me.ShowIcon = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Settings"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.ResumeLayout(False)
-
+        ok_btn = New Button()
+        cancel_btn = New Button()
+        GroupBox1 = New GroupBox()
+        updateCheck_btn = New Button()
+        disableUpdate_rad = New RadioButton()
+        enableUpdate_rad = New RadioButton()
+        Label1 = New Label()
+        GroupBox2 = New GroupBox()
+        disableRunInBack_rad = New RadioButton()
+        enableRunInBack_rad = New RadioButton()
+        Label2 = New Label()
+        migrateFolder = New FolderBrowserDialog()
+        GroupBox3 = New GroupBox()
+        menuBarPos_cmb = New ComboBox()
+        menuBarPos_lbl = New Label()
+        GroupBox1.SuspendLayout()
+        GroupBox2.SuspendLayout()
+        GroupBox3.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' ok_btn
+        ' 
+        ok_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        ok_btn.Location = New Point(632, 297)
+        ok_btn.Name = "ok_btn"
+        ok_btn.Size = New Size(75, 23)
+        ok_btn.TabIndex = 0
+        ok_btn.Text = "&OK"
+        ok_btn.UseVisualStyleBackColor = True
+        ' 
+        ' cancel_btn
+        ' 
+        cancel_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        cancel_btn.Location = New Point(12, 297)
+        cancel_btn.Name = "cancel_btn"
+        cancel_btn.Size = New Size(75, 23)
+        cancel_btn.TabIndex = 1
+        cancel_btn.Text = "&Cancel"
+        cancel_btn.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(updateCheck_btn)
+        GroupBox1.Controls.Add(disableUpdate_rad)
+        GroupBox1.Controls.Add(enableUpdate_rad)
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Location = New Point(12, 12)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(347, 96)
+        GroupBox1.TabIndex = 2
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Automatic Updates"
+        ' 
+        ' updateCheck_btn
+        ' 
+        updateCheck_btn.Location = New Point(177, 37)
+        updateCheck_btn.Name = "updateCheck_btn"
+        updateCheck_btn.Size = New Size(164, 23)
+        updateCheck_btn.TabIndex = 3
+        updateCheck_btn.Text = "Check For Updates"
+        updateCheck_btn.UseVisualStyleBackColor = True
+        ' 
+        ' disableUpdate_rad
+        ' 
+        disableUpdate_rad.AutoSize = True
+        disableUpdate_rad.Checked = True
+        disableUpdate_rad.Location = New Point(6, 62)
+        disableUpdate_rad.Name = "disableUpdate_rad"
+        disableUpdate_rad.Size = New Size(168, 19)
+        disableUpdate_rad.TabIndex = 2
+        disableUpdate_rad.TabStop = True
+        disableUpdate_rad.Text = "Disable Automatic Updates"
+        disableUpdate_rad.UseVisualStyleBackColor = True
+        ' 
+        ' enableUpdate_rad
+        ' 
+        enableUpdate_rad.AutoSize = True
+        enableUpdate_rad.Location = New Point(6, 37)
+        enableUpdate_rad.Name = "enableUpdate_rad"
+        enableUpdate_rad.Size = New Size(165, 19)
+        enableUpdate_rad.TabIndex = 1
+        enableUpdate_rad.Text = "Enable Automatic Updates"
+        enableUpdate_rad.UseVisualStyleBackColor = True
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(6, 19)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(267, 15)
+        Label1.TabIndex = 0
+        Label1.Text = "Do you want to check for updates Automatically?"
+        ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.Controls.Add(disableRunInBack_rad)
+        GroupBox2.Controls.Add(enableRunInBack_rad)
+        GroupBox2.Controls.Add(Label2)
+        GroupBox2.Location = New Point(12, 114)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Size = New Size(347, 96)
+        GroupBox2.TabIndex = 4
+        GroupBox2.TabStop = False
+        GroupBox2.Text = "Minimize to System Tray"
+        ' 
+        ' disableRunInBack_rad
+        ' 
+        disableRunInBack_rad.AutoSize = True
+        disableRunInBack_rad.Checked = True
+        disableRunInBack_rad.Location = New Point(6, 62)
+        disableRunInBack_rad.Name = "disableRunInBack_rad"
+        disableRunInBack_rad.Size = New Size(79, 19)
+        disableRunInBack_rad.TabIndex = 2
+        disableRunInBack_rad.TabStop = True
+        disableRunInBack_rad.Text = "Close App"
+        disableRunInBack_rad.UseVisualStyleBackColor = True
+        ' 
+        ' enableRunInBack_rad
+        ' 
+        enableRunInBack_rad.AutoSize = True
+        enableRunInBack_rad.Location = New Point(6, 37)
+        enableRunInBack_rad.Name = "enableRunInBack_rad"
+        enableRunInBack_rad.Size = New Size(153, 19)
+        enableRunInBack_rad.TabIndex = 1
+        enableRunInBack_rad.Text = "Minimize to System Tray"
+        enableRunInBack_rad.UseVisualStyleBackColor = True
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(6, 19)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(289, 15)
+        Label2.TabIndex = 0
+        Label2.Text = "Do you want to minimize the app rather than close it?"
+        ' 
+        ' migrateFolder
+        ' 
+        migrateFolder.Description = "You will need to migrate your data. To do this, go to where PokeFarm Q Desktop App was installed, then look for a folder called PokeFarm.exe.WebView2"
+        migrateFolder.UseDescriptionForTitle = True
+        ' 
+        ' GroupBox3
+        ' 
+        GroupBox3.Controls.Add(menuBarPos_cmb)
+        GroupBox3.Controls.Add(menuBarPos_lbl)
+        GroupBox3.Location = New Point(12, 216)
+        GroupBox3.Name = "GroupBox3"
+        GroupBox3.Size = New Size(347, 74)
+        GroupBox3.TabIndex = 5
+        GroupBox3.TabStop = False
+        GroupBox3.Text = "Menu Bar Position"
+        ' 
+        ' menuBarPos_cmb
+        ' 
+        menuBarPos_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+        menuBarPos_cmb.FormattingEnabled = True
+        menuBarPos_cmb.Items.AddRange(New Object() {"Top", "Left", "Right", "Bottom"})
+        menuBarPos_cmb.Location = New Point(6, 37)
+        menuBarPos_cmb.Name = "menuBarPos_cmb"
+        menuBarPos_cmb.Size = New Size(335, 23)
+        menuBarPos_cmb.TabIndex = 1
+        ' 
+        ' menuBarPos_lbl
+        ' 
+        menuBarPos_lbl.AutoSize = True
+        menuBarPos_lbl.Location = New Point(6, 19)
+        menuBarPos_lbl.Name = "menuBarPos_lbl"
+        menuBarPos_lbl.Size = New Size(272, 15)
+        menuBarPos_lbl.TabIndex = 0
+        menuBarPos_lbl.Text = "Please choose a position you want your menu bar."
+        ' 
+        ' Settings
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(719, 332)
+        Controls.Add(GroupBox3)
+        Controls.Add(GroupBox2)
+        Controls.Add(GroupBox1)
+        Controls.Add(cancel_btn)
+        Controls.Add(ok_btn)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "Settings"
+        ShowIcon = False
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Settings"
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
+        GroupBox2.ResumeLayout(False)
+        GroupBox2.PerformLayout()
+        GroupBox3.ResumeLayout(False)
+        GroupBox3.PerformLayout()
+        ResumeLayout(False)
     End Sub
 
     Friend WithEvents ok_btn As Button
