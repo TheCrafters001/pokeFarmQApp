@@ -133,27 +133,27 @@ Public Class Form1
 
 
 #Region "Basic"
-    Private Sub Lab_tsmi_Click(sender As Object, e As EventArgs) Handles Lab_tsmi.Click
+    Private Sub Lab_tsm_Click(sender As Object, e As EventArgs) Handles Lab_tsm.Click
         nav.web(nav.sc("lab"))
     End Sub
 
-    Private Sub Party_tsmi_Click(sender As Object, e As EventArgs) Handles Party_tsmi.Click
+    Private Sub Party_tsm_Click(sender As Object, e As EventArgs) Handles Party_tsm.Click
         nav.web(nav.sc("party"))
     End Sub
 
-    Private Sub Shelter_tsmi_Click(sender As Object, e As EventArgs) Handles Shelter_tsmi.Click
+    Private Sub Shelter_tsm_Click(sender As Object, e As EventArgs) Handles Shelter_tsm.Click
         nav.web(nav.sc("shelter"))
     End Sub
 
-    Private Sub Marketboard_tsmi_Click(sender As Object, e As EventArgs) Handles Marketboard_tsmi.Click
+    Private Sub Market_tsm_Click(sender As Object, e As EventArgs) Handles Market_tsm.Click
         nav.web(nav.sc("marketboard"))
     End Sub
 
-    Private Sub daycare_tsmi_Click(sender As Object, e As EventArgs) Handles daycare_tsmi.Click
+    Private Sub daycare_tsm_Click(sender As Object, e As EventArgs) Handles Daycare_tsm.Click
         nav.web(nav.sc("daycare"))
     End Sub
 
-    Private Sub Pokedex_tsmi_Click(sender As Object, e As EventArgs) Handles Pokedex_tsmi.Click
+    Private Sub Dex_tsm_Click(sender As Object, e As EventArgs) Handles Dex_tsm.Click
         nav.web(nav.sc("dex"))
     End Sub
 
