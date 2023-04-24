@@ -38,7 +38,7 @@ Public Class Form1
         Me.Text = webView.CoreWebView2.DocumentTitle
 
         ' Also show page link
-        nav.updateStatus(webView.CoreWebView2.Source)
+        ' nav.updateStatus(webView.CoreWebView2.Source)
     End Sub
 
     Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs) Handles webView.NavigationStarting
