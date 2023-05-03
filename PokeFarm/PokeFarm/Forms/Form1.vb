@@ -7,6 +7,7 @@ Public Class Form1
         Try
             ' nav.updateStatus("")
 
+
             startup.updateCheck()
             startup.preInit()
             startup.postInit()
@@ -15,7 +16,7 @@ Public Class Form1
         End Try
     End Sub
 
-    Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles webView.NavigationCompleted
+    Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs)
 
         ' Run Check to check if we are on pokefarm
         pageCheck.Check()
@@ -41,7 +42,7 @@ Public Class Form1
         ' nav.updateStatus(webView.CoreWebView2.Source)
     End Sub
 
-    Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs) Handles webView.NavigationStarting
+    Private Sub webView_NavigationStarting(sender As Object, e As CoreWebView2NavigationStartingEventArgs)
         Me.Text = "Loading..."
         ' nav.updateStatus("Loading...")
     End Sub

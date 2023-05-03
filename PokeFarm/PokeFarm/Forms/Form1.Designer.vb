@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
-        webView = New Microsoft.Web.WebView2.WinForms.WebView2()
         FarmNewsToolStripMenuItem = New ToolStripMenuItem()
         InventoryToolStripMenuItem = New ToolStripMenuItem()
         NearbyPlacesToolStripMenuItem = New ToolStripMenuItem()
@@ -44,21 +43,11 @@ Partial Class Form1
         OpenToolStripMenuItem = New ToolStripMenuItem()
         ToolStripSeparator2 = New ToolStripSeparator()
         QuitToolStripMenuItem = New ToolStripMenuItem()
-        CType(webView, ComponentModel.ISupportInitialize).BeginInit()
+        ImageList1 = New ImageList(components)
+        webView = New Microsoft.Web.WebView2.WinForms.WebView2()
         trayIconStrip.SuspendLayout()
+        CType(webView, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' webView
-        ' 
-        webView.AllowExternalDrop = True
-        webView.CreationProperties = Nothing
-        webView.DefaultBackgroundColor = Color.Black
-        webView.Dock = DockStyle.Fill
-        webView.Location = New Point(0, 0)
-        webView.Name = "webView"
-        webView.Size = New Size(1264, 703)
-        webView.TabIndex = 0
-        webView.ZoomFactor = 1R
         ' 
         ' FarmNewsToolStripMenuItem
         ' 
@@ -180,9 +169,54 @@ Partial Class Form1
         QuitToolStripMenuItem.Size = New Size(103, 22)
         QuitToolStripMenuItem.Text = "Quit"
         ' 
+        ' ImageList1
+        ' 
+        ImageList1.ColorDepth = ColorDepth.Depth8Bit
+        ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), ImageListStreamer)
+        ImageList1.TransparentColor = Color.Transparent
+        ImageList1.Images.SetKeyName(0, "albinoradar.png")
+        ImageList1.Images.SetKeyName(1, "boxboxboxbox.png")
+        ImageList1.Images.SetKeyName(2, "credits.png")
+        ImageList1.Images.SetKeyName(3, "daycare.png")
+        ImageList1.Images.SetKeyName(4, "dex.png")
+        ImageList1.Images.SetKeyName(5, "farm.png")
+        ImageList1.Images.SetKeyName(6, "farm_news.png")
+        ImageList1.Images.SetKeyName(7, "gem_normal.png")
+        ImageList1.Images.SetKeyName(8, "gold.png")
+        ImageList1.Images.SetKeyName(9, "hypermode-24.png")
+        ImageList1.Images.SetKeyName(10, "incubator.png")
+        ImageList1.Images.SetKeyName(11, "index-2.png")
+        ImageList1.Images.SetKeyName(12, "interactions.png")
+        ImageList1.Images.SetKeyName(13, "inventory.png")
+        ImageList1.Images.SetKeyName(14, "lab.png")
+        ImageList1.Images.SetKeyName(15, "links.png")
+        ImageList1.Images.SetKeyName(16, "luckyegg.png")
+        ImageList1.Images.SetKeyName(17, "notepad.png")
+        ImageList1.Images.SetKeyName(18, "places.png")
+        ImageList1.Images.SetKeyName(19, "pokeball.png")
+        ImageList1.Images.SetKeyName(20, "qmark.png")
+        ImageList1.Images.SetKeyName(21, "shelter.png")
+        ImageList1.Images.SetKeyName(22, "shinycharm.png")
+        ImageList1.Images.SetKeyName(23, "shop.png")
+        ImageList1.Images.SetKeyName(24, "tools_options.png")
+        ImageList1.Images.SetKeyName(25, "ubercharm.png")
+        ImageList1.Images.SetKeyName(26, "zophan.png")
+        ' 
+        ' webView
+        ' 
+        webView.AllowExternalDrop = True
+        webView.CreationProperties = Nothing
+        webView.DefaultBackgroundColor = Color.Black
+        webView.Dock = DockStyle.Fill
+        webView.Location = New Point(0, 0)
+        webView.Name = "webView"
+        webView.Size = New Size(1264, 703)
+        webView.TabIndex = 2
+        webView.ZoomFactor = 1.0R
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Black
         ClientSize = New Size(1264, 703)
@@ -191,11 +225,10 @@ Partial Class Form1
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "PokéFarm Q"
-        CType(webView, ComponentModel.ISupportInitialize).EndInit()
         trayIconStrip.ResumeLayout(False)
+        CType(webView, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
-    Friend WithEvents webView As Microsoft.Web.WebView2.WinForms.WebView2
     Friend WithEvents FarmNewsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InventoryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NearbyPlacesToolStripMenuItem As ToolStripMenuItem
@@ -215,4 +248,6 @@ Partial Class Form1
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents QuitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents webView As Microsoft.Web.WebView2.WinForms.WebView2
 End Class
