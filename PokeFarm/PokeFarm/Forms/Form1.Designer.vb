@@ -603,30 +603,30 @@ Partial Class Form1
         ' SettingsToolStripMenuItem
         ' 
         SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        SettingsToolStripMenuItem.Size = New Size(162, 22)
+        SettingsToolStripMenuItem.Size = New Size(180, 22)
         SettingsToolStripMenuItem.Text = "Settings"
         ' 
         ' TrustedDomainsToolStripMenuItem
         ' 
         TrustedDomainsToolStripMenuItem.Name = "TrustedDomainsToolStripMenuItem"
-        TrustedDomainsToolStripMenuItem.Size = New Size(162, 22)
+        TrustedDomainsToolStripMenuItem.Size = New Size(180, 22)
         TrustedDomainsToolStripMenuItem.Text = "Trusted Domains"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(159, 6)
+        ToolStripSeparator1.Size = New Size(177, 6)
         ' 
         ' Wiki_tsmi
         ' 
         Wiki_tsmi.Name = "Wiki_tsmi"
-        Wiki_tsmi.Size = New Size(162, 22)
+        Wiki_tsmi.Size = New Size(180, 22)
         Wiki_tsmi.Text = "Wiki"
         ' 
         ' About_tsmi
         ' 
         About_tsmi.Name = "About_tsmi"
-        About_tsmi.Size = New Size(162, 22)
+        About_tsmi.Size = New Size(180, 22)
         About_tsmi.Text = "About"
         ' 
         ' FarmNewsToolStripMenuItem
