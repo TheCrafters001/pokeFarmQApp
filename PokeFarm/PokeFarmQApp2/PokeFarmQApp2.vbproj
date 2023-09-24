@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autoupdater.NET.Official" Version="1.8.3" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1823.32" />
+    <PackageReference Include="Autoupdater.NET.Official" Version="1.8.4" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2045.28" />
   </ItemGroup>
 
   <ItemGroup>
