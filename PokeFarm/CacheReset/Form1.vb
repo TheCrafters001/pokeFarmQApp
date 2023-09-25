@@ -6,7 +6,7 @@ Public Class Form1
 
         'Check MessageBox
         If DiagResult = DialogResult.Yes Then
-            CacheClear(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name))
+            CacheClear(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\PokeFarm"))
 
             Try
                 Dim cacheReset As New ProcessStartInfo
@@ -41,5 +41,20 @@ Public Class Form1
         ' Delete Parent
         Directory.Delete(filePath)
 
+    End Sub
+
+    Private Sub cancel_btn_Click(sender As Object, e As EventArgs) Handles cancel_btn.Click
+        Try
+            Dim cacheReset As New ProcessStartInfo
+            cacheReset.FileName = ".\Pokefarm.exe"
+            cacheReset.Arguments = ""
+            cacheReset.UseShellExecute = True
+            cacheReset.WindowStyle = ProcessWindowStyle.Normal
+            Dim proc As Process = Process.Start(cacheReset)
+            Application.Exit()
+        Catch ex As Exception
+            MessageBox.Show("Couldn't launch.", "Error")
+        End Try
+        Application.Exit()
     End Sub
 End Class

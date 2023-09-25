@@ -41,16 +41,17 @@ Partial Class Form1
         ' 
         ' Label2
         ' 
-        Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label2.Location = New Point(12, 34)
         Label2.Name = "Label2"
-        Label2.Size = New Size(252, 67)
+        Label2.Size = New Size(252, 80)
         Label2.TabIndex = 1
-        Label2.Text = "Are you sure you want to reset the cache? This will wipe all your cookies and active scripts, which will log you out. Once the cache is deleted, there is no way to recover it."
+        Label2.Text = resources.GetString("Label2.Text")
         ' 
         ' resetCache_btn
         ' 
-        resetCache_btn.Location = New Point(12, 108)
+        resetCache_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        resetCache_btn.Location = New Point(12, 121)
         resetCache_btn.Name = "resetCache_btn"
         resetCache_btn.Size = New Size(84, 23)
         resetCache_btn.TabIndex = 2
@@ -59,7 +60,8 @@ Partial Class Form1
         ' 
         ' cancel_btn
         ' 
-        cancel_btn.Location = New Point(189, 108)
+        cancel_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
+        cancel_btn.Location = New Point(189, 121)
         cancel_btn.Name = "cancel_btn"
         cancel_btn.Size = New Size(75, 23)
         cancel_btn.TabIndex = 3
@@ -71,7 +73,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         CancelButton = cancel_btn
-        ClientSize = New Size(276, 143)
+        ClientSize = New Size(276, 156)
         Controls.Add(cancel_btn)
         Controls.Add(resetCache_btn)
         Controls.Add(Label2)
