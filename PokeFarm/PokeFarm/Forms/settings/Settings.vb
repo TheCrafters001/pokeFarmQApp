@@ -1,7 +1,5 @@
 ﻿Imports System.IO
 Imports AutoUpdaterDotNET
-Imports Microsoft.Web.WebView2.Core
-Imports Microsoft.Web.WebView2.WinForms
 
 Public Class Settings
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -86,4 +84,25 @@ Public Class Settings
         AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
     End Sub
 
+    Private Sub cacheReset_btn_Click(sender As Object, e As EventArgs) Handles cacheReset_btn.Click
+        Dim DiagResult As DialogResult = MessageBox.Show("To reset the cache, I need to restart the application." & vbCrLf & "Would you like to restart the application?", "Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
+
+        'Check MessageBox
+        If DiagResult = DialogResult.Yes Then
+            Try
+                Dim cacheReset As New ProcessStartInfo
+                cacheReset.FileName = ".\CacheReset.exe"
+                cacheReset.Arguments = ""
+                cacheReset.UseShellExecute = True
+                cacheReset.WindowStyle = ProcessWindowStyle.Normal
+                Dim proc As Process = Process.Start(cacheReset)
+                Application.Exit()
+            Catch ex As Exception
+                MessageBox.Show("Couldn't launch. Is it installed?", "Error")
+            End Try
+            Application.Exit()
+        ElseIf DiagResult = DialogResult.No Then
+            Me.Close()
+        End If
+    End Sub
 End Class
