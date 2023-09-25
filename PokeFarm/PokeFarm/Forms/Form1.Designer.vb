@@ -131,9 +131,9 @@ Partial Class Form1
         webView.CreationProperties = Nothing
         webView.DefaultBackgroundColor = Color.Black
         webView.Dock = DockStyle.Fill
-        webView.Location = New Point(126, 0)
+        webView.Location = New Point(120, 0)
         webView.Name = "webView"
-        webView.Size = New Size(1138, 681)
+        webView.Size = New Size(1144, 681)
         webView.TabIndex = 0
         webView.ZoomFactor = 1R
         ' 
@@ -143,7 +143,7 @@ Partial Class Form1
         MenuStrip1.Items.AddRange(New ToolStripItem() {Lab_tsm, Party_tsm, Shelter_tsm, Market_tsm, Daycare_tsm, Dex_tsm, Farm_tsm, NearbyPlaces_tsm, Currencies_tsm, Fields_tsm, Scour_tsm, Wishforge_tsm, Boxes_tsm, Summons_tsm, Users_tmu, QuickTools_tsm, Messages_tsm, Forum_tsm, Special_tsm, Help_tsm})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(126, 703)
+        MenuStrip1.Size = New Size(120, 703)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -603,30 +603,30 @@ Partial Class Form1
         ' SettingsToolStripMenuItem
         ' 
         SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        SettingsToolStripMenuItem.Size = New Size(180, 22)
+        SettingsToolStripMenuItem.Size = New Size(162, 22)
         SettingsToolStripMenuItem.Text = "Settings"
         ' 
         ' TrustedDomainsToolStripMenuItem
         ' 
         TrustedDomainsToolStripMenuItem.Name = "TrustedDomainsToolStripMenuItem"
-        TrustedDomainsToolStripMenuItem.Size = New Size(180, 22)
+        TrustedDomainsToolStripMenuItem.Size = New Size(162, 22)
         TrustedDomainsToolStripMenuItem.Text = "Trusted Domains"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(177, 6)
+        ToolStripSeparator1.Size = New Size(159, 6)
         ' 
         ' Wiki_tsmi
         ' 
         Wiki_tsmi.Name = "Wiki_tsmi"
-        Wiki_tsmi.Size = New Size(180, 22)
+        Wiki_tsmi.Size = New Size(162, 22)
         Wiki_tsmi.Text = "Wiki"
         ' 
         ' About_tsmi
         ' 
         About_tsmi.Name = "About_tsmi"
-        About_tsmi.Size = New Size(180, 22)
+        About_tsmi.Size = New Size(162, 22)
         About_tsmi.Text = "About"
         ' 
         ' FarmNewsToolStripMenuItem
@@ -752,9 +752,9 @@ Partial Class Form1
         ' StatusStrip1
         ' 
         StatusStrip1.Items.AddRange(New ToolStripItem() {navProgress_status})
-        StatusStrip1.Location = New Point(126, 681)
+        StatusStrip1.Location = New Point(120, 681)
         StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.Size = New Size(1138, 22)
+        StatusStrip1.Size = New Size(1144, 22)
         StatusStrip1.TabIndex = 2
         StatusStrip1.Text = "StatusStrip1"
         ' 

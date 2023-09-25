@@ -37,19 +37,15 @@ Partial Class Settings
         GroupBox3 = New GroupBox()
         menuBarPos_cmb = New ComboBox()
         menuBarPos_lbl = New Label()
-        cacheReset_grp = New GroupBox()
-        cacheReset_btn = New Button()
-        cacheReset_lbl = New Label()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
-        cacheReset_grp.SuspendLayout()
         SuspendLayout()
         ' 
         ' ok_btn
         ' 
         ok_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        ok_btn.Location = New Point(507, 297)
+        ok_btn.Location = New Point(287, 297)
         ok_btn.Name = "ok_btn"
         ok_btn.Size = New Size(75, 23)
         ok_btn.TabIndex = 0
@@ -197,40 +193,11 @@ Partial Class Settings
         menuBarPos_lbl.TabIndex = 0
         menuBarPos_lbl.Text = "Please choose a position you want your menu bar."
         ' 
-        ' cacheReset_grp
-        ' 
-        cacheReset_grp.Controls.Add(cacheReset_btn)
-        cacheReset_grp.Controls.Add(cacheReset_lbl)
-        cacheReset_grp.Location = New Point(365, 12)
-        cacheReset_grp.Name = "cacheReset_grp"
-        cacheReset_grp.Size = New Size(222, 96)
-        cacheReset_grp.TabIndex = 6
-        cacheReset_grp.TabStop = False
-        cacheReset_grp.Text = "Cache"
-        ' 
-        ' cacheReset_btn
-        ' 
-        cacheReset_btn.Location = New Point(6, 60)
-        cacheReset_btn.Name = "cacheReset_btn"
-        cacheReset_btn.Size = New Size(210, 23)
-        cacheReset_btn.TabIndex = 1
-        cacheReset_btn.Text = "Reset Cache"
-        cacheReset_btn.UseVisualStyleBackColor = True
-        ' 
-        ' cacheReset_lbl
-        ' 
-        cacheReset_lbl.Location = New Point(6, 19)
-        cacheReset_lbl.Name = "cacheReset_lbl"
-        cacheReset_lbl.Size = New Size(210, 38)
-        cacheReset_lbl.TabIndex = 0
-        cacheReset_lbl.Text = "Reset any cached data? This will log you out and remove any active scripts."
-        ' 
         ' Settings
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(594, 332)
-        Controls.Add(cacheReset_grp)
+        ClientSize = New Size(374, 332)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
@@ -249,7 +216,6 @@ Partial Class Settings
         GroupBox2.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
-        cacheReset_grp.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 

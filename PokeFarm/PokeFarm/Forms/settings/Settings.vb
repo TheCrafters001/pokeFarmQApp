@@ -1,5 +1,7 @@
-﻿Imports AutoUpdaterDotNET
-
+﻿Imports System.IO
+Imports AutoUpdaterDotNET
+Imports Microsoft.Web.WebView2.Core
+Imports Microsoft.Web.WebView2.WinForms
 
 Public Class Settings
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
