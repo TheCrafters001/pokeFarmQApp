@@ -101,7 +101,7 @@ Partial Class TrustedDomains
         Name = "TrustedDomains"
         ShowIcon = False
         StartPosition = FormStartPosition.CenterScreen
-        Text = "TrustedDomains"
+        Text = "Trusted Domains"
         domainControls.ResumeLayout(False)
         domainControls.PerformLayout()
         ResumeLayout(False)

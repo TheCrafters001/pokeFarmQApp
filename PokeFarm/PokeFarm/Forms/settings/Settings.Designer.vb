@@ -40,10 +40,15 @@ Partial Class Settings
         cacheReset_lbl = New Label()
         cacheReset_btn = New Button()
         cacheReset_grp = New GroupBox()
+        statusBar_grp = New GroupBox()
+        statusBar_Dis_rad = New RadioButton()
+        statusBar_Ena_rad = New RadioButton()
+        statusBar_lbl = New Label()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
         cacheReset_grp.SuspendLayout()
+        statusBar_grp.SuspendLayout()
         SuspendLayout()
         ' 
         ' ok_btn
@@ -225,11 +230,54 @@ Partial Class Settings
         cacheReset_grp.TabStop = False
         cacheReset_grp.Text = "Cache"
         ' 
+        ' statusBar_grp
+        ' 
+        statusBar_grp.Controls.Add(statusBar_Dis_rad)
+        statusBar_grp.Controls.Add(statusBar_Ena_rad)
+        statusBar_grp.Controls.Add(statusBar_lbl)
+        statusBar_grp.Location = New Point(371, 114)
+        statusBar_grp.Name = "statusBar_grp"
+        statusBar_grp.Size = New Size(216, 120)
+        statusBar_grp.TabIndex = 5
+        statusBar_grp.TabStop = False
+        statusBar_grp.Text = "Status Bar"
+        ' 
+        ' statusBar_Dis_rad
+        ' 
+        statusBar_Dis_rad.AutoSize = True
+        statusBar_Dis_rad.Location = New Point(6, 87)
+        statusBar_Dis_rad.Name = "statusBar_Dis_rad"
+        statusBar_Dis_rad.Size = New Size(70, 19)
+        statusBar_Dis_rad.TabIndex = 2
+        statusBar_Dis_rad.Text = "Disabled"
+        statusBar_Dis_rad.UseVisualStyleBackColor = True
+        ' 
+        ' statusBar_Ena_rad
+        ' 
+        statusBar_Ena_rad.AutoSize = True
+        statusBar_Ena_rad.Checked = True
+        statusBar_Ena_rad.Location = New Point(6, 62)
+        statusBar_Ena_rad.Name = "statusBar_Ena_rad"
+        statusBar_Ena_rad.Size = New Size(67, 19)
+        statusBar_Ena_rad.TabIndex = 1
+        statusBar_Ena_rad.TabStop = True
+        statusBar_Ena_rad.Text = "Enabled"
+        statusBar_Ena_rad.UseVisualStyleBackColor = True
+        ' 
+        ' statusBar_lbl
+        ' 
+        statusBar_lbl.Location = New Point(6, 19)
+        statusBar_lbl.Name = "statusBar_lbl"
+        statusBar_lbl.Size = New Size(205, 37)
+        statusBar_lbl.TabIndex = 0
+        statusBar_lbl.Text = "This controls the bar a tthe bottom of the page."
+        ' 
         ' Settings
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(594, 332)
+        Controls.Add(statusBar_grp)
         Controls.Add(cacheReset_grp)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
@@ -250,6 +298,8 @@ Partial Class Settings
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         cacheReset_grp.ResumeLayout(False)
+        statusBar_grp.ResumeLayout(False)
+        statusBar_grp.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -271,4 +321,8 @@ Partial Class Settings
     Friend WithEvents cacheReset_grp As GroupBox
     Friend WithEvents cacheReset_lbl As Label
     Friend WithEvents cacheReset_btn As Button
+    Friend WithEvents statusBar_grp As GroupBox
+    Friend WithEvents statusBar_Dis_rad As RadioButton
+    Friend WithEvents statusBar_Ena_rad As RadioButton
+    Friend WithEvents statusBar_lbl As Label
 End Class

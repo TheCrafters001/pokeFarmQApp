@@ -26,6 +26,17 @@ Public Class Settings
 
         End If
 
+        ' Check status strip settings
+        If My.Settings.statusBarStatus = False Then
+            statusBar_Dis_rad.Checked = True
+            statusBar_Ena_rad.Checked = False
+
+        ElseIf My.Settings.autoUpdates = True Then
+            statusBar_Dis_rad.Checked = False
+            statusBar_Ena_rad.Checked = True
+
+        End If
+
         ' Get MenuBar Pos
         menuBarPos_cmb.SelectedIndex = My.Settings.menuBarPos
 
@@ -58,6 +69,17 @@ Public Class Settings
             'Save menuBar settings
             My.Settings.menuBarPos = menuBarPos_cmb.SelectedIndex
             My.Settings.Save()
+
+            'Save runInBackground settings
+            If statusBar_Dis_rad.Checked = True And statusBar_Ena_rad.Checked = False Then
+                My.Settings.statusBarStatus = False
+                My.Settings.Save()
+
+            ElseIf statusBar_Dis_rad.Checked = False And statusBar_Ena_rad.Checked = True Then
+                My.Settings.statusBarStatus = True
+                My.Settings.Save()
+
+            End If
 
             'Create MessageBox
             Dim DiagResult As DialogResult = MessageBox.Show("If you have changed any settings, you will need to restart the application for them to apply." & vbCrLf & "Would you like to restart the application?", "Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)

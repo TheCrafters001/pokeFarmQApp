@@ -37,6 +37,12 @@ Public Class startup
         ' by user09938
         Debug.WriteLine("MS Edge Version: " & CoreWebView2Environment.GetAvailableBrowserVersionString())
         Await nav.InitializeCoreWebView2Async(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name))
+
+        ' Check for Status Bar Setting
+        If My.Settings.statusBarStatus = False Then
+            Form1.StatusStrip1.Dispose()
+        End If
+
     End Sub
 
     Public Shared Sub postInit()
