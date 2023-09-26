@@ -72,6 +72,8 @@ Partial Class Form1
         usersSep1_tsmi = New ToolStripSeparator()
         userSearch_tsmi = New ToolStripMenuItem()
         pokerus_tsmi = New ToolStripMenuItem()
+        usersSep2_tsmi = New ToolStripSeparator()
+        vipUsers_tsmi = New ToolStripMenuItem()
         QuickTools_tsm = New ToolStripMenuItem()
         NewsToolStripMenuItem = New ToolStripMenuItem()
         InteractionsToolStripMenuItem1 = New ToolStripMenuItem()
@@ -119,8 +121,6 @@ Partial Class Form1
         QuitToolStripMenuItem = New ToolStripMenuItem()
         StatusStrip1 = New StatusStrip()
         navProgress_status = New ToolStripStatusLabel()
-        usersSep2_tsmi = New ToolStripSeparator()
-        vipUsers_tsmi = New ToolStripMenuItem()
         CType(webView, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         trayIconStrip.SuspendLayout()
@@ -459,6 +459,17 @@ Partial Class Form1
         pokerus_tsmi.Size = New Size(180, 22)
         pokerus_tsmi.Text = "Pokérus"
         ' 
+        ' usersSep2_tsmi
+        ' 
+        usersSep2_tsmi.Name = "usersSep2_tsmi"
+        usersSep2_tsmi.Size = New Size(177, 6)
+        ' 
+        ' vipUsers_tsmi
+        ' 
+        vipUsers_tsmi.Name = "vipUsers_tsmi"
+        vipUsers_tsmi.Size = New Size(180, 22)
+        vipUsers_tsmi.Text = "VIP Users"
+        ' 
         ' QuickTools_tsm
         ' 
         QuickTools_tsm.DropDownItems.AddRange(New ToolStripItem() {NewsToolStripMenuItem, InteractionsToolStripMenuItem1, TournamentToolStripMenuItem, EggTimerToolStripMenuItem, HyperModeToolStripMenuItem, ShinyHuntingToolStripMenuItem, UberCharmToolStripMenuItem, AlbinoHuntingToolStripMenuItem, LuckyEggToolStripMenuItem})
@@ -767,17 +778,6 @@ Partial Class Form1
         navProgress_status.Name = "navProgress_status"
         navProgress_status.Size = New Size(71, 17)
         navProgress_status.Text = "navProgress"
-        ' 
-        ' usersSep2_tsmi
-        ' 
-        usersSep2_tsmi.Name = "usersSep2_tsmi"
-        usersSep2_tsmi.Size = New Size(177, 6)
-        ' 
-        ' vipUsers_tsmi
-        ' 
-        vipUsers_tsmi.Name = "vipUsers_tsmi"
-        vipUsers_tsmi.Size = New Size(180, 22)
-        vipUsers_tsmi.Text = "VIP Users"
         ' 
         ' Form1
         ' 

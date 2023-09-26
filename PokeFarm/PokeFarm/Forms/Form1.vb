@@ -74,6 +74,10 @@ Public Class Form1
         nav.web(nav.profile(False, True))
     End Sub
 
+    Private Sub vipUsers_tsmi_Click(sender As Object, e As EventArgs) Handles vipUsers_tsmi.Click
+        vipUsers.Show()
+    End Sub
+
 #End Region
 
 #Region "Forum"

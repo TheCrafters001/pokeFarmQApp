@@ -105,4 +105,22 @@ Public Class pageCheck
         End Try
     End Sub
 
+    Public Shared Sub VIPUsersCheck()
+        Try
+
+            Dim filePath As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\vip-list.txt")
+
+            If File.Exists(filePath) = True Then
+                Debug.WriteLine("VIP Users List Exists")
+            Else
+                Dim pokeFarmVIPs() As String = {"Niet"}
+
+                Debug.WriteLine("Creating VIP Users List")
+
+                File.WriteAllLines(filePath, pokeFarmVIPs, Encoding.UTF8)
+            End If
+        Catch ex As Exception
+            eHandle.ex(ex.Message, "VIP List Error")
+        End Try
+    End Sub
 End Class
