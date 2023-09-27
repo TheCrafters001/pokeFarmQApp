@@ -34,7 +34,8 @@ Partial Class ErrorForm
         Label1.Name = "Label1"
         Label1.Size = New Size(316, 15)
         Label1.TabIndex = 0
-        Label1.Text = "WOAH! Easy there! There was a bug! The full error is below!"' 
+        Label1.Text = "WOAH! Easy there! There was a bug! The full error is below!"
+        ' 
         ' RichTextBox1
         ' 
         RichTextBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
@@ -43,7 +44,8 @@ Partial Class ErrorForm
         RichTextBox1.ReadOnly = True
         RichTextBox1.Size = New Size(586, 395)
         RichTextBox1.TabIndex = 1
-        RichTextBox1.Text = ""' 
+        RichTextBox1.Text = ""
+        ' 
         ' Button1
         ' 
         Button1.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right

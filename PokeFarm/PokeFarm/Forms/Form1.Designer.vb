@@ -58,13 +58,13 @@ Partial Class Form1
         aether_tsmi = New ToolStripMenuItem()
         research_tsmi = New ToolStripMenuItem()
         cele_tsmi = New ToolStripMenuItem()
+        Wishforge_tsm = New ToolStripMenuItem()
+        Fields_tsm = New ToolStripMenuItem()
+        Scour_tsm = New ToolStripMenuItem()
         Currencies_tsm = New ToolStripMenuItem()
         Credits_tsmu = New ToolStripMenuItem()
         Gold_tsmu = New ToolStripMenuItem()
         Zophan_tsmu = New ToolStripMenuItem()
-        Fields_tsm = New ToolStripMenuItem()
-        Scour_tsm = New ToolStripMenuItem()
-        Wishforge_tsm = New ToolStripMenuItem()
         Boxes_tsm = New ToolStripMenuItem()
         Summons_tsm = New ToolStripMenuItem()
         Users_tmu = New ToolStripMenuItem()
@@ -133,19 +133,19 @@ Partial Class Form1
         webView.CreationProperties = Nothing
         webView.DefaultBackgroundColor = Color.Black
         webView.Dock = DockStyle.Fill
-        webView.Location = New Point(126, 0)
+        webView.Location = New Point(120, 0)
         webView.Name = "webView"
-        webView.Size = New Size(1138, 681)
+        webView.Size = New Size(1144, 681)
         webView.TabIndex = 0
         webView.ZoomFactor = 1R
         ' 
         ' MenuStrip1
         ' 
         MenuStrip1.Dock = DockStyle.Left
-        MenuStrip1.Items.AddRange(New ToolStripItem() {Lab_tsm, Party_tsm, Shelter_tsm, Market_tsm, Daycare_tsm, Dex_tsm, Farm_tsm, NearbyPlaces_tsm, Currencies_tsm, Fields_tsm, Scour_tsm, Wishforge_tsm, Boxes_tsm, Summons_tsm, Users_tmu, QuickTools_tsm, Messages_tsm, Forum_tsm, Special_tsm, Help_tsm})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {Lab_tsm, Party_tsm, Shelter_tsm, Market_tsm, Daycare_tsm, Dex_tsm, Farm_tsm, NearbyPlaces_tsm, Wishforge_tsm, Fields_tsm, Scour_tsm, Currencies_tsm, Boxes_tsm, Summons_tsm, Users_tmu, QuickTools_tsm, Messages_tsm, Forum_tsm, Special_tsm, Help_tsm})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(126, 703)
+        MenuStrip1.Size = New Size(120, 703)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -153,42 +153,42 @@ Partial Class Form1
         ' 
         Lab_tsm.Image = My.Resources.Resources.lab
         Lab_tsm.Name = "Lab_tsm"
-        Lab_tsm.Size = New Size(113, 20)
+        Lab_tsm.Size = New Size(107, 20)
         Lab_tsm.Text = "Lab"
         ' 
         ' Party_tsm
         ' 
         Party_tsm.Image = My.Resources.Resources.pokeball
         Party_tsm.Name = "Party_tsm"
-        Party_tsm.Size = New Size(113, 20)
+        Party_tsm.Size = New Size(107, 20)
         Party_tsm.Text = "Party"
         ' 
         ' Shelter_tsm
         ' 
         Shelter_tsm.Image = My.Resources.Resources.shelter
         Shelter_tsm.Name = "Shelter_tsm"
-        Shelter_tsm.Size = New Size(113, 20)
+        Shelter_tsm.Size = New Size(107, 20)
         Shelter_tsm.Text = "Shelter"
         ' 
         ' Market_tsm
         ' 
         Market_tsm.Image = My.Resources.Resources.shop
         Market_tsm.Name = "Market_tsm"
-        Market_tsm.Size = New Size(113, 20)
+        Market_tsm.Size = New Size(107, 20)
         Market_tsm.Text = "Market"
         ' 
         ' Daycare_tsm
         ' 
         Daycare_tsm.Image = My.Resources.Resources.daycare
         Daycare_tsm.Name = "Daycare_tsm"
-        Daycare_tsm.Size = New Size(113, 20)
+        Daycare_tsm.Size = New Size(107, 20)
         Daycare_tsm.Text = "Daycare"
         ' 
         ' Dex_tsm
         ' 
         Dex_tsm.Image = My.Resources.Resources.dex
         Dex_tsm.Name = "Dex_tsm"
-        Dex_tsm.Size = New Size(113, 20)
+        Dex_tsm.Size = New Size(107, 20)
         Dex_tsm.Text = "Pokédex"
         ' 
         ' Farm_tsm
@@ -196,7 +196,7 @@ Partial Class Form1
         Farm_tsm.DropDownItems.AddRange(New ToolStripItem() {FarmNews_tsmi, Inventory_tsmi, OtherLinks_tsmi, Options_tsmi, Notepad_tsmi, Interactions_tsmi})
         Farm_tsm.Image = My.Resources.Resources.farm
         Farm_tsm.Name = "Farm_tsm"
-        Farm_tsm.Size = New Size(113, 20)
+        Farm_tsm.Size = New Size(107, 20)
         Farm_tsm.Text = "Farm"
         ' 
         ' FarmNews_tsmi
@@ -296,7 +296,7 @@ Partial Class Form1
         NearbyPlaces_tsm.DropDownItems.AddRange(New ToolStripItem() {berry_tsmi, fish_tsmi, trade_tsmi, egg_tsmi, contest_tsmi, dojo_tsmi, colress_tsmi, pGrove_tsmi, aether_tsmi, research_tsmi, cele_tsmi})
         NearbyPlaces_tsm.Image = My.Resources.Resources.places
         NearbyPlaces_tsm.Name = "NearbyPlaces_tsm"
-        NearbyPlaces_tsm.Size = New Size(113, 20)
+        NearbyPlaces_tsm.Size = New Size(107, 20)
         NearbyPlaces_tsm.Text = "Nearby Places"
         ' 
         ' berry_tsmi
@@ -365,12 +365,33 @@ Partial Class Form1
         cele_tsmi.Size = New Size(191, 22)
         cele_tsmi.Text = "Cele's Centre"
         ' 
+        ' Wishforge_tsm
+        ' 
+        Wishforge_tsm.Image = My.Resources.Resources.gem_normal
+        Wishforge_tsm.Name = "Wishforge_tsm"
+        Wishforge_tsm.Size = New Size(107, 20)
+        Wishforge_tsm.Text = "Wishforge"
+        ' 
+        ' Fields_tsm
+        ' 
+        Fields_tsm.Image = My.Resources.Resources.places
+        Fields_tsm.Name = "Fields_tsm"
+        Fields_tsm.Size = New Size(107, 20)
+        Fields_tsm.Text = "Fields"
+        ' 
+        ' Scour_tsm
+        ' 
+        Scour_tsm.Image = My.Resources.Resources.places
+        Scour_tsm.Name = "Scour_tsm"
+        Scour_tsm.Size = New Size(107, 20)
+        Scour_tsm.Text = "Scour Missions"
+        ' 
         ' Currencies_tsm
         ' 
         Currencies_tsm.DropDownItems.AddRange(New ToolStripItem() {Credits_tsmu, Gold_tsmu, Zophan_tsmu})
         Currencies_tsm.Image = My.Resources.Resources.gold
         Currencies_tsm.Name = "Currencies_tsm"
-        Currencies_tsm.Size = New Size(113, 20)
+        Currencies_tsm.Size = New Size(107, 20)
         Currencies_tsm.Text = "Currencies"
         ' 
         ' Credits_tsmu
@@ -394,87 +415,72 @@ Partial Class Form1
         Zophan_tsmu.Size = New Size(166, 22)
         Zophan_tsmu.Text = "Zophan Canisters"
         ' 
-        ' Fields_tsm
-        ' 
-        Fields_tsm.Image = My.Resources.Resources.places
-        Fields_tsm.Name = "Fields_tsm"
-        Fields_tsm.Size = New Size(113, 20)
-        Fields_tsm.Text = "Fields"
-        ' 
-        ' Scour_tsm
-        ' 
-        Scour_tsm.Image = My.Resources.Resources.places
-        Scour_tsm.Name = "Scour_tsm"
-        Scour_tsm.Size = New Size(113, 20)
-        Scour_tsm.Text = "Scour Missions"
-        ' 
-        ' Wishforge_tsm
-        ' 
-        Wishforge_tsm.Image = My.Resources.Resources.gem_normal
-        Wishforge_tsm.Name = "Wishforge_tsm"
-        Wishforge_tsm.Size = New Size(113, 20)
-        Wishforge_tsm.Text = "Wishforge"
-        ' 
         ' Boxes_tsm
         ' 
         Boxes_tsm.Image = My.Resources.Resources.boxboxboxbox
         Boxes_tsm.Name = "Boxes_tsm"
-        Boxes_tsm.Size = New Size(113, 20)
+        Boxes_tsm.Size = New Size(107, 20)
         Boxes_tsm.Text = "Treasure Boxes"
         ' 
         ' Summons_tsm
         ' 
         Summons_tsm.Image = My.Resources.Resources.links
         Summons_tsm.Name = "Summons_tsm"
-        Summons_tsm.Size = New Size(113, 20)
+        Summons_tsm.Size = New Size(107, 20)
         Summons_tsm.Text = "Summons"
         ' 
         ' Users_tmu
         ' 
         Users_tmu.DropDownItems.AddRange(New ToolStripItem() {myUserProfle_tsmi, usersSep1_tsmi, userSearch_tsmi, pokerus_tsmi, usersSep2_tsmi, vipUsers_tsmi})
+        Users_tmu.Image = My.Resources.Resources.unknown_trainer
         Users_tmu.Name = "Users_tmu"
-        Users_tmu.Size = New Size(113, 19)
+        Users_tmu.Size = New Size(107, 20)
         Users_tmu.Text = "Users"
         ' 
         ' myUserProfle_tsmi
         ' 
+        myUserProfle_tsmi.Image = My.Resources.Resources.unknown_trainer
         myUserProfle_tsmi.Name = "myUserProfle_tsmi"
-        myUserProfle_tsmi.Size = New Size(180, 22)
+        myUserProfle_tsmi.Size = New Size(173, 22)
         myUserProfle_tsmi.Text = "My Profile"
         ' 
         ' usersSep1_tsmi
         ' 
         usersSep1_tsmi.Name = "usersSep1_tsmi"
-        usersSep1_tsmi.Size = New Size(177, 6)
+        usersSep1_tsmi.Size = New Size(170, 6)
         ' 
         ' userSearch_tsmi
         ' 
+        userSearch_tsmi.Image = My.Resources.Resources.unknown_trainer
         userSearch_tsmi.Name = "userSearch_tsmi"
-        userSearch_tsmi.Size = New Size(180, 22)
+        userSearch_tsmi.Size = New Size(173, 22)
         userSearch_tsmi.Text = "Search for a Profile"
         ' 
         ' pokerus_tsmi
         ' 
+        pokerus_tsmi.Image = My.Resources.Resources.unknown_trainer
         pokerus_tsmi.Name = "pokerus_tsmi"
-        pokerus_tsmi.Size = New Size(180, 22)
+        pokerus_tsmi.Size = New Size(173, 22)
         pokerus_tsmi.Text = "Pokérus"
         ' 
         ' usersSep2_tsmi
         ' 
         usersSep2_tsmi.Name = "usersSep2_tsmi"
-        usersSep2_tsmi.Size = New Size(177, 6)
+        usersSep2_tsmi.Size = New Size(170, 6)
         ' 
         ' vipUsers_tsmi
         ' 
+        vipUsers_tsmi.Image = My.Resources.Resources.unknown_trainer
         vipUsers_tsmi.Name = "vipUsers_tsmi"
-        vipUsers_tsmi.Size = New Size(180, 22)
+        vipUsers_tsmi.Size = New Size(173, 22)
         vipUsers_tsmi.Text = "VIP Users"
         ' 
         ' QuickTools_tsm
         ' 
         QuickTools_tsm.DropDownItems.AddRange(New ToolStripItem() {NewsToolStripMenuItem, InteractionsToolStripMenuItem1, TournamentToolStripMenuItem, EggTimerToolStripMenuItem, HyperModeToolStripMenuItem, ShinyHuntingToolStripMenuItem, UberCharmToolStripMenuItem, AlbinoHuntingToolStripMenuItem, LuckyEggToolStripMenuItem})
+        QuickTools_tsm.Image = My.Resources.Resources.farm_news
         QuickTools_tsm.Name = "QuickTools_tsm"
-        QuickTools_tsm.Size = New Size(113, 19)
+        QuickTools_tsm.Size = New Size(107, 20)
         QuickTools_tsm.Text = "Quick Menu"
         ' 
         ' NewsToolStripMenuItem
@@ -542,15 +548,16 @@ Partial Class Form1
         ' 
         ' Messages_tsm
         ' 
+        Messages_tsm.Image = My.Resources.Resources.notepad
         Messages_tsm.Name = "Messages_tsm"
-        Messages_tsm.Size = New Size(113, 19)
+        Messages_tsm.Size = New Size(107, 20)
         Messages_tsm.Text = "Messages"
         ' 
         ' Forum_tsm
         ' 
         Forum_tsm.DropDownItems.AddRange(New ToolStripItem() {VisitForumToolStripMenuItem, ForumSubscriptionsToolStripMenuItem})
         Forum_tsm.Name = "Forum_tsm"
-        Forum_tsm.Size = New Size(113, 19)
+        Forum_tsm.Size = New Size(107, 19)
         Forum_tsm.Text = "Forum"
         ' 
         ' VisitForumToolStripMenuItem
@@ -569,7 +576,7 @@ Partial Class Form1
         ' 
         Special_tsm.DropDownItems.AddRange(New ToolStripItem() {MCA_tsmi, SCA_tsmi})
         Special_tsm.Name = "Special_tsm"
-        Special_tsm.Size = New Size(113, 19)
+        Special_tsm.Size = New Size(107, 19)
         Special_tsm.Text = "Special"
         ' 
         ' MCA_tsmi
@@ -610,7 +617,7 @@ Partial Class Form1
         Help_tsm.Image = My.Resources.Resources.qmark
         Help_tsm.Name = "Help_tsm"
         Help_tsm.RightToLeft = RightToLeft.No
-        Help_tsm.Size = New Size(113, 20)
+        Help_tsm.Size = New Size(107, 20)
         Help_tsm.Text = "Help"
         ' 
         ' SettingsToolStripMenuItem
@@ -765,9 +772,9 @@ Partial Class Form1
         ' StatusStrip1
         ' 
         StatusStrip1.Items.AddRange(New ToolStripItem() {navProgress_status})
-        StatusStrip1.Location = New Point(126, 681)
+        StatusStrip1.Location = New Point(120, 681)
         StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.Size = New Size(1138, 22)
+        StatusStrip1.Size = New Size(1144, 22)
         StatusStrip1.TabIndex = 2
         StatusStrip1.Text = "StatusStrip1"
         ' 
@@ -783,7 +790,6 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.Black
         ClientSize = New Size(1264, 703)
         Controls.Add(webView)
         Controls.Add(StatusStrip1)
