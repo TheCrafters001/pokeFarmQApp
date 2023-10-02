@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports System.Text
+Imports PFQDALog
 
 Public Class TrustedDomains
     Private Sub TrustedDomains_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -11,6 +12,7 @@ Public Class TrustedDomains
 
         For Each i As String In domains
             trustedDomains_lst.Items.Add(i)
+            Log.CreateLog("Trusted Domain: " & i)
         Next
     End Sub
 
@@ -31,6 +33,7 @@ Public Class TrustedDomains
                 Dim diagResult As DialogResult = MessageBox.Show("The selected domain cannot be removed, because it is essential for this app to work.", "Hold it!", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
             Else
+                Log.CreateLog("Trusted Domain Removed: " & trustedDomains_lst.SelectedItem)
                 trustedDomains_lst.Items.Remove(trustedDomains_lst.SelectedItem)
             End If
         End If

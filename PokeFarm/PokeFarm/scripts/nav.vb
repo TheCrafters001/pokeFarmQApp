@@ -1,6 +1,7 @@
 ﻿
 Imports System.IO
 Imports Microsoft.Web.WebView2.Core
+Imports PFQDALog
 ''' <summary>
 ''' Navigation Class
 ''' </summary>
@@ -41,7 +42,7 @@ Public Class nav
     ''' <param name="name">Navigate to user, if not specified, functions like isMe.</param>
     ''' <returns></returns>
     Public Shared Function profile(ByVal isMe As Boolean, ByVal isPkrs As Boolean)
-        Dim output As String
+        Dim output As String = ""
 
         If isMe = True Then
             output = "https://pokefarm.com/user/~me"
@@ -71,6 +72,11 @@ Public Class nav
         'create WebView2 Environment using the installed or specified WebView2 Runtime version.
         'cwv2Environment = Await CoreWebView2Environment.CreateAsync("C:\Program Files (x86)\Microsoft\Edge Dev\Application\1.0.1054.31", userDataFolder, options)
         cwv2Environment = Await CoreWebView2Environment.CreateAsync(Nothing, userDataFolder, options)
+
+#If DEBUG = True Then
+        DebugLog.CreateLog("User Data Path: " & userDataFolder)
+        DebugLog.CreateLog("WebView2 Env: " & cwv2Environment.ToString)
+#End If
 
         'initialize
         Await Form1.webView.EnsureCoreWebView2Async(cwv2Environment)

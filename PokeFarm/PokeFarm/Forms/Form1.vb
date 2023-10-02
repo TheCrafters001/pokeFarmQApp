@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports Microsoft.Web.WebView2.Core
+Imports PFQDALog
 
 Public Class Form1
 
@@ -7,8 +8,8 @@ Public Class Form1
         Try
             nav.updateStatus("")
 
-            startup.updateCheck()
             startup.preInit()
+            startup.updateCheck()
             startup.menuBar(My.Settings.menuBarPos)
             startup.postInit()
         Catch ex As Exception
@@ -17,6 +18,8 @@ Public Class Form1
     End Sub
 
     Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles webView.NavigationCompleted
+
+        Log.CreateLog("Changed page to: " & webView.Source.ToString)
 
         ' Run Check to check if we are on pokefarm
         pageCheck.Check()
@@ -34,6 +37,10 @@ Public Class Form1
                         }
                     }
                 })()")
+
+#If DEBUG = True Then
+        DebugLog.CreateLog("Ran Link null script.")
+#End If
 
         ' Display title
         Me.Text = webView.CoreWebView2.DocumentTitle
@@ -370,5 +377,32 @@ Public Class Form1
         navProgress_status.Text = webView.CoreWebView2.Source
     End Sub
 #End Region
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        ' Run Check to check if we are on pokefarm
+        pageCheck.Check()
+
+        ' Solution: https://stackoverflow.com/a/27145407
+        ' By Aliaksandr Hmyrak
+        webView.CoreWebView2.ExecuteScriptAsync("(function()
+                {
+                    var hyperlinks = document.getElementsByTagName('a');
+                    for(var i = 0; i < hyperlinks.length; i++)
+                    {
+                        if(hyperlinks[i].getAttribute('target') != null)
+                        {
+                            hyperlinks[i].setAttribute('target', '_self');
+                        }
+                    }
+                })()")
+
+        ' Display title
+        Me.Text = webView.CoreWebView2.DocumentTitle
+
+        ' Also show page link
+        nav.updateStatus(webView.CoreWebView2.Source)
+
+    End Sub
 
 End Class

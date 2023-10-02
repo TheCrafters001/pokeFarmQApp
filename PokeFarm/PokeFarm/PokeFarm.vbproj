@@ -1,4 +1,5 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -34,6 +35,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CacheReset\CacheReset.vbproj" />
+    <ProjectReference Include="..\PFQDALog\PFQDALog.vbproj" />
   </ItemGroup>
 
   <ItemGroup>

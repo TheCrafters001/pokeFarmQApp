@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports AutoUpdaterDotNET
 Imports Microsoft.Web.WebView2.Core
+Imports PFQDALog
 
 Public Class startup
 
@@ -10,6 +11,7 @@ Public Class startup
     Public Shared Sub updateCheck()
         'This will only run if updates are enabled
         If My.Settings.autoUpdates = True Then
+            Log.CreateLog("Checking for Updates.")
             AutoUpdater.ReportErrors = False
             AutoUpdater.LetUserSelectRemindLater = True
             AutoUpdater.Synchronous = True
@@ -30,18 +32,26 @@ Public Class startup
         Else ' Fallback
             Form1.MenuStrip1.Dock = DockStyle.Top
         End If
+        Log.CreateLog("Set MenuStrip Location: " & Form1.MenuStrip1.Dock)
     End Sub
 
     Public Shared Async Sub preInit()
+
+        Log.StartNew()
+
         'Solution https://stackoverflow.com/a/71699939
         ' by user09938
-        Debug.WriteLine("MS Edge Version: " & CoreWebView2Environment.GetAvailableBrowserVersionString())
+        Log.CreateLog("MS Edge Version: " & CoreWebView2Environment.GetAvailableBrowserVersionString())
         Await nav.InitializeCoreWebView2Async(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name))
+
+        Log.CreateLog("Set WebView2 Location: " & Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\", System.Reflection.Assembly.GetExecutingAssembly().GetName().Name))
 
         ' Check for Status Bar Setting
         If My.Settings.statusBarStatus = False Then
             Form1.StatusStrip1.Dispose()
         End If
+
+        Log.CreateLog("PFQDA Version: " & Application.ProductVersion)
 
     End Sub
 

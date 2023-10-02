@@ -121,6 +121,7 @@ Partial Class Form1
         QuitToolStripMenuItem = New ToolStripMenuItem()
         StatusStrip1 = New StatusStrip()
         navProgress_status = New ToolStripStatusLabel()
+        Timer1 = New Timer(components)
         CType(webView, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         trayIconStrip.SuspendLayout()
@@ -786,6 +787,10 @@ Partial Class Form1
         navProgress_status.Size = New Size(71, 17)
         navProgress_status.Text = "navProgress"
         ' 
+        ' Timer1
+        ' 
+        Timer1.Interval = 3000
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -905,4 +910,5 @@ Partial Class Form1
     Friend WithEvents Dex_tsm As ToolStripMenuItem
     Friend WithEvents usersSep2_tsmi As ToolStripSeparator
     Friend WithEvents vipUsers_tsmi As ToolStripMenuItem
+    Friend WithEvents Timer1 As Timer
 End Class

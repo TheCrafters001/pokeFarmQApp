@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports AutoUpdaterDotNET
+Imports PFQDALog
 
 Public Class Settings
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -39,6 +40,11 @@ Public Class Settings
 
         ' Get MenuBar Pos
         menuBarPos_cmb.SelectedIndex = My.Settings.menuBarPos
+
+        Log.CreateLog("Auto Updates: " & My.Settings.autoUpdates)
+        Log.CreateLog("Run in Background: " & My.Settings.runInBackground)
+        Log.CreateLog("Status Strip: " & My.Settings.statusBarStatus)
+        Log.CreateLog("Menu Bar: " & My.Settings.menuBarPos)
 
     End Sub
 
@@ -81,6 +87,14 @@ Public Class Settings
 
             End If
 
+            Log.CreateLog("=======================")
+            Log.CreateLog("== Settings Updated. ==")
+            Log.CreateLog("Auto Updates: " & My.Settings.autoUpdates)
+            Log.CreateLog("Run in Background: " & My.Settings.runInBackground)
+            Log.CreateLog("Status Strip: " & My.Settings.statusBarStatus)
+            Log.CreateLog("Menu Bar: " & My.Settings.menuBarPos)
+            Log.CreateLog("=======================")
+
             'Create MessageBox
             Dim DiagResult As DialogResult = MessageBox.Show("If you have changed any settings, you will need to restart the application for them to apply." & vbCrLf & "Would you like to restart the application?", "Settings", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1)
 
@@ -91,6 +105,7 @@ Public Class Settings
                 Me.Close()
             End If
         Catch ex As Exception
+            ErrorLog.CreateLog(ex.Message)
             MessageBox.Show("There was an error trying to save your settings." & vbCrLf & ex.Message)
         End Try
     End Sub
@@ -100,6 +115,7 @@ Public Class Settings
     End Sub
 
     Private Sub updateCheck_btn_Click(sender As Object, e As EventArgs) Handles updateCheck_btn.Click
+        Log.CreateLog("Checking for Updates.")
         AutoUpdater.ReportErrors = True
         AutoUpdater.LetUserSelectRemindLater = False
         AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Temp\pokefarm\"
@@ -118,9 +134,11 @@ Public Class Settings
                 cacheReset.UseShellExecute = True
                 cacheReset.WindowStyle = ProcessWindowStyle.Normal
                 Dim proc As Process = Process.Start(cacheReset)
+                Log.CreateLog("==== Cache Reset Process Started ====")
                 Application.Exit()
             Catch ex As Exception
                 MessageBox.Show("Couldn't launch. Is it installed?", "Error")
+                ErrorLog.CreateLog(ex.Message)
             End Try
             Application.Exit()
         ElseIf DiagResult = DialogResult.No Then
