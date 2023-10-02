@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "PokéFarm Q Desktop App"
-#define MyAppVersion "1.7.1"
+#define MyAppVersion "1.7.2"
 #define MyAppPublisher "TheCrafters001"
 #define MyAppExeName "PokeFarm.exe"
 
@@ -80,6 +80,7 @@ Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.runtimeconfig.
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.deps.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.dll.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PFQDALog.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.deps.json"; DestDir: "{app}"; Flags: ignoreversion
@@ -112,3 +113,18 @@ Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\th\AutoUpdater.NET.reso
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\tr\AutoUpdater.NET.resources.dll"; DestDir: "{app}\tr"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\zh\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\zh-TW\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh-TW"; Flags: ignoreversion
+
+[Code]
+procedure CurUninstallStepChanged (CurUninstallStep: TUninstallStep);
+ var
+     mres : integer;
+ begin
+    case CurUninstallStep of                   
+      usPostUninstall:
+        begin
+          mres := MsgBox('Do you want to remove the cache? This will not delete your Trusted Domains or VIP Users.', mbConfirmation, MB_YESNO or MB_DEFBUTTON2)
+          if mres = IDYES then
+            DelTree(ExpandConstant('{userappdata}\TheCrafters001\PFQDA\PokeFarm'), True, True, True);
+       end;
+   end;
+end;
