@@ -4,7 +4,7 @@ Imports System.Text
 
 Public Class Log
 
-    Private Shared LogFile As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\logs\" & Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-Log.txt")
+    Private Shared LogFile As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\logs\" & Date.Now.Year & "-" & Date.Now.Month & "-" & Date.Now.Day & "-Log.txt")
     Private Shared LogFolder As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\logs\")
 
     Public Shared Sub StartNew()
