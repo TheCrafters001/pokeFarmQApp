@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "PokéFarm Q Desktop App"
-#define MyAppVersion "1.7.2"
+#define MyAppVersion "1.7.3"
 #define MyAppPublisher "TheCrafters001"
 #define MyAppExeName "PokeFarm.exe"
 
@@ -71,27 +71,40 @@ Name: "{app}\sk"
 Name: "{app}\sv"
 Name: "{app}\th"
 Name: "{app}\tr"
+Name: "{app}\WebView2"
+Name: "{app}\WebView2\EBWebView"
+Name: "{app}\WebView2\EBWebView\x64"
+Name: "{app}\WebView2\EBWebView\x86"
+Name: "{app}\WebView2\edge_feedback"
+Name: "{app}\WebView2\Extensions"
+Name: "{app}\WebView2\Locales"
+Name: "{app}\WebView2\MEIPreload"
+Name: "{app}\WebView2\Notifications"
+Name: "{app}\WebView2\PdfPreview"
+Name: "{app}\WebView2\Trust Protection Lists"
+Name: "{app}\WebView2\Trust Protection Lists\Mu"
+Name: "{app}\WebView2\Trust Protection Lists\Sigma"
+Name: "{app}\WebView2\WidevineCdm"
+Name: "{app}\WebView2\WidevineCdm\_platform_specific"
+Name: "{app}\WebView2\WidevineCdm\_platform_specific\win_x64"
 Name: "{app}\zh"
 Name: "{app}\zh-TW"
 
 [Files]
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.deps.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.dll.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PFQDALog.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.deps.json"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PokeFarm.deps.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\AutoUpdater.NET.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.deps.json"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\CacheReset.runtimeconfig.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Core.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x86\native"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x64\native"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-arm64\native"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\PFQDALog.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\ar\AutoUpdater.NET.resources.dll"; DestDir: "{app}\ar"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\cs\AutoUpdater.NET.resources.dll"; DestDir: "{app}\cs"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\da\AutoUpdater.NET.resources.dll"; DestDir: "{app}\da"; Flags: ignoreversion
@@ -107,10 +120,183 @@ Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\pl\AutoUpdater.NET.reso
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\pt\AutoUpdater.NET.resources.dll"; DestDir: "{app}\pt"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\pt-BR\AutoUpdater.NET.resources.dll"; DestDir: "{app}\pt-BR"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\ru\AutoUpdater.NET.resources.dll"; DestDir: "{app}\ru"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-arm64\native"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x64\native"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x86\native"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\sk\AutoUpdater.NET.resources.dll"; DestDir: "{app}\sk"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\sv\AutoUpdater.NET.resources.dll"; DestDir: "{app}\sv"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\th\AutoUpdater.NET.resources.dll"; DestDir: "{app}\th"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\tr\AutoUpdater.NET.resources.dll"; DestDir: "{app}\tr"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\120.0.2210.61.manifest"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\augloop_client.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\concrt140.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\d3dcompiler_47.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\delegatedWebFeatures.sccd"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\dual_engine_adapter_x64.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\dwritemin.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\dxcompiler.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\dxil.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Edge.dat"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\EdgeWebView.dat"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\eventlog_provider.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\ffmpeg.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\icudtl.dat"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\learning_tools.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\libEGL.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\libGLESv2.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\microsoft_shell_integration.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\mip_core.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\mip_protection_sdk.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\mojo_core.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedge.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedge.dll.sig"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedgewebview2.exe"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedgewebview2.exe.sig"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedge_100_percent.pak"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedge_200_percent.pak"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedge_elf.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msedge_wer.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\mspdf.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msvcp140.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\msvcp140_codecvt_ids.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\notification_helper.exe"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\oneauth.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\oneds.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\onnxruntime.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\onramp.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\prefs_enclave_x64.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\resources.pak"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\show_third_party_software_licenses.bat"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\telclient.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\v8_context_snapshot.bin"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\vccorlib140.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\vcruntime140.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\vcruntime140_1.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\vk_swiftshader.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\vk_swiftshader_icd.json"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\vulkan-1.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\wdag.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\webview2_integration.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\wns_push_client.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\EBWebView\x64\EmbeddedBrowserWebView.dll"; DestDir: "{app}\WebView2\EBWebView\x64"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\EBWebView\x86\EmbeddedBrowserWebView.dll"; DestDir: "{app}\WebView2\EBWebView\x86"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\edge_feedback\camera_mf_trace.wprp"; DestDir: "{app}\WebView2\edge_feedback"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\edge_feedback\mf_trace.wprp"; DestDir: "{app}\WebView2\edge_feedback"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Extensions\external_extensions.json"; DestDir: "{app}\WebView2\Extensions"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\af.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\am.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ar.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\as.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\az.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\bg.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\bn-IN.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\bs.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ca-Es-VALENCIA.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ca.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\cs.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\cy.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\da.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\de.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\el.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\en-GB.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\en-US.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\es-419.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\es.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\et.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\eu.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\fa.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\fi.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\fil.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\fr-CA.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\fr.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ga.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\gd.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\gl.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\gu.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\he.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\hi.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\hr.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\hu.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\id.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\is.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\it.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ja.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ka.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\kk.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\km.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\kn.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ko.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\kok.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\lb.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\lo.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\lt.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\lv.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\mi.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\mk.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ml.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\mr.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ms.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\mt.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\nb.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ne.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\nl.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\nn.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\or.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\pa.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\pl.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\pt-BR.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\pt-PT.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\qu.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ro.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ru.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sk.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sl.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sq.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sr-Cyrl-BA.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sr-Latn-RS.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sr.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\sv.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ta.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\te.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\th.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\tr.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\tt.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ug.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\uk.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\ur.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\vi.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\zh-CN.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Locales\zh-TW.pak"; DestDir: "{app}\WebView2\Locales"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\MEIPreload\manifest.json"; DestDir: "{app}\WebView2\MEIPreload"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\MEIPreload\preloaded_data.pb"; DestDir: "{app}\WebView2\MEIPreload"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Notifications\SoftLandingAssetDark.gif"; DestDir: "{app}\WebView2\Notifications"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Notifications\SoftLandingAssetLight.gif"; DestDir: "{app}\WebView2\Notifications"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\PdfPreview\PdfPreviewHandler.dll"; DestDir: "{app}\WebView2\PdfPreview"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\manifest.json"; DestDir: "{app}\WebView2\Trust Protection Lists"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Advertising"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Analytics"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\CompatExceptions"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Content"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Cryptomining"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Entities"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Fingerprinting"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\LICENSE"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Other"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\Social"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Mu\TransparentAdvertisers"; DestDir: "{app}\WebView2\Trust Protection Lists\Mu"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Advertising"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Analytics"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Content"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Cryptomining"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Entities"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Fingerprinting"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\LICENSE"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Other"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Social"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\Trust Protection Lists\Sigma\Staging"; DestDir: "{app}\WebView2\Trust Protection Lists\Sigma"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\WidevineCdm\manifest.json"; DestDir: "{app}\WebView2\WidevineCdm"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll"; DestDir: "{app}\WebView2\WidevineCdm\_platform_specific\win_x64"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll.sig"; DestDir: "{app}\WebView2\WidevineCdm\_platform_specific\win_x64"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\zh\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net6.0-windows\zh-TW\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh-TW"; Flags: ignoreversion
 
