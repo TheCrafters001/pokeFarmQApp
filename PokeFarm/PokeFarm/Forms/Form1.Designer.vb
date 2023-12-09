@@ -23,8 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
-        webView = New Microsoft.Web.WebView2.WinForms.WebView2()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         MenuStrip1 = New MenuStrip()
         Lab_tsm = New ToolStripMenuItem()
         Party_tsm = New ToolStripMenuItem()
@@ -122,23 +121,12 @@ Partial Class Form1
         StatusStrip1 = New StatusStrip()
         navProgress_status = New ToolStripStatusLabel()
         Timer1 = New Timer(components)
-        CType(webView, ComponentModel.ISupportInitialize).BeginInit()
+        webView = New Microsoft.Web.WebView2.WinForms.WebView2()
         MenuStrip1.SuspendLayout()
         trayIconStrip.SuspendLayout()
         StatusStrip1.SuspendLayout()
+        CType(webView, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' webView
-        ' 
-        webView.AllowExternalDrop = True
-        webView.CreationProperties = Nothing
-        webView.DefaultBackgroundColor = Color.Black
-        webView.Dock = DockStyle.Fill
-        webView.Location = New Point(126, 0)
-        webView.Name = "webView"
-        webView.Size = New Size(1138, 681)
-        webView.TabIndex = 0
-        webView.ZoomFactor = 1R
         ' 
         ' MenuStrip1
         ' 
@@ -204,21 +192,21 @@ Partial Class Form1
         ' 
         FarmNews_tsmi.Image = My.Resources.Resources.farm_news
         FarmNews_tsmi.Name = "FarmNews_tsmi"
-        FarmNews_tsmi.Size = New Size(180, 22)
+        FarmNews_tsmi.Size = New Size(136, 22)
         FarmNews_tsmi.Text = "Farm News"
         ' 
         ' Inventory_tsmi
         ' 
         Inventory_tsmi.Image = My.Resources.Resources.inventory
         Inventory_tsmi.Name = "Inventory_tsmi"
-        Inventory_tsmi.Size = New Size(180, 22)
+        Inventory_tsmi.Size = New Size(136, 22)
         Inventory_tsmi.Text = "Inventory"
         ' 
         ' OtherLinks_tsmi
         ' 
         OtherLinks_tsmi.Image = My.Resources.Resources.links
         OtherLinks_tsmi.Name = "OtherLinks_tsmi"
-        OtherLinks_tsmi.Size = New Size(180, 22)
+        OtherLinks_tsmi.Size = New Size(136, 22)
         OtherLinks_tsmi.Text = "Other Links"
         ' 
         ' Options_tsmi
@@ -226,7 +214,7 @@ Partial Class Form1
         Options_tsmi.DropDownItems.AddRange(New ToolStripItem() {optionDisplay_tsmi, optionNotif_tsmi, optionBookmar_tsmi, optionTimer_tsmi, optionFroum_tsmi, optionUserScri_tsmi, optionOthers_tsmi})
         Options_tsmi.Image = My.Resources.Resources.tools_options
         Options_tsmi.Name = "Options_tsmi"
-        Options_tsmi.Size = New Size(180, 22)
+        Options_tsmi.Size = New Size(136, 22)
         Options_tsmi.Text = "Options"
         ' 
         ' optionDisplay_tsmi
@@ -282,14 +270,14 @@ Partial Class Form1
         ' 
         Notepad_tsmi.Image = My.Resources.Resources.notepad
         Notepad_tsmi.Name = "Notepad_tsmi"
-        Notepad_tsmi.Size = New Size(180, 22)
+        Notepad_tsmi.Size = New Size(136, 22)
         Notepad_tsmi.Text = "Notepad"
         ' 
         ' Interactions_tsmi
         ' 
         Interactions_tsmi.Image = My.Resources.Resources.interactions
         Interactions_tsmi.Name = "Interactions_tsmi"
-        Interactions_tsmi.Size = New Size(180, 22)
+        Interactions_tsmi.Size = New Size(136, 22)
         Interactions_tsmi.Text = "Interactions"
         ' 
         ' NearbyPlaces_tsm
@@ -442,38 +430,38 @@ Partial Class Form1
         ' 
         myUserProfle_tsmi.Image = My.Resources.Resources.unknown_trainer
         myUserProfle_tsmi.Name = "myUserProfle_tsmi"
-        myUserProfle_tsmi.Size = New Size(180, 22)
+        myUserProfle_tsmi.Size = New Size(173, 22)
         myUserProfle_tsmi.Text = "My Profile"
         ' 
         ' usersSep1_tsmi
         ' 
         usersSep1_tsmi.Name = "usersSep1_tsmi"
-        usersSep1_tsmi.Size = New Size(177, 6)
+        usersSep1_tsmi.Size = New Size(170, 6)
         ' 
         ' userSearch_tsmi
         ' 
         userSearch_tsmi.Image = My.Resources.Resources.unknown_trainer
         userSearch_tsmi.Name = "userSearch_tsmi"
-        userSearch_tsmi.Size = New Size(180, 22)
+        userSearch_tsmi.Size = New Size(173, 22)
         userSearch_tsmi.Text = "Search for a Profile"
         ' 
         ' pokerus_tsmi
         ' 
         pokerus_tsmi.Image = My.Resources.Resources.unknown_trainer
         pokerus_tsmi.Name = "pokerus_tsmi"
-        pokerus_tsmi.Size = New Size(180, 22)
+        pokerus_tsmi.Size = New Size(173, 22)
         pokerus_tsmi.Text = "Pokérus"
         ' 
         ' usersSep2_tsmi
         ' 
         usersSep2_tsmi.Name = "usersSep2_tsmi"
-        usersSep2_tsmi.Size = New Size(177, 6)
+        usersSep2_tsmi.Size = New Size(170, 6)
         ' 
         ' vipUsers_tsmi
         ' 
         vipUsers_tsmi.Image = My.Resources.Resources.unknown_trainer
         vipUsers_tsmi.Name = "vipUsers_tsmi"
-        vipUsers_tsmi.Size = New Size(180, 22)
+        vipUsers_tsmi.Size = New Size(173, 22)
         vipUsers_tsmi.Text = "VIP Users"
         ' 
         ' QuickTools_tsm
@@ -791,6 +779,18 @@ Partial Class Form1
         ' 
         Timer1.Interval = 3000
         ' 
+        ' webView
+        ' 
+        webView.AllowExternalDrop = True
+        webView.CreationProperties = Nothing
+        webView.DefaultBackgroundColor = Color.White
+        webView.Dock = DockStyle.Fill
+        webView.Location = New Point(126, 0)
+        webView.Name = "webView"
+        webView.Size = New Size(1138, 681)
+        webView.TabIndex = 3
+        webView.ZoomFactor = 1R
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -804,16 +804,15 @@ Partial Class Form1
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
         Text = "PokéFarm Q"
-        CType(webView, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
         trayIconStrip.ResumeLayout(False)
         StatusStrip1.ResumeLayout(False)
         StatusStrip1.PerformLayout()
+        CType(webView, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-    Friend WithEvents webView As Microsoft.Web.WebView2.WinForms.WebView2
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents Help_tsm As ToolStripMenuItem
     Friend WithEvents About_tsmi As ToolStripMenuItem
@@ -911,4 +910,5 @@ Partial Class Form1
     Friend WithEvents usersSep2_tsmi As ToolStripSeparator
     Friend WithEvents vipUsers_tsmi As ToolStripMenuItem
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents webView As Microsoft.Web.WebView2.WinForms.WebView2
 End Class

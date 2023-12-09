@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autoupdater.NET.Official" Version="1.8.4" />
-    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2045.28" />
+    <PackageReference Include="WebView2.Runtime.X64" Version="120.0.2210.61" />
   </ItemGroup>
 
   <ItemGroup>
