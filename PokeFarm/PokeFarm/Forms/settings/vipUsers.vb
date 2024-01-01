@@ -70,7 +70,12 @@ Public Class vipUsers
         Dim DiaResult As DialogResult = SaveFileDialog1.ShowDialog()
 
         If DiaResult = DialogResult.OK Then
-            File.Copy(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\vip-list.txt"), SaveFileDialog1.FileName)
+            Try
+                File.Copy(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\vip-list.txt"), SaveFileDialog1.FileName)
+                MessageBox.Show("Export Successful!", "Export List", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Catch ex As Exception
+                MessageBox.Show("There was a problem exporting your VIP List!" & vbCrLf & vbCrLf & ex.Message)
+            End Try
         End If
 
     End Sub
@@ -84,9 +89,16 @@ Public Class vipUsers
             ' Because we are importing, make sure you ask for overwrite,
             ' as I do not actually read the file, just copies it.
             ' This may get changed later.
-            Dim overwriteWarning As DialogResult = MessageBox.Show("Are you sure you want to import the list? It will overwrite your existing list.", "Import List", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2)
+            Dim overwriteWarning As DialogResult = MessageBox.Show("Are you sure you want to import the list? It will overwrite your existing list.", "Import List", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
             If overwriteWarning = DialogResult.Yes Then
-                File.Copy(OpenFileDialog1.FileName, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\vip-list.txt"), True)
+                Try
+                    File.Copy(OpenFileDialog1.FileName, Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\vip-list.txt"), True)
+                    MessageBox.Show("Import Successful!", "Import List", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Me.Close()
+                Catch ex As Exception
+                    MessageBox.Show("There was a problem importing your VIP List!" & vbCrLf & vbCrLf & ex.Message)
+                End Try
+
             End If
         End If
     End Sub
