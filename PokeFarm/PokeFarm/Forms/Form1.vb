@@ -240,25 +240,6 @@ Public Class Form1
         nav.web(nav.sc("summons"))
     End Sub
 
-#Region "Currency"
-    Private Sub Boxes_tsm_Click(sender As Object, e As EventArgs) Handles Boxes_tsm.Click
-        nav.web(nav.sc("boxes"))
-    End Sub
-
-    Private Sub Credits_tsmu_Click(sender As Object, e As EventArgs) Handles Credits_tsmu.Click
-        nav.web(nav.sc("cr"))
-    End Sub
-
-    Private Sub Gold_tsmu_Click(sender As Object, e As EventArgs) Handles Gold_tsmu.Click
-        nav.web(nav.sc("gp"))
-    End Sub
-
-    Private Sub Zophan_tsmu_Click(sender As Object, e As EventArgs) Handles Zophan_tsmu.Click
-        nav.web(nav.sc("zc"))
-    End Sub
-
-#End Region
-
 #End Region
 
 #Region "Nearby Places"
