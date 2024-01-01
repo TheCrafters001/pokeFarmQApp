@@ -23,6 +23,8 @@ Partial Class vipUsers
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         domainControls = New GroupBox()
+        importList_btn = New Button()
+        exportList_btn = New Button()
         vipUserSaveList_btn = New Button()
         vipUserQuickClick_btn = New Button()
         removeSelectedUser_btn = New Button()
@@ -30,11 +32,15 @@ Partial Class vipUsers
         addUser_btn = New Button()
         vipUsers_lst = New ListBox()
         vipUser_lbl = New Label()
+        SaveFileDialog1 = New SaveFileDialog()
+        OpenFileDialog1 = New OpenFileDialog()
         domainControls.SuspendLayout()
         SuspendLayout()
         ' 
         ' domainControls
         ' 
+        domainControls.Controls.Add(importList_btn)
+        domainControls.Controls.Add(exportList_btn)
         domainControls.Controls.Add(vipUserSaveList_btn)
         domainControls.Controls.Add(vipUserQuickClick_btn)
         domainControls.Controls.Add(removeSelectedUser_btn)
@@ -42,10 +48,28 @@ Partial Class vipUsers
         domainControls.Controls.Add(addUser_btn)
         domainControls.Location = New Point(12, 217)
         domainControls.Name = "domainControls"
-        domainControls.Size = New Size(318, 81)
+        domainControls.Size = New Size(318, 109)
         domainControls.TabIndex = 3
         domainControls.TabStop = False
         domainControls.Text = "VIP Users Control"
+        ' 
+        ' importList_btn
+        ' 
+        importList_btn.Location = New Point(162, 80)
+        importList_btn.Name = "importList_btn"
+        importList_btn.Size = New Size(150, 23)
+        importList_btn.TabIndex = 7
+        importList_btn.Text = "Import List"
+        importList_btn.UseVisualStyleBackColor = True
+        ' 
+        ' exportList_btn
+        ' 
+        exportList_btn.Location = New Point(6, 80)
+        exportList_btn.Name = "exportList_btn"
+        exportList_btn.Size = New Size(150, 23)
+        exportList_btn.TabIndex = 6
+        exportList_btn.Text = "Export List"
+        exportList_btn.UseVisualStyleBackColor = True
         ' 
         ' vipUserSaveList_btn
         ' 
@@ -102,17 +126,27 @@ Partial Class vipUsers
         ' 
         ' vipUser_lbl
         ' 
-        vipUser_lbl.Location = New Point(12, 301)
+        vipUser_lbl.Location = New Point(12, 329)
         vipUser_lbl.Name = "vipUser_lbl"
         vipUser_lbl.Size = New Size(318, 47)
         vipUser_lbl.TabIndex = 4
         vipUser_lbl.Text = "Click the 'Quick Click' option in order to open everyone's party at once. You can only add 50 users due to a limitation of PokéFarm. This does not pull your VIP list on the site."
         ' 
+        ' SaveFileDialog1
+        ' 
+        SaveFileDialog1.FileName = "vip-list.txt"
+        SaveFileDialog1.Title = "Export VIP List"
+        ' 
+        ' OpenFileDialog1
+        ' 
+        OpenFileDialog1.FileName = "vip-list.txt"
+        OpenFileDialog1.Title = "Import VIP List"
+        ' 
         ' vipUsers
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(342, 357)
+        ClientSize = New Size(342, 383)
         Controls.Add(vipUser_lbl)
         Controls.Add(domainControls)
         Controls.Add(vipUsers_lst)
@@ -134,4 +168,8 @@ Partial Class vipUsers
     Friend WithEvents vipUserQuickClick_btn As Button
     Friend WithEvents vipUser_lbl As Label
     Friend WithEvents vipUserSaveList_btn As Button
+    Friend WithEvents importList_btn As Button
+    Friend WithEvents exportList_btn As Button
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
