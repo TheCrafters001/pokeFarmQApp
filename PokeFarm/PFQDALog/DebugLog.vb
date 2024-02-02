@@ -4,7 +4,7 @@ Imports System.Text
 Public Class DebugLog
 
 
-    Private Shared LogFile As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\logs\" & Date.Now.Day & "-" & Date.Now.Month & "-" & Date.Now.Year & "-Log.txt")
+    Private Shared LogFile As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\TheCrafters001\PFQDA\logs\debug\" & Date.Now.Year & "-" & Date.Now.Month & "-" & Date.Now.Day & "-Log.txt")
 
     Public Shared Sub CreateLog(ByVal Text As String)
 
