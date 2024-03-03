@@ -130,7 +130,7 @@ Partial Class Form1
         MenuStrip1.Items.AddRange(New ToolStripItem() {Lab_tsm, Party_tsm, Shelter_tsm, Market_tsm, Daycare_tsm, Dex_tsm, Farm_tsm, NearbyPlaces_tsm, Wishforge_tsm, Fields_tsm, Scour_tsm, Boxes_tsm, Summons_tsm, Users_tmu, QuickTools_tsm, Messages_tsm, Forum_tsm, Special_tsm, Help_tsm})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
-        MenuStrip1.Size = New Size(120, 703)
+        MenuStrip1.Size = New Size(126, 703)
         MenuStrip1.TabIndex = 1
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -188,21 +188,21 @@ Partial Class Form1
         ' 
         FarmNews_tsmi.Image = My.Resources.Resources.farm_news
         FarmNews_tsmi.Name = "FarmNews_tsmi"
-        FarmNews_tsmi.Size = New Size(180, 22)
+        FarmNews_tsmi.Size = New Size(136, 22)
         FarmNews_tsmi.Text = "Farm News"
         ' 
         ' Inventory_tsmi
         ' 
         Inventory_tsmi.Image = My.Resources.Resources.inventory
         Inventory_tsmi.Name = "Inventory_tsmi"
-        Inventory_tsmi.Size = New Size(180, 22)
+        Inventory_tsmi.Size = New Size(136, 22)
         Inventory_tsmi.Text = "Inventory"
         ' 
         ' OtherLinks_tsmi
         ' 
         OtherLinks_tsmi.Image = My.Resources.Resources.links
         OtherLinks_tsmi.Name = "OtherLinks_tsmi"
-        OtherLinks_tsmi.Size = New Size(180, 22)
+        OtherLinks_tsmi.Size = New Size(136, 22)
         OtherLinks_tsmi.Text = "Other Links"
         ' 
         ' Options_tsmi
@@ -210,7 +210,7 @@ Partial Class Form1
         Options_tsmi.DropDownItems.AddRange(New ToolStripItem() {optionDisplay_tsmi, optionNotif_tsmi, optionBookmar_tsmi, optionTimer_tsmi, optionFroum_tsmi, optionUserScri_tsmi, optionOthers_tsmi})
         Options_tsmi.Image = My.Resources.Resources.tools_options
         Options_tsmi.Name = "Options_tsmi"
-        Options_tsmi.Size = New Size(180, 22)
+        Options_tsmi.Size = New Size(136, 22)
         Options_tsmi.Text = "Options"
         ' 
         ' optionDisplay_tsmi
@@ -266,14 +266,14 @@ Partial Class Form1
         ' 
         Notepad_tsmi.Image = My.Resources.Resources.notepad
         Notepad_tsmi.Name = "Notepad_tsmi"
-        Notepad_tsmi.Size = New Size(180, 22)
+        Notepad_tsmi.Size = New Size(136, 22)
         Notepad_tsmi.Text = "Notepad"
         ' 
         ' Interactions_tsmi
         ' 
         Interactions_tsmi.Image = My.Resources.Resources.interactions
         Interactions_tsmi.Name = "Interactions_tsmi"
-        Interactions_tsmi.Size = New Size(180, 22)
+        Interactions_tsmi.Size = New Size(136, 22)
         Interactions_tsmi.Text = "Interactions"
         ' 
         ' NearbyPlaces_tsm
@@ -728,9 +728,9 @@ Partial Class Form1
         ' StatusStrip1
         ' 
         StatusStrip1.Items.AddRange(New ToolStripItem() {navProgress_status})
-        StatusStrip1.Location = New Point(120, 681)
+        StatusStrip1.Location = New Point(126, 681)
         StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.Size = New Size(1144, 22)
+        StatusStrip1.Size = New Size(1138, 22)
         StatusStrip1.TabIndex = 2
         StatusStrip1.Text = "StatusStrip1"
         ' 
@@ -752,9 +752,9 @@ Partial Class Form1
         webView.CreationProperties = Nothing
         webView.DefaultBackgroundColor = Color.White
         webView.Dock = DockStyle.Fill
-        webView.Location = New Point(120, 0)
+        webView.Location = New Point(126, 0)
         webView.Name = "webView"
-        webView.Size = New Size(1144, 681)
+        webView.Size = New Size(1138, 681)
         webView.TabIndex = 3
         webView.ZoomFactor = 1R
         ' 

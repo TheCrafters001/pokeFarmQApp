@@ -71,6 +71,10 @@ Public Class Form1
         nav.web(nav.sc("pm"))
     End Sub
 
+    Private Sub Boxes_tsm_Click(sender As Object, e As EventArgs) Handles Boxes_tsm.Click
+        nav.web(nav.sc("boxes"))
+    End Sub
+
 #Region "Users"
     Private Sub userSearch_tsmi_Click(sender As Object, e As EventArgs) Handles userSearch_tsmi.Click
         nav.web(nav.sc("user"))
