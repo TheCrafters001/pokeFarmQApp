@@ -41,10 +41,14 @@ Public Class Settings
         ' Get MenuBar Pos
         menuBarPos_cmb.SelectedIndex = My.Settings.menuBarPos
 
+        ' Check Branch
+        updateBranch_cmb.SelectedIndex = My.Settings.UpdateBranch
+
         Log.CreateLog("Auto Updates: " & My.Settings.autoUpdates)
         Log.CreateLog("Run in Background: " & My.Settings.runInBackground)
         Log.CreateLog("Status Strip: " & My.Settings.statusBarStatus)
         Log.CreateLog("Menu Bar: " & My.Settings.menuBarPos)
+        Log.CreateLog("Update Branch: " & My.Settings.UpdateBranch)
 
     End Sub
 
@@ -87,12 +91,16 @@ Public Class Settings
 
             End If
 
+            ' Save Update Branch Settings
+            My.Settings.UpdateBranch = updateBranch_cmb.SelectedIndex
+
             Log.CreateLog("=======================")
-            Log.CreateLog("== Settings Updated. ==")
+            Log.CreateLog("== Settings Updated ===")
             Log.CreateLog("Auto Updates: " & My.Settings.autoUpdates)
             Log.CreateLog("Run in Background: " & My.Settings.runInBackground)
             Log.CreateLog("Status Strip: " & My.Settings.statusBarStatus)
             Log.CreateLog("Menu Bar: " & My.Settings.menuBarPos)
+            Log.CreateLog("Update Branch: " & My.Settings.UpdateBranch)
             Log.CreateLog("=======================")
 
             'Create MessageBox

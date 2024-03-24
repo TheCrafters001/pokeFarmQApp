@@ -11,12 +11,18 @@ Public Class startup
     Public Shared Sub updateCheck()
         'This will only run if updates are enabled
         If My.Settings.autoUpdates = True Then
-            Log.CreateLog("Checking for Updates.")
-            AutoUpdater.ReportErrors = False
-            AutoUpdater.LetUserSelectRemindLater = True
-            AutoUpdater.Synchronous = True
-            AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\pokefarm\"
-            AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
+            Select Case My.Settings.UpdateBranch
+                Case 0
+                    Log.CreateLog("Checking for Updates.")
+                    AutoUpdater.ReportErrors = False
+                    AutoUpdater.LetUserSelectRemindLater = True
+                    AutoUpdater.Synchronous = True
+                    AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\pokefarm\"
+                    AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
+                Case 1
+
+            End Select
+
         End If
     End Sub
 
