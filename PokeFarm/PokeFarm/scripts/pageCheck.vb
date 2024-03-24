@@ -55,6 +55,10 @@ Public Class pageCheck
                 ' Do Nothing.
 
             ElseIf isAlreadyTrusted = False Then
+
+                'Force Timer1 to stop working to stop constant popups.
+                Form1.Timer1.Stop()
+
                 nav.web("about:blank")
 
                 Dim diagResult As DialogResult
@@ -75,6 +79,9 @@ Public Class pageCheck
                     Catch ex As Exception
                         eHandle.ex(ex.Message)
                     End Try
+
+                    ' Start Form1 Timer again
+                    Form1.Timer1.Start()
 
                     nav.web("https://pokefarm.com/")
                 ElseIf diagResult = DialogResult.No Then

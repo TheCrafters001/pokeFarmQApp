@@ -22,6 +22,9 @@ Public Class Form1
 
     Private Sub webView_NavigationCompleted(sender As Object, e As CoreWebView2NavigationCompletedEventArgs) Handles webView.NavigationCompleted
 
+        'Start Timer if stopped
+        Timer1.Start()
+
         Log.CreateLog("Changed page to: " & webView.Source.ToString)
 
         ' Run Check to check if we are on pokefarm
@@ -367,6 +370,8 @@ Public Class Form1
 #End Region
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        Debug.WriteLine("Triggered Timer Tick")
 
         ' Run Check to check if we are on pokefarm
         pageCheck.Check()
