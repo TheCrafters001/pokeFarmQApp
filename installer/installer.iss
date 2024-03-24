@@ -72,7 +72,10 @@ Name: "{app}\sk"
 Name: "{app}\sv"
 Name: "{app}\th"
 Name: "{app}\tr"
+Name: "{app}\zh"
+Name: "{app}\zh-TW"
 Name: "{app}\WebView2"
+Name: "{app}\WebView2\copilot_provider_msix"
 Name: "{app}\WebView2\EBWebView"
 Name: "{app}\WebView2\EBWebView\x64"
 Name: "{app}\WebView2\EBWebView\x86"
@@ -88,8 +91,6 @@ Name: "{app}\WebView2\Trust Protection Lists\Sigma"
 Name: "{app}\WebView2\WidevineCdm"
 Name: "{app}\WebView2\WidevineCdm\_platform_specific"
 Name: "{app}\WebView2\WidevineCdm\_platform_specific\win_x64"
-Name: "{app}\zh"
-Name: "{app}\zh-TW"
 
 [Files]
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\PokeFarm.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -123,20 +124,24 @@ Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\pl\AutoUpda
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\pt\AutoUpdater.NET.resources.dll"; DestDir: "{app}\pt"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\pt-BR\AutoUpdater.NET.resources.dll"; DestDir: "{app}\pt-BR"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\ru\AutoUpdater.NET.resources.dll"; DestDir: "{app}\ru"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\runtimes\win-arm64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-arm64\native"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\runtimes\win-x64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x64\native"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\runtimes\win-x86\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x86\native"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\sk\AutoUpdater.NET.resources.dll"; DestDir: "{app}\sk"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\sv\AutoUpdater.NET.resources.dll"; DestDir: "{app}\sv"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\th\AutoUpdater.NET.resources.dll"; DestDir: "{app}\th"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\tr\AutoUpdater.NET.resources.dll"; DestDir: "{app}\tr"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\zh\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\zh-TW\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh-TW"; Flags: ignoreversion
+
+
+;WebView2
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\runtimes\win-arm64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-arm64\native"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\runtimes\win-x64\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x64\native"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\runtimes\win-x86\native\WebView2Loader.dll"; DestDir: "{app}\runtimes\win-x86\native"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\123.0.2420.53.manifest"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\augloop_client.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\concrt140.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\d3dcompiler_47.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\delegatedWebFeatures.sccd"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\dual_engine_adapter_x64.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\dwritemin.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\dxcompiler.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\dxil.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\Edge.dat"; DestDir: "{app}\WebView2"; Flags: ignoreversion
@@ -181,6 +186,8 @@ Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\vu
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\wdag.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\webview2_integration.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\wns_push_client.dll"; DestDir: "{app}\WebView2"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\copilot_provider_msix\copilot_provider_neutral.msix"; DestDir: "{app}\WebView2\copilot_provider_msix"; Flags: ignoreversion
+Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\copilot_provider_msix\package_metadata"; DestDir: "{app}\WebView2\copilot_provider_msix"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\EBWebView\x64\EmbeddedBrowserWebView.dll"; DestDir: "{app}\WebView2\EBWebView\x64"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\EBWebView\x86\EmbeddedBrowserWebView.dll"; DestDir: "{app}\WebView2\EBWebView\x86"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\edge_feedback\camera_mf_trace.wprp"; DestDir: "{app}\WebView2\edge_feedback"; Flags: ignoreversion
@@ -300,8 +307,6 @@ Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\Tr
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\WidevineCdm\manifest.json"; DestDir: "{app}\WebView2\WidevineCdm"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll"; DestDir: "{app}\WebView2\WidevineCdm\_platform_specific\win_x64"; Flags: ignoreversion
 Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\WebView2\WidevineCdm\_platform_specific\win_x64\widevinecdm.dll.sig"; DestDir: "{app}\WebView2\WidevineCdm\_platform_specific\win_x64"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\zh\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh"; Flags: ignoreversion
-Source: "..\PokeFarm\PokeFarm\bin\Release\net8.0-windows10.0.19041.0\zh-TW\AutoUpdater.NET.resources.dll"; DestDir: "{app}\zh-TW"; Flags: ignoreversion
 
 [Code]
 procedure CurUninstallStepChanged (CurUninstallStep: TUninstallStep);
