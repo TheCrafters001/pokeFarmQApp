@@ -20,7 +20,12 @@ Public Class startup
                     AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\pokefarm\"
                     AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
                 Case 1
-
+                    Log.CreateLog("Checking for Updates. (BETA BRANCH)")
+                    AutoUpdater.ReportErrors = False
+                    AutoUpdater.LetUserSelectRemindLater = True
+                    AutoUpdater.Synchronous = True
+                    AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) & "\Temp\pokefarm\"
+                    AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update-beta.xml")
             End Select
 
         End If
