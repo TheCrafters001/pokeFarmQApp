@@ -44,17 +44,21 @@ Partial Class Settings
         statusBar_Dis_rad = New RadioButton()
         statusBar_Ena_rad = New RadioButton()
         statusBar_lbl = New Label()
+        updateBranch_grp = New GroupBox()
+        updateBranch_cmb = New ComboBox()
+        Label3 = New Label()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
         cacheReset_grp.SuspendLayout()
         statusBar_grp.SuspendLayout()
+        updateBranch_grp.SuspendLayout()
         SuspendLayout()
         ' 
         ' ok_btn
         ' 
         ok_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
-        ok_btn.Location = New Point(507, 297)
+        ok_btn.Location = New Point(512, 326)
         ok_btn.Name = "ok_btn"
         ok_btn.Size = New Size(75, 23)
         ok_btn.TabIndex = 0
@@ -64,7 +68,7 @@ Partial Class Settings
         ' cancel_btn
         ' 
         cancel_btn.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
-        cancel_btn.Location = New Point(12, 297)
+        cancel_btn.Location = New Point(12, 326)
         cancel_btn.Name = "cancel_btn"
         cancel_btn.Size = New Size(75, 23)
         cancel_btn.TabIndex = 1
@@ -270,20 +274,50 @@ Partial Class Settings
         statusBar_lbl.Name = "statusBar_lbl"
         statusBar_lbl.Size = New Size(205, 37)
         statusBar_lbl.TabIndex = 0
-        statusBar_lbl.Text = "This controls the bar a tthe bottom of the page."
+        statusBar_lbl.Text = "This controls the bar a the bottom of the page."
+        ' 
+        ' updateBranch_grp
+        ' 
+        updateBranch_grp.Controls.Add(updateBranch_cmb)
+        updateBranch_grp.Controls.Add(Label3)
+        updateBranch_grp.Location = New Point(365, 240)
+        updateBranch_grp.Name = "updateBranch_grp"
+        updateBranch_grp.Size = New Size(222, 80)
+        updateBranch_grp.TabIndex = 7
+        updateBranch_grp.TabStop = False
+        updateBranch_grp.Text = "Branch"
+        ' 
+        ' updateBranch_cmb
+        ' 
+        updateBranch_cmb.DropDownStyle = ComboBoxStyle.DropDownList
+        updateBranch_cmb.FormattingEnabled = True
+        updateBranch_cmb.Items.AddRange(New Object() {"Stable", "Experimental (Beta)"})
+        updateBranch_cmb.Location = New Point(6, 51)
+        updateBranch_cmb.Name = "updateBranch_cmb"
+        updateBranch_cmb.Size = New Size(210, 23)
+        updateBranch_cmb.TabIndex = 1
+        ' 
+        ' Label3
+        ' 
+        Label3.Location = New Point(6, 19)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(210, 31)
+        Label3.TabIndex = 0
+        Label3.Text = "Select which type of updates you wish to get."
         ' 
         ' Settings
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(594, 332)
+        ClientSize = New Size(594, 361)
+        Controls.Add(ok_btn)
+        Controls.Add(updateBranch_grp)
         Controls.Add(statusBar_grp)
         Controls.Add(cacheReset_grp)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Controls.Add(cancel_btn)
-        Controls.Add(ok_btn)
         FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         MinimizeBox = False
@@ -300,6 +334,7 @@ Partial Class Settings
         cacheReset_grp.ResumeLayout(False)
         statusBar_grp.ResumeLayout(False)
         statusBar_grp.PerformLayout()
+        updateBranch_grp.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -325,4 +360,7 @@ Partial Class Settings
     Friend WithEvents statusBar_Dis_rad As RadioButton
     Friend WithEvents statusBar_Ena_rad As RadioButton
     Friend WithEvents statusBar_lbl As Label
+    Friend WithEvents updateBranch_grp As GroupBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents updateBranch_cmb As ComboBox
 End Class
