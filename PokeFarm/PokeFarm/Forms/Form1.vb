@@ -49,7 +49,7 @@ Public Class Form1
 #End If
 
         ' Display title
-        Me.Text = webView.CoreWebView2.DocumentTitle
+        Me.Text = webView.CoreWebView2.DocumentTitle & " Desktop App"
 
         ' Also show page link
         nav.updateStatus(webView.CoreWebView2.Source)
@@ -391,7 +391,7 @@ Public Class Form1
                 })()")
 
         ' Display title
-        Me.Text = webView.CoreWebView2.DocumentTitle
+        Me.Text = webView.CoreWebView2.DocumentTitle & " Desktop App"
 
         ' Also show page link
         nav.updateStatus(webView.CoreWebView2.Source)
