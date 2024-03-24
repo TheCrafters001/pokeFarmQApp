@@ -123,11 +123,7 @@ Public Class Settings
     End Sub
 
     Private Sub updateCheck_btn_Click(sender As Object, e As EventArgs) Handles updateCheck_btn.Click
-        Log.CreateLog("Checking for Updates.")
-        AutoUpdater.ReportErrors = True
-        AutoUpdater.LetUserSelectRemindLater = False
-        AutoUpdater.DownloadPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\Temp\pokefarm\"
-        AutoUpdater.Start("https://github.com/TheCrafters001/pokeFarmQApp/releases/latest/download/update.xml")
+        startup.updateCheck()
     End Sub
 
     Private Sub cacheReset_btn_Click(sender As Object, e As EventArgs) Handles cacheReset_btn.Click
